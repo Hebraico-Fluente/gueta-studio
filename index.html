@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gueta Studio · Sites e plataformas sob medida</title>
-<meta name="description" content="Gueta Studio, de Moshik Gueta: sites e plataformas sob medida para cafés, restaurantes, escolas e marcas independentes. Cardápio interativo, pedidos pelo WhatsApp, cursos online e três idiomas.">
+<meta name="description" content="Gueta Studio, de Moshik Gueta: sites e plataformas sob medida para cafés, restaurantes, escolas e marcas independentes. Cardápio interativo, pedidos pelo WhatsApp, cursos online, painéis de administração e três idiomas.">
 <meta name="theme-color" content="#F3EDE3">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gueta Studio · Sites e plataformas sob medida">
@@ -97,7 +97,7 @@ h1{font-size:clamp(54px,7.2vw,106px);line-height:.95;margin:24px 0 28px}
 .hero-v .browser{position:relative;left:auto;top:auto;width:100%}
 .hero-v .browser .bar span{transition:opacity .2s ease}
 .hero-v video{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#101D31}
-.hv-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.hv-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
 .hv-tabs button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:58px;padding:12px 10px 8px;border:0;border-radius:12px;background:transparent;text-align:left;cursor:pointer;color:var(--muted);transition:background-color .2s ease,color .2s ease}
 .hv-tabs button::before{content:"";position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--line-2)}
 .hv-tabs button i{position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--terra);transform-origin:left;transform:scaleX(0)}
@@ -105,7 +105,7 @@ h1{font-size:clamp(54px,7.2vw,106px);line-height:.95;margin:24px 0 28px}
 .hv-tabs small{font-size:11.5px;line-height:1.3;color:var(--muted)}
 .hv-tabs button[aria-current=true]{color:var(--ink);background:rgba(255,255,255,.55)}
 @media (hover:hover){.hv-tabs button:hover{color:var(--ink)}}
-@media (max-width:600px){.hv-tabs{grid-template-columns:1fr 1fr}.hv-tabs button{min-height:52px}}
+@media (max-width:600px){.hv-tabs{grid-template-columns:1fr 1fr}.hv-tabs button{min-height:52px}.hv-tabs button:last-child{grid-column:1/-1}}
 
 /* strip */
 .strip{border-block:1px solid var(--line);padding:22px 0;background:var(--paper)}
@@ -351,7 +351,7 @@ footer a{text-decoration:none;color:var(--on-night)}
       <div>
         <span class="kick">Sites e plataformas sob medida</span>
         <h1>Sites com a <i class="t">alma</i> do seu negócio.</h1>
-        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites e plataformas únicos para <b>cafés, restaurantes, escolas e negócios locais</b>: cardápio interativo, pedidos pelo WhatsApp, cursos online e três idiomas. Nada de modelo pronto.</p>
+        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites e plataformas únicos para <b>cafés, restaurantes, escolas e negócios locais</b>: cardápio interativo, pedidos pelo WhatsApp, cursos online, <b>painéis de administração</b> e três idiomas. Nada de modelo pronto.</p>
         <div class="cta">
           <a class="btn btn-terra" data-contact href="#contato">Quero um site assim
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -365,13 +365,14 @@ footer a{text-decoration:none;color:var(--on-night)}
       </div>
       <div class="hero-v">
         <div class="browser"><div class="bar"><i></i><i></i><i></i><span id="hvUrl">moshikgueta.github.io/balcao-pizza</span></div>
-          <video id="hv" muted loop playsinline preload="metadata" poster="media/atalhos.jpg" width="1280" height="800" aria-label="Vídeo com as interações criadas para os sites: a pizza que gira, o cardápio em modo feed, o Mupeco interativo e a luz que acende nos móveis"><source src="media/atalhos.mp4" type="video/mp4"></video>
+          <video id="hv" muted loop playsinline preload="metadata" poster="media/atalhos.jpg" width="1280" height="800" aria-label="Vídeo com as interações criadas para os sites: a pizza que gira, o cardápio em modo feed, o Mupeco interativo, a luz que acende nos móveis e o orçamento de casamento montado na hora"><source src="media/atalhos.mp4" type="video/mp4"></video>
         </div>
         <div class="hv-tabs" id="hvTabs" aria-label="Interações no vídeo">
           <button type="button" data-t="0" data-u="moshikgueta.github.io/balcao-pizza" aria-current="true"><i></i><b>A pizza que gira</b><small>Balcão</small></button>
           <button type="button" data-t="9.77" data-u="moshikgueta.github.io/balcao-pizza" aria-current="false"><i></i><b>Cardápio em feed</b><small>Balcão · El Tumi</small></button>
           <button type="button" data-t="16.63" data-u="moshikgueta.github.io/El-tumi" aria-current="false"><i></i><b>Mupeco interativo</b><small>El Tumi</small></button>
           <button type="button" data-t="22.1" data-u="moshikgueta.github.io/draft-interiores" aria-current="false"><i></i><b>Acenda a luz</b><small>Draft Interiores</small></button>
+          <button type="button" data-t="29.77" data-u="pitangueira.moshikg10.workers.dev" aria-current="false"><i></i><b>Orçamento na hora</b><small>Pitangueira</small></button>
         </div>
       </div>
     </div>
@@ -649,6 +650,11 @@ footer a{text-decoration:none;color:var(--on-night)}
           <b>Sob consulta</b>
         </div>
         <div class="row">
+          <h3>Painéis de administração</h3>
+          <p>Um painel com senha para administrar o negócio: pedidos, orçamentos e clientes organizados por etapa, do “novo” ao “fechado”, com aviso no celular a cada pedido. Como o da Pitangueira.</p>
+          <b>Sob consulta</b>
+        </div>
+        <div class="row">
           <h3>Manutenção</h3>
           <p>Preços, itens e fotos sempre atualizados, domínio próprio, hospedagem e suporte pelo WhatsApp. Opcional, cancele quando quiser.</p>
           <b>R$ 120 <small>/ mês</small></b>
@@ -777,7 +783,7 @@ else if ("IntersectionObserver" in window) {
 (() => {
   const v = document.getElementById("hv"); if (!v) return;
   const tabs = [...document.querySelectorAll("#hvTabs button")], url = document.getElementById("hvUrl");
-  const starts = tabs.map(b => +b.dataset.t), end = () => v.duration || 29.57;
+  const starts = tabs.map(b => +b.dataset.t), end = () => v.duration || 39.43;
   let cur = -1;
   function sync(){
     const t = v.currentTime; let k = 0; starts.forEach((s, i) => { if (t >= s) k = i; });
