@@ -97,7 +97,7 @@ h1{font-size:clamp(54px,7.2vw,106px);line-height:.95;margin:24px 0 28px}
 .hero-v .browser{position:relative;left:auto;top:auto;width:100%}
 .hero-v .browser .bar span{transition:opacity .2s ease}
 .hero-v video{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#101D31}
-.hv-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
+.hv-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
 .hv-tabs button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:58px;padding:12px 10px 8px;border:0;border-radius:12px;background:transparent;text-align:left;cursor:pointer;color:var(--muted);transition:background-color .2s ease,color .2s ease}
 .hv-tabs button::before{content:"";position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--line-2)}
 .hv-tabs button i{position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--terra);transform-origin:left;transform:scaleX(0)}
@@ -105,7 +105,7 @@ h1{font-size:clamp(54px,7.2vw,106px);line-height:.95;margin:24px 0 28px}
 .hv-tabs small{font-size:11.5px;line-height:1.3;color:var(--muted)}
 .hv-tabs button[aria-current=true]{color:var(--ink);background:rgba(255,255,255,.55)}
 @media (hover:hover){.hv-tabs button:hover{color:var(--ink)}}
-@media (max-width:600px){.hv-tabs{grid-template-columns:1fr 1fr}.hv-tabs button{min-height:52px}.hv-tabs button:last-child{grid-column:1/-1}}
+@media (max-width:600px){.hv-tabs{grid-template-columns:1fr 1fr}.hv-tabs button{min-height:52px}}
 
 /* strip */
 .strip{border-block:1px solid var(--line);padding:22px 0;background:var(--paper)}
@@ -365,7 +365,7 @@ footer a{text-decoration:none;color:var(--on-night)}
       </div>
       <div class="hero-v">
         <div class="browser"><div class="bar"><i></i><i></i><i></i><span id="hvUrl">moshikgueta.github.io/balcao-pizza</span></div>
-          <video id="hv" muted loop playsinline preload="metadata" poster="media/atalhos.jpg" width="1280" height="800" aria-label="Vídeo com as interações criadas para os sites: a pizza que gira, o cardápio em modo feed, o Mupeco interativo, a luz que acende nos móveis e o orçamento de casamento montado na hora"><source src="media/atalhos.mp4" type="video/mp4"></video>
+          <video id="hv" muted loop playsinline preload="metadata" poster="media/atalhos.jpg" width="1280" height="800" aria-label="Vídeo com as interações criadas para os sites: a pizza que gira, o cardápio em modo feed, o Mupeco interativo, a luz que acende nos móveis o orçamento de casamento montado na hora e o painel de leads, com os pedidos arrastados de etapa"><source src="media/atalhos.mp4" type="video/mp4"></video>
         </div>
         <div class="hv-tabs" id="hvTabs" aria-label="Interações no vídeo">
           <button type="button" data-t="0" data-u="moshikgueta.github.io/balcao-pizza" aria-current="true"><i></i><b>A pizza que gira</b><small>Balcão</small></button>
@@ -373,6 +373,7 @@ footer a{text-decoration:none;color:var(--on-night)}
           <button type="button" data-t="16.63" data-u="moshikgueta.github.io/El-tumi" aria-current="false"><i></i><b>Mupeco interativo</b><small>El Tumi</small></button>
           <button type="button" data-t="22.1" data-u="moshikgueta.github.io/draft-interiores" aria-current="false"><i></i><b>Acenda a luz</b><small>Draft Interiores</small></button>
           <button type="button" data-t="29.77" data-u="pitangueira.moshikg10.workers.dev" aria-current="false"><i></i><b>Orçamento na hora</b><small>Pitangueira</small></button>
+          <button type="button" data-t="39.43" data-u="pitangueira.moshikg10.workers.dev/painel" aria-current="false"><i></i><b>Painel de leads</b><small>Pitangueira</small></button>
         </div>
       </div>
     </div>
@@ -804,7 +805,7 @@ else if ("IntersectionObserver" in window) {
 (() => {
   const v = document.getElementById("hv"); if (!v) return;
   const tabs = [...document.querySelectorAll("#hvTabs button")], url = document.getElementById("hvUrl");
-  const starts = tabs.map(b => +b.dataset.t), end = () => v.duration || 39.43;
+  const starts = tabs.map(b => +b.dataset.t), end = () => v.duration || 51.13;
   let cur = -1;
   function sync(){
     const t = v.currentTime; let k = 0; starts.forEach((s, i) => { if (t >= s) k = i; });
