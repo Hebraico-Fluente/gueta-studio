@@ -4,12 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gueta Studio · Sites e plataformas sob medida</title>
-<meta name="description" content="Gueta Studio, de Moshik Gueta: sites e plataformas sob medida para cafés, restaurantes, escolas e marcas independentes. Cardápio interativo, pedidos pelo WhatsApp, cursos online, painéis de administração e três idiomas.">
+<meta name="description" content="Gueta Studio, de Moshik Gueta: sites sob medida para casamentos, cafés, restaurantes e negócios locais, com a identidade de cada cliente. Sites bilíngues, pedidos pelo WhatsApp, painéis de administração e cursos online. Curitiba.">
 <meta name="theme-color" content="#F3EDE3">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gueta Studio · Sites e plataformas sob medida">
-<meta property="og:description" content="Sites únicos para negócios com história. Por Moshik Gueta.">
-<meta property="og:image" content="https://moshikgueta.github.io/gueta-studio/shots/tumi-hero.jpg">
+<meta property="og:description" content="Sites sob medida para casamentos, cafés, restaurantes e negócios locais. Bilíngues quando precisar. Por Moshik Gueta.">
+<meta property="og:image" content="https://moshikgueta.github.io/gueta-studio/shots/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://moshikgueta.github.io/gueta-studio/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://moshikgueta.github.io/gueta-studio/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Gueta Studio","description":"Sites e plataformas sob medida para casamentos, cafés, restaurantes e negócios locais. Sites bilíngues.","url":"https://moshikgueta.github.io/gueta-studio/","logo":"https://moshikgueta.github.io/gueta-studio/marca/gueta-avatar.png","image":"https://moshikgueta.github.io/gueta-studio/shots/og.jpg","founder":{"@type":"Person","name":"Moshik Gueta","sameAs":["https://www.linkedin.com/in/moshikgueta/"]},"areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},"telephone":"+55 41 99991-9434","knowsLanguage":["pt","es","en","it","he"]}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="marca/gueta-avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -378,6 +385,21 @@ footer a{text-decoration:none;color:var(--on-night)}
 @media (max-width:900px){.wed-pit{grid-template-columns:minmax(0,1fr)}.wed-pit .media{margin-right:4%}}
 .foot-brand{display:inline-flex;align-items:center;gap:10px}
 @media (max-width:420px){.brand-ic{width:32px;height:30px}.brand small{display:none}.nav .btn{white-space:nowrap}}
+
+/* depoimentos */
+#depoimentos[hidden]{display:none}
+.deps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:22px}
+.dep{margin:0;padding:30px 30px 26px;border-radius:22px;background:var(--paper);box-shadow:0 0 0 1px var(--line)}
+.dep blockquote{margin:0;font:400 clamp(22px,2vw,26px)/1.35 var(--serif);color:var(--ink)}
+.dep blockquote::before{content:"“";display:block;font:400 64px/.6 var(--serif);color:var(--terra);margin-bottom:10px}
+.dep figcaption{margin-top:20px;font-size:14.5px;color:var(--muted)}
+.dep figcaption b{display:block;color:var(--ink);font-weight:600}
+/* botão fixo de WhatsApp */
+.wa-fix{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 16px;border-radius:999px;background:#1F9D55;color:#fff;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 18px 40px -14px rgba(16,29,49,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.wa-fix svg{width:22px;height:22px}
+.wa-fix.on{transform:none}
+@media (min-width:901px){.wa-fix span{display:none}.wa-fix{padding:0;width:56px;justify-content:center}}
+@media (prefers-reduced-motion:reduce){.wa-fix{transition:none}}
 </style>
 </head>
 <body>
@@ -401,9 +423,9 @@ footer a{text-decoration:none;color:var(--on-night)}
   <section class="hero" aria-label="Apresentação">
     <div class="wrap hero-grid">
       <div>
-        <span class="kick">Sites e plataformas sob medida</span>
+        <span class="kick">Sites sob medida · casamentos e negócios</span>
         <h1>Sites com a <i class="t">alma</i> do seu negócio.</h1>
-        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites e plataformas únicos para <b>casamentos, cafés, restaurantes, escolas e negócios locais</b>: cardápio interativo, pedidos pelo WhatsApp, cursos online, <b>painéis de administração</b> e três idiomas. Nada de modelo pronto.</p>
+        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites únicos para <b>casamentos, cafés, restaurantes e negócios locais</b>, com a identidade de cada cliente: presença e presentes online, pedidos pelo WhatsApp, <b>painéis de administração</b> e cursos. Sou poliglota, então o site pode ser <b>bilíngue</b>. Nada de modelo pronto.</p>
         <div class="cta">
           <a class="btn btn-terra" data-contact href="#contato">Quero um site assim
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -411,7 +433,7 @@ footer a{text-decoration:none;color:var(--on-night)}
         </div>
         <div class="proof">
           <div><b>5</b><span>projetos no ar</span></div>
-          <div><b>10–15</b><span>dias para um site ficar pronto</span></div>
+          <div><b>PT · EN · ES</b><span>sites bilíngues, com texto revisado</span></div>
           <div><b>100%</b><span>sob medida, sem template</span></div>
         </div>
       </div>
@@ -790,6 +812,13 @@ footer a{text-decoration:none;color:var(--on-night)}
     </div>
   </section>
 
+  <section id="depoimentos" hidden>
+    <div class="wrap">
+      <div class="sec-head"><div><span class="kick">Quem já trabalhou comigo</span><h2>O que os clientes <i class="t">dizem</i>.</h2></div></div>
+      <div class="deps" id="deps"></div>
+    </div>
+  </section>
+
   <section id="faq" class="feat">
     <div class="wrap">
       <div class="sec-head" style="margin-bottom:28px">
@@ -821,6 +850,8 @@ footer a{text-decoration:none;color:var(--on-night)}
     </div>
   </section>
 </main>
+
+<a class="wa-fix" data-contact href="#contato" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg><span>Falar comigo</span></a>
 
 <footer>
   <div class="wrap"><span class="foot-brand"><img src="marca/gueta-icone.svg" alt="" width="28" height="26">© <span data-year></span> Gueta Studio · Sites e plataformas sob medida</span><span><a href="#trabalhos">Trabalhos</a> · <a href="#contato">Contato</a></span></div>
@@ -873,6 +904,29 @@ else if ("IntersectionObserver" in window) {
   if (reduceMotion) { v.controls = true; return; }
   if ("IntersectionObserver" in window) new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(()=>{}) : v.pause()), {threshold:.25}).observe(v);
   else v.play().catch(()=>{});
+})();
+
+/* depoimentos: escreva aqui as frases reais dos clientes (a seção só aparece quando houver alguma) */
+const DEPOIMENTOS = [
+  // { texto: "Frase do cliente.", nome: "Pétala e Isa", negocio: "Pitangueira · casamentos criativos" },
+];
+if (DEPOIMENTOS.length) {
+  const box = document.getElementById("deps");
+  DEPOIMENTOS.forEach(d => {
+    const f = document.createElement("figure"); f.className = "dep";
+    const q = document.createElement("blockquote"); q.textContent = d.texto;
+    const c = document.createElement("figcaption"); const b = document.createElement("b"); b.textContent = d.nome;
+    c.append(b, document.createTextNode(d.negocio || "")); f.append(q, c); box.append(f);
+  });
+  document.getElementById("depoimentos").hidden = false;
+}
+/* botão fixo de WhatsApp: aparece depois do topo e some no contato final */
+(() => {
+  const w = document.querySelector(".wa-fix"), end = document.getElementById("contato"); if (!w) return;
+  let nearEnd = false;
+  if ("IntersectionObserver" in window && end) new IntersectionObserver(es => { nearEnd = es[0].isIntersecting; tick(); }, {threshold: 0, rootMargin: "0px 0px -30% 0px"}).observe(end);
+  const tick = () => w.classList.toggle("on", scrollY > innerHeight * .9 && !nearEnd);
+  addEventListener("scroll", tick, {passive: true}); tick();
 })();
 const hd = document.querySelector("header");
 addEventListener("scroll", () => hd.classList.toggle("scrolled", scrollY > 20), {passive:true});
