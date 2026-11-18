@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ana & Pedro · 12.09.2027 · identidade Pitangueira</title>
+<meta name="description" content="O casamento de Ana & Pedro. Confirme sua presença, veja o local e a lista de presentes.">
+<meta name="robots" content="noindex"><!-- site-modelo -->
+<meta name="theme-color" content="#FAF6F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Frank+Ruhl+Libre:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FAF6F0; --cream:#F2EBE0; --sand:#E6DCCD; --ink:#2E2A26; --soft:#5C554D; --muted:#8E857A;
+  --gold:#B8936A; --gold-d:#9A7651; --sage:#7F8E74;
+  --serif:"Cormorant Garamond","Frank Ruhl Libre",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1); --pad:clamp(22px,5vw,64px);
+}
+[dir=rtl]{--serif:"Frank Ruhl Libre","Cormorant Garamond",serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:300 17px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:1.5px solid var(--gold);outline-offset:4px}
+.wrap{width:min(1140px,100%);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;margin:0;letter-spacing:.005em;text-wrap:balance}
+h2{font-size:clamp(40px,5.4vw,64px);line-height:1.05}
+h2 em,h1 em{font-style:italic;color:var(--gold-d)}
+p{margin:0;text-wrap:pretty}
+.label{display:inline-flex;align-items:center;gap:14px;font:400 12px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--gold-d)}
+[dir=rtl] .label{letter-spacing:.06em;font-size:14px}
+.label::before,.label::after{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+.orn{display:block;width:120px;height:14px;margin:26px auto;color:var(--gold)}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+.lead{max-width:34em;color:var(--soft);font-size:clamp(16px,1.4vw,18.5px);margin-top:20px}
+
+/* topo */
+.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background .45s var(--ease),box-shadow .45s}
+.nav .wrap{display:flex;align-items:center;gap:26px;height:72px}
+.mono{font:italic 400 28px/1 var(--serif);color:#fff;text-decoration:none;transition:color .4s}
+.nav ul{display:flex;gap:26px;margin:0 auto;padding:0;list-style:none}
+.nav ul a{font:400 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,.85);transition:color .3s}
+[dir=rtl] .nav ul a{letter-spacing:.04em;font-size:14px}
+.langs{display:flex;gap:2px;margin-inline-start:auto;padding:3px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px)}
+.langs button{min-width:34px;height:30px;padding:0 8px;border:0;border-radius:999px;background:none;color:rgba(255,255,255,.85);font:500 11px/1 var(--sans);letter-spacing:.08em;cursor:pointer}
+.langs button[aria-pressed=true]{background:#fff;color:var(--ink)}
+.nav.solid{background:rgba(250,246,240,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(46,42,38,.07)}
+.nav.solid .mono{color:var(--ink)}
+.nav.solid ul a{color:var(--soft)}
+.nav.solid .langs{background:var(--cream)}
+.nav.solid .langs button{color:var(--soft)}
+.nav.solid .langs button[aria-pressed=true]{background:var(--ink);color:#fff}
+@media (hover:hover){.nav ul a:hover{color:var(--gold)}}
+@media (max-width:900px){.nav ul{display:none}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 30px;border:1px solid currentColor;border-radius:999px;background:transparent;font:400 12.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .35s var(--ease),color .35s,border-color .35s,transform .2s var(--ease)}
+[dir=rtl] .btn{letter-spacing:.04em;font-size:15px}
+.btn:active{transform:scale(.97)}
+.btn.solid{background:var(--ink);border-color:var(--ink);color:#fff}
+@media (hover:hover){.btn.solid:hover{background:var(--gold-d);border-color:var(--gold-d)}.btn.line:hover{background:var(--ink);color:#fff;border-color:var(--ink)}}
+.btn.light{color:#fff;border-color:rgba(255,255,255,.65)}
+.btn.light.fill{background:#fff;color:var(--ink);border-color:#fff}
+@media (hover:hover){.btn.light:hover{background:#fff;color:var(--ink)}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2}
+.hero .bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:settle 3s var(--ease) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(30,26,22,.35),rgba(30,26,22,.2) 40%,rgba(30,26,22,.62))}
+.hero .inner{padding:110px var(--pad) 90px}
+.hero .label{color:#fff;opacity:0;animation:up 1.4s .2s var(--ease) forwards}
+.hero h1{margin:26px 0 8px;font-size:clamp(64px,11vw,150px);line-height:.95;font-style:italic;opacity:0;animation:up 1.4s .35s var(--ease) forwards}
+.hero h1 span{display:inline-block;font-style:normal;font-size:.55em;vertical-align:.18em;margin:0 .12em;color:#F1DCC0}
+.hero .date{font:300 clamp(18px,2vw,23px)/1.5 var(--sans);letter-spacing:.14em;text-transform:uppercase;opacity:0;animation:up 1.4s .5s var(--ease) forwards}
+[dir=rtl] .hero .date{letter-spacing:.02em}
+.hero .city{margin-top:6px;font:italic 300 22px/1.4 var(--serif);color:rgba(255,255,255,.85);opacity:0;animation:up 1.4s .55s var(--ease) forwards}
+.cd{display:flex;justify-content:center;gap:clamp(10px,2vw,18px);margin:42px 0 40px;opacity:0;animation:up 1.4s .7s var(--ease) forwards}
+.cd div{width:clamp(70px,9vw,92px);padding:14px 0 12px;border:1px solid rgba(255,255,255,.4);border-radius:14px;background:rgba(255,255,255,.08);backdrop-filter:blur(6px)}
+.cd b{display:block;font:300 clamp(30px,3.6vw,42px)/1 var(--serif);font-variant-numeric:tabular-nums}
+.cd small{display:block;margin-top:6px;font:400 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+[dir=rtl] .cd small{letter-spacing:0;font-size:12.5px}
+.hero .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;opacity:0;animation:up 1.4s .85s var(--ease) forwards}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.sec{padding:clamp(90px,12vw,150px) 0}
+.cream{background:var(--cream)}
+
+/* história */
+.story{display:grid;gap:clamp(50px,7vw,90px);margin-top:clamp(50px,7vw,80px)}
+.st{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,80px);align-items:center}
+.st:nth-child(even) figure{order:2}
+.st figure{margin:0;overflow:hidden;border-radius:200px 200px 6px 6px;aspect-ratio:4/5}
+.st img{width:100%;height:100%;object-fit:cover}
+.st .yr{font:italic 300 clamp(54px,6vw,80px)/1 var(--serif);color:var(--gold)}
+.st h3{font-size:clamp(30px,3vw,40px);margin:10px 0 14px}
+.st p{color:var(--soft);max-width:26em}
+@media (max-width:760px){.st{grid-template-columns:minmax(0,1fr)}.st:nth-child(even) figure{order:0}.st figure{max-width:420px;aspect-ratio:4/4.4}}
+
+/* o grande dia */
+.places{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,30px);margin-top:clamp(44px,6vw,70px)}
+.place{background:var(--ivory);border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -40px rgba(46,42,38,.4)}
+.place figure{margin:0;aspect-ratio:16/10;overflow:hidden}
+.place figure img{width:100%;height:100%;object-fit:cover}
+.place .bd{padding:clamp(26px,3vw,38px)}
+.place small{font:400 12px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-d)}
+[dir=rtl] .place small{letter-spacing:.04em;font-size:14px}
+.place h3{font-size:clamp(32px,3.2vw,42px);margin:12px 0 4px}
+.place .t{font:italic 300 26px/1.3 var(--serif);color:var(--gold-d)}
+.place p{color:var(--soft);margin-top:12px}
+.place .btn{margin-top:22px;min-height:46px;padding:0 22px;font-size:11.5px}
+.dress{margin-top:clamp(30px,4vw,44px);display:flex;flex-wrap:wrap;justify-content:center;gap:10px 30px;color:var(--soft)}
+.dress b{font-weight:500;color:var(--ink)}
+@media (max-width:760px){.places{grid-template-columns:minmax(0,1fr)}}
+
+/* rsvp */
+.rsvp{position:relative;isolation:isolate;overflow:hidden}
+.rsvp .bg{position:absolute;inset:0;z-index:-2}
+.rsvp .bg img{width:100%;height:100%;object-fit:cover}
+.rsvp::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(250,246,240,.88)}
+.form{max-width:640px;margin:clamp(40px,5vw,56px) auto 0;padding:clamp(28px,4vw,48px);background:var(--ivory);border-radius:8px;box-shadow:0 40px 80px -50px rgba(46,42,38,.5);display:grid;gap:18px}
+.form label{display:grid;gap:7px;font:400 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+[dir=rtl] .form label{letter-spacing:0;font-size:14px}
+.in{width:100%;min-height:52px;padding:13px 16px;border:1px solid var(--sand);border-radius:8px;background:#fff;font:300 16px/1.4 var(--sans);letter-spacing:0;text-transform:none;color:var(--ink);transition:border-color .3s}
+.in:focus{outline:none;border-color:var(--gold)}
+textarea.in{min-height:96px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.going{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.going input{position:absolute;opacity:0;width:1px;height:1px}
+.going span{display:grid;place-items:center;min-height:52px;padding:8px 12px;border:1px solid var(--sand);border-radius:8px;background:#fff;font:400 15px/1.3 var(--sans);letter-spacing:0;text-transform:none;color:var(--soft);text-align:center;cursor:pointer;transition:all .3s}
+.going input:checked+span{border-color:var(--ink);background:var(--ink);color:#fff}
+.going input:focus-visible+span{outline:1.5px solid var(--gold);outline-offset:3px}
+.form .btn{justify-self:center;margin-top:6px}
+.priv{margin:2px 0 0;font-size:13px;line-height:1.5;color:var(--muted);text-align:center}
+.err{min-height:1.2em;color:#9E3B2C;font-size:14px;text-align:center}
+.done{text-align:center;padding:20px 0}
+.done b{display:block;font:italic 300 36px/1.2 var(--serif);margin-bottom:10px}
+.done small{display:block;margin-top:14px;color:var(--muted);font-size:13px}
+.done[hidden],.form[hidden]{display:none}
+
+/* presentes */
+.gifts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,22px);margin-top:clamp(44px,6vw,64px)}
+.gift{display:flex;flex-direction:column;gap:6px;padding:28px 26px;background:var(--ivory);border:1px solid var(--sand);border-radius:8px;transition:transform .5s var(--ease),box-shadow .5s}
+@media (hover:hover){.gift:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(46,42,38,.5)}}
+.gift i{font-style:normal;font-size:26px}
+.gift h3{font-size:25px;line-height:1.2;margin-top:6px}
+.gift .v{font:italic 300 28px/1 var(--serif);color:var(--gold-d);margin:6px 0 16px}
+.gift .btn{margin-top:auto;align-self:flex-start;min-height:44px;padding:0 20px;font-size:11px}
+@media (max-width:900px){.gifts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.gifts{grid-template-columns:minmax(0,1fr);gap:10px}.gift{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:2px 12px;align-items:center;padding:16px 16px}.gift i{grid-row:1/3;font-size:24px}.gift h3{font-size:21px;margin:0}.gift .v{font-size:22px;margin:0}.gift .btn{grid-column:3;grid-row:1/3;margin:0;align-self:center;padding:0 14px}}
+
+.direct{max-width:640px;margin:34px auto 0;padding:16px 22px;border-radius:999px;background:var(--cream);text-align:center;font-size:15px;color:var(--soft)}
+@media (max-width:520px){.direct{border-radius:14px}}
+/* modal pix */
+dialog{width:min(440px,100% - 28px);border:0;border-radius:12px;padding:0;background:var(--ivory);color:var(--ink);box-shadow:0 40px 90px -30px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(46,42,38,.5);backdrop-filter:blur(3px)}
+.dlg{padding:34px 30px 28px;text-align:center}
+.dlg h3{font-size:34px}
+.dlg .g{margin-top:6px;color:var(--soft)}
+.dlg .v{font:italic 300 40px/1.1 var(--serif);color:var(--gold-d);margin:14px 0 20px}
+.key{display:flex;align-items:center;gap:8px;padding:6px 6px 6px 16px;border:1px dashed var(--gold);border-radius:999px;background:#fff;text-align:start}
+[dir=rtl] .key{padding:6px 16px 6px 6px}
+.key small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.key code{font:400 15px/1.3 var(--sans);overflow-wrap:anywhere}
+.key div{flex:1;min-width:0}
+.key .btn{min-height:42px;padding:0 16px;font-size:10.5px}
+.dlg p.n{margin-top:16px;font-size:14px;color:var(--muted)}
+.dlg .x{margin-top:18px;border:0;background:none;color:var(--soft);text-decoration:underline;cursor:pointer;font-size:14px}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,18vw,260px);gap:clamp(8px,1.2vw,14px);margin-top:clamp(40px,5vw,60px)}
+.gal figure{margin:0;overflow:hidden;border-radius:4px;background:var(--sand)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+@media (hover:hover){.gal figure:hover img{transform:scale(1.05)}}
+.gal .t2{grid-row:span 2}.gal .w2{grid-column:span 2}
+@media (max-width:720px){.gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(130px,40vw,220px)}}
+
+/* faq */
+.faq{max-width:760px;margin:clamp(40px,5vw,56px) auto 0}
+.faq details{border-top:1px solid var(--sand)}
+.faq details:last-child{border-bottom:1px solid var(--sand)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 2px;cursor:pointer;list-style:none;font:400 clamp(22px,2.2vw,27px)/1.3 var(--serif)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:300 30px/1 var(--sans);color:var(--gold);transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 2px 24px;color:var(--soft);max-width:40em}
+
+/* fim */
+.end{position:relative;padding:clamp(110px,14vw,170px) 0;text-align:center;color:#fff;isolation:isolate;overflow:hidden}
+.end .bg{position:absolute;inset:0;z-index:-2}
+.end .bg img{width:100%;height:100%;object-fit:cover}
+.end::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(30,26,22,.55)}
+.end h2{font-style:italic;font-size:clamp(52px,8vw,100px)}
+.end p{margin-top:16px;color:rgba(255,255,255,.85);letter-spacing:.14em;text-transform:uppercase;font-size:14px}
+footer{padding:30px 0 40px;text-align:center;font-size:13px;color:var(--muted)}
+footer a{color:var(--gold-d)}
+.badge{position:fixed;inset-inline-start:14px;bottom:14px;z-index:45;padding:8px 14px;border-radius:999px;background:rgba(46,42,38,.82);color:#F2EBE0;font:400 11.5px/1 var(--sans);letter-spacing:.08em;backdrop-filter:blur(8px)}
+.badge a{color:#E8C9A4;text-decoration:none}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.rv.shown{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.rv,.hero .label,.hero h1,.hero .date,.hero .city,.cd,.hero .acts{opacity:1;transform:none}}
+@media (max-width:420px){.row2{grid-template-columns:1fr 1fr}.btn{padding:0 22px;letter-spacing:.14em}}
+</style>
+
+<style>
+/* ===== Identidade visual criada pela Pitangueira para o casal ===== */
+:root{--ivory:#FFF7EE;--cream:#FCEADB;--sand:#F1D6C2;--ink:#3B1622;--soft:#7D5A60;--muted:#9A7A7F;--gold:#FF7C38;--gold-d:#AD2A49;--sage:#F67E7D;
+  --serif:"DM Serif Display",Georgia,serif;--sans:"Montserrat",system-ui,sans-serif;--script:"Pinyon Script",cursive;--bordo:#AD2A49;--bordo-e:#7E1C35;--laranja:#FF7C38;--amarelo:#FFCE59;--pessego:#FFC9A8}
+body{font-weight:400}
+h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;color:var(--laranja)!important;font-size:1.15em}
+.label{color:var(--bordo)!important;font-weight:600!important}
+.orn{color:var(--laranja)!important}
+/* topo */
+.mono{font-family:var(--script)!important;font-style:normal!important;font-size:34px!important}
+.langs button[aria-pressed=true]{color:var(--bordo)!important}
+.nav.solid .langs button[aria-pressed=true]{background:var(--bordo)!important;color:#fff!important}
+/* abertura laranja com coração e estrelas */
+.hero{background:var(--laranja)}
+.hero .bg{display:none}
+.hero::before{background:none!important}
+.hero::after{content:"";position:absolute;left:50%;top:52%;width:min(820px,140vw);aspect-ratio:1;transform:translate(-50%,-50%) rotate(-45deg);z-index:-1;
+  background:#F0682A;border-radius:0 0 0 0;
+  -webkit-mask:radial-gradient(circle at 50% 25%,#000 25%,transparent 25.2%) ,radial-gradient(circle at 75% 50%,#000 25%,transparent 25.2%),linear-gradient(#000,#000) 25% 25%/50% 50% no-repeat;
+  mask:radial-gradient(circle at 50% 25%,#000 25%,transparent 25.2%),radial-gradient(circle at 75% 50%,#000 25%,transparent 25.2%),linear-gradient(#000,#000) 25% 25%/50% 50% no-repeat}
+.hero .label{color:var(--bordo-e)!important;background:var(--pessego);padding:10px 20px;border-radius:999px}
+.hero .label::before,.hero .label::after{display:none}
+.hero .inner{padding:84px var(--pad) 60px!important}
+.hero .cd{margin:28px 0 26px!important}
+.hero .photo{width:130px;height:130px;margin:0 auto 14px;border-radius:50%;border:6px solid var(--bordo);overflow:hidden;box-shadow:0 18px 40px -16px rgba(59,22,34,.6);opacity:0;animation:up 1.4s .1s var(--ease) forwards;transform:rotate(-4deg)}
+.hero .photo img{width:100%;height:100%;object-fit:cover}
+.hero h1{font-family:var(--serif)!important;font-style:normal!important;color:#fff}
+.hero h1 span{font-family:var(--script)!important;color:var(--amarelo)!important;font-size:.8em!important;vertical-align:.02em!important}
+.hero .date{font-weight:600!important;color:#fff}
+.hero .city{font-family:var(--script)!important;font-style:normal!important;font-size:34px!important;color:var(--bordo-e)!important}
+.cd div{border-color:rgba(255,255,255,.7)!important;background:rgba(255,255,255,.18)!important}
+.cd b{font-family:var(--serif)!important}
+.btn{border-radius:999px!important;font-family:var(--sans)!important;font-weight:600!important;letter-spacing:.12em!important}
+.btn.light.fill{background:var(--bordo)!important;border-color:var(--bordo)!important;color:#fff!important}
+.btn.light{border-color:#fff!important}
+.btn.solid{background:var(--bordo)!important;border-color:var(--bordo)!important}
+.btn.line{border-color:var(--bordo)!important;color:var(--bordo)!important}
+.star{position:absolute;color:var(--pessego);pointer-events:none;z-index:-1}
+.star path{fill:currentColor}
+/* seções */
+.st figure{border:6px solid var(--bordo);border-radius:200px 200px 24px 24px!important}
+.st .yr{font-family:var(--script)!important;font-style:normal!important;color:var(--laranja)!important;font-size:clamp(64px,7vw,92px)!important}
+.cream{background:var(--cream)!important}
+.place{border-radius:22px!important;box-shadow:0 26px 50px -34px rgba(59,22,34,.45)!important}
+.place .t{font-family:var(--script)!important;font-style:normal!important;color:var(--laranja)!important;font-size:34px!important}
+.rsvp .bg{display:none}
+.rsvp::before{background:var(--pessego)!important}
+.form{border-radius:24px!important;border:2px dashed var(--laranja)}
+.going input:checked+span{background:var(--bordo)!important;border-color:var(--bordo)!important}
+.gift{border-radius:20px!important;background:#fff!important}
+.gift .v{font-family:var(--serif)!important;font-style:normal!important;color:var(--bordo)!important}
+.direct{background:var(--pessego)!important;color:var(--bordo-e)!important}
+.end .bg{display:none}
+.end{background:var(--bordo)}
+.end::before{background:none!important}
+.end h2{font-family:var(--script)!important;font-style:normal!important;color:var(--amarelo)}
+.gal figure{border-radius:18px!important}
+.faq summary::after{color:var(--laranja)!important}
+.badge{background:var(--bordo-e)!important}
+.badge a{color:var(--amarelo)!important}
+.idv{display:block;margin-top:10px;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--bordo-e)}
+</style>
+<style>.langs [data-lang=it],.langs [data-lang=he]{display:none!important}</style></head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="orn" viewBox="0 0 120 14"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1c3 3 3 9 0 12-3-3-3-9 0-12zM52 7c3-2.5 6-2.5 8 0-2 2.5-5 2.5-8 0zM68 7c-3-2.5-6-2.5-8 0 2 2.5 5 2.5 8 0z" fill="none" stroke="currentColor" stroke-width=".8"/></symbol></svg>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mono" href="#">A&amp;P</a>
+    <ul>
+      <li><a href="#historia" data-t="nav_story"></a></li>
+      <li><a href="#dia" data-t="nav_day"></a></li>
+      <li><a href="#rsvp" data-t="nav_rsvp"></a></li>
+      <li><a href="#presentes" data-t="nav_gifts"></a></li>
+      <li><a href="#duvidas" data-t="nav_faq"></a></li>
+    </ul>
+    <div class="langs" role="group" aria-label="Idioma">
+      <button type="button" data-lang="pt">PT</button><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="it">IT</button><button type="button" data-lang="he">HE</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <svg class="star" viewBox="0 0 100 100" style="width:160px;left:4%;top:12%;transform:rotate(12deg)"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:90px;right:8%;top:18%;color:#FFCE59"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:200px;right:-40px;bottom:6%;transform:rotate(-14deg)"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:60px;left:14%;bottom:14%;color:#FFCE59"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg>
+  <div class="bg"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=2200&q=80&auto=format&fit=crop" alt="" fetchpriority="high"></div>
+  <div class="inner">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=500&q=80&auto=format&fit=crop" alt=""></div>
+    <span class="label" data-t="hero_kicker"></span>
+    <h1>Ana<span>&amp;</span>Pedro</h1>
+    <p class="date" data-date="long"></p>
+    <p class="city" data-t="city"></p>
+    <div class="cd" aria-live="off">
+      <div><b data-cd="d">0</b><small data-t="cd_d"></small></div>
+      <div><b data-cd="h">0</b><small data-t="cd_h"></small></div>
+      <div><b data-cd="m">0</b><small data-t="cd_m"></small></div>
+      <div><b data-cd="s">0</b><small data-t="cd_s"></small></div>
+    </div>
+    <div class="acts"><a class="btn light fill" href="#rsvp" data-t="rsvp_cta"></a><a class="btn light" id="saveDate" target="_blank" rel="noopener" data-t="save_date"></a></div>
+  </div>
+</section>
+
+<section class="sec" id="historia">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="story_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="story_title" data-html></h2></div>
+    <div class="story">
+      <div class="st rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=900&q=78&auto=format&fit=crop" alt=""></figure><div><span class="yr">2019</span><h3 data-t="s1_t"></h3><p data-t="s1_p"></p></div></div>
+      <div class="st rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?w=900&q=78&auto=format&fit=crop" alt=""></figure><div><span class="yr">2022</span><h3 data-t="s2_t"></h3><p data-t="s2_p"></p></div></div>
+      <div class="st rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=900&q=78&auto=format&fit=crop" alt=""></figure><div><span class="yr">2026</span><h3 data-t="s3_t"></h3><p data-t="s3_p"></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec cream" id="dia">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="day_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="day_title" data-html></h2><p class="lead" data-date="long"></p></div>
+    <div class="places">
+      <article class="place rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=1100&q=78&auto=format&fit=crop" alt=""></figure>
+        <div class="bd"><small data-t="cer"></small><h3>Villa Serena</h3><span class="t">16h30</span><p data-t="cer_p"></p><a class="btn line" data-map target="_blank" rel="noopener" data-t="map"></a></div></article>
+      <article class="place rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1100&q=78&auto=format&fit=crop" alt=""></figure>
+        <div class="bd"><small data-t="rec"></small><h3>Villa Serena · Salão</h3><span class="t">18h00</span><p data-t="rec_p"></p><a class="btn line" data-map target="_blank" rel="noopener" data-t="map"></a></div></article>
+    </div>
+    <p class="dress rv"><span><b data-t="dress_l"></b> <span data-t="dress"></span></span></p>
+  </div>
+</section>
+
+<section class="sec rsvp" id="rsvp">
+  <div class="bg"><img loading="lazy" src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=2000&q=70&auto=format&fit=crop" alt=""></div>
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="rsvp_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="rsvp_title" data-html></h2><p class="lead" data-t="rsvp_sub"></p></div>
+    <form class="form rv" id="rsvpForm" novalidate>
+      <label><span data-t="f_name"></span><input class="in" name="nome" autocomplete="name"></label>
+      <div class="going" role="radiogroup">
+        <label><input type="radio" name="vai" value="sim" checked><span data-t="yes"></span></label>
+        <label><input type="radio" name="vai" value="nao"><span data-t="no"></span></label>
+      </div>
+      <div class="row2" id="qty">
+        <label><span data-t="f_adults"></span><select class="in" name="adultos"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+        <label><span data-t="f_kids"></span><select class="in" name="criancas"><option>0</option><option>1</option><option>2</option><option>3</option></select></label>
+      </div>
+      <label id="diet"><span data-t="f_diet"></span><input class="in" name="restricao" data-ph="f_diet_ph"></label>
+      <label><span data-t="f_msg"></span><textarea class="in" name="msg" rows="3"></textarea></label>
+      <p class="priv" data-t="privacy"></p>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn solid" type="submit" data-t="f_send"></button>
+    </form>
+    <div class="form done" id="done" hidden><b id="doneT"></b><p id="doneP" data-t="done_p"></p><small data-t="demo"></small></div>
+  </div>
+</section>
+
+<section class="sec" id="presentes">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="gifts_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="gifts_title" data-html></h2><p class="lead" data-t="gifts_sub"></p></div>
+    <div class="gifts" id="gifts"></div>
+    <p class="direct rv" data-t="direct"></p>
+  </div>
+</section>
+
+<section class="sec cream" style="padding-bottom:clamp(70px,9vw,110px)">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="gal_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="gal_title" data-html></h2></div>
+    <div class="gal">
+      <figure class="t2 rv"><img loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=700&q=78&auto=format&fit=crop" alt=""></figure>
+      <figure class="w2 rv"><img loading="lazy" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1200&q=78&auto=format&fit=crop" alt=""></figure>
+      <figure class="t2 rv"><img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=700&q=78&auto=format&fit=crop" alt=""></figure>
+      <figure class="rv"><img loading="lazy" src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?w=700&q=78&auto=format&fit=crop" alt=""></figure>
+      <figure class="rv"><img loading="lazy" src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=700&q=78&auto=format&fit=crop" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="duvidas">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="faq_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="faq_title" data-html></h2></div>
+    <div class="faq rv">
+      <details><summary data-t="q1"></summary><p data-t="a1"></p></details>
+      <details><summary data-t="q2"></summary><p data-t="a2"></p></details>
+      <details><summary data-t="q3"></summary><p data-t="a3"></p></details>
+      <details><summary data-t="q4"></summary><p data-t="a4"></p></details>
+      <details><summary data-t="q5"></summary><p data-t="a5"></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="bg"><img loading="lazy" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=2000&q=75&auto=format&fit=crop" alt=""></div>
+  <div class="wrap"><h2 data-t="end_t"></h2><p data-date="short"></p></div>
+</section>
+</main>
+
+<footer>Identidade visual: <a href="https://www.instagram.com/pitangueiracriativa/">Pitangueira</a> · Site: <a href="https://moshikgueta.github.io/gueta-studio/">Gueta Studio</a></footer>
+<p class="badge"><span data-t="badge"></span> · <a href="https://moshikgueta.github.io/gueta-studio/">Gueta Studio</a></p>
+
+<dialog id="pix"><div class="dlg">
+  <h3 data-t="pix_t"></h3><p class="g" id="pixG"></p><p class="v" id="pixV"></p>
+  <div class="key"><div><small data-t="pix_k"></small><code id="pixKey"></code></div><button class="btn solid" type="button" id="copy" data-t="copy"></button></div>
+  <p class="n" data-t="pix_n"></p>
+  <button class="x" type="button" id="pixClose" data-t="close"></button>
+</div></dialog>
+
+<script>
+/* ===== Dados do casal: troque aqui ===== */
+const WEDDING = {
+  date: "2027-09-12T16:30:00-03:00",
+  rsvpDeadline: "2027-08-12",
+  place: "Villa Serena, Curitiba, PR",
+  pix: "ana.pedro@example.com",
+  whatsapp: "",            // com número (ex.: "5541999999999") a confirmação abre no WhatsApp dos noivos; vazio = demonstração
+  gifts: [
+    { i:"🍝", k:"g1", v:250 }, { i:"⛵", k:"g2", v:400 }, { i:"☕", k:"g3", v:120 },
+    { i:"✈️", k:"g4", v:600 }, { i:"🏨", k:"g5", v:500 }, { i:"💛", k:"g6", v:0 },
+  ],
+};
+
+const T = {
+pt:{privacy:"🔒 Seus dados são usados só para organizar o casamento, ficam visíveis apenas para os noivos e são apagados depois da festa.",direct:"💛 O valor vai direto para a conta dos noivos, sem comissão de site de casamento. As taxas dependem só do sistema de pagamento que os noivos escolheram.",nav_story:"Nossa história",nav_day:"O grande dia",nav_rsvp:"Presença",nav_gifts:"Presentes",nav_faq:"Dúvidas",
+hero_kicker:"Vamos nos casar",city:"Curitiba · Brasil",cd_d:"dias",cd_h:"horas",cd_m:"min",cd_s:"seg",rsvp_cta:"Confirmar presença",save_date:"Salvar na agenda",
+story_label:"Nossa história",story_title:"Como tudo <em>começou</em>",
+s1_t:"O primeiro café",s1_p:"Um encontro por acaso numa cafeteria virou uma conversa de três horas, e a certeza de que aquilo era só o começo.",
+s2_t:"A primeira viagem",s2_p:"Uma mochila, um mapa e a descoberta de que juntos qualquer lugar vira casa.",
+s3_t:"O pedido",s3_p:"À beira do mar, no fim da tarde. Ela disse sim antes mesmo de ele terminar a pergunta.",
+day_label:"O grande dia",day_title:"Onde e <em>quando</em>",cer:"Cerimônia",cer_p:"No jardim, ao ar livre. Chegue com 20 minutos de antecedência.",rec:"Recepção",rec_p:"Jantar, pista de dança e muita alegria até tarde.",map:"Ver no mapa",dress_l:"Traje:",dress:"esporte fino. Só evite o branco 😉",
+rsvp_label:"Confirmação",rsvp_title:"Você <em>vem?</em>",rsvp_sub:"Confirme até {deadline} para prepararmos tudo com carinho.",
+f_name:"Nome completo",yes:"Sim, estarei lá!",no:"Infelizmente não poderei ir",f_adults:"Adultos",f_kids:"Crianças",f_diet:"Restrição alimentar (opcional)",f_diet_ph:"Ex.: vegetariano, sem glúten",f_msg:"Mensagem para os noivos",f_send:"Enviar confirmação",err_name:"Digite o seu nome, por favor.",
+done_yes:"Que alegria! Presença confirmada 💛",done_no:"Que pena! Obrigado por avisar 💛",done_p:"Recebemos a sua resposta. Até breve!",demo:"Site-modelo: nada foi enviado de verdade.",
+gifts_label:"Presentes",gifts_title:"Lista de <em>presentes</em>",gifts_sub:"A sua presença é o nosso maior presente. Se quiser nos mimar, escolha uma experiência da nossa lua de mel.",
+g1:"Jantar romântico na lua de mel",g2:"Passeio de barco",g3:"Café da manhã no hotel",g4:"Ajuda com as passagens",g5:"Uma noite a mais no hotel",g6:"Valor livre",free:"Do seu jeito",give:"Presentear",
+pix_t:"Presentear com Pix",pix_k:"Chave Pix",copy:"Copiar",copied:"Copiado!",pix_n:"Depois de enviar, se quiser, mande uma mensagem pra gente. Obrigado! 💛",close:"Fechar",
+gal_label:"Momentos",gal_title:"Um pouco de <em>nós</em>",faq_label:"Dúvidas",faq_title:"Perguntas <em>frequentes</em>",
+q1:"Posso levar acompanhante?",a1:"O convite é nominal. No formulário de presença, informe quantas pessoas do seu convite vão.",
+q2:"Crianças são bem-vindas?",a2:"Claro! Teremos um espaço kids com monitoras durante a recepção.",
+q3:"Tem estacionamento?",a3:"Sim, com manobristas no local.",
+q4:"Qual é o traje?",a4:"Esporte fino. A cerimônia é no jardim: para as mulheres, recomendamos salto bloco.",
+q5:"Onde ficar hospedado?",a5:"Para quem vem de fora, o bairro Batel fica a 15 minutos e tem ótimas opções de hotel.",
+end_t:"Esperamos por você",made:"Site-modelo feito com carinho por",badge:"Site-modelo em 3 idiomas"},
+es:{privacy:"🔒 Tus datos se usan solo para organizar la boda, solo los novios pueden verlos y se borran después de la fiesta.",direct:"💛 El dinero va directo a la cuenta de los novios, sin comisión de sitio de bodas. Las tarifas dependen solo del sistema de pago que eligieron los novios.",nav_story:"Nuestra historia",nav_day:"El gran día",nav_rsvp:"Asistencia",nav_gifts:"Regalos",nav_faq:"Preguntas",
+hero_kicker:"Nos casamos",city:"Curitiba · Brasil",cd_d:"días",cd_h:"horas",cd_m:"min",cd_s:"seg",rsvp_cta:"Confirmar asistencia",save_date:"Guardar en la agenda",
+story_label:"Nuestra historia",story_title:"Cómo <em>empezó</em> todo",
+s1_t:"El primer café",s1_p:"Un encuentro casual en una cafetería se convirtió en una charla de tres horas, y en la certeza de que era solo el comienzo.",
+s2_t:"El primer viaje",s2_p:"Una mochila, un mapa y el descubrimiento de que juntos cualquier lugar se vuelve hogar.",
+s3_t:"La propuesta",s3_p:"Frente al mar, al atardecer. Ella dijo que sí antes de que él terminara la pregunta.",
+day_label:"El gran día",day_title:"Dónde y <em>cuándo</em>",cer:"Ceremonia",cer_p:"En el jardín, al aire libre. Llega con 20 minutos de anticipación.",rec:"Recepción",rec_p:"Cena, pista de baile y mucha alegría hasta tarde.",map:"Ver en el mapa",dress_l:"Vestimenta:",dress:"semiformal. Solo evita el blanco 😉",
+rsvp_label:"Confirmación",rsvp_title:"¿Vienes?",rsvp_sub:"Confirma antes del {deadline} para que preparemos todo con cariño.",
+f_name:"Nombre completo",yes:"¡Sí, allí estaré!",no:"Lamentablemente no podré ir",f_adults:"Adultos",f_kids:"Niños",f_diet:"Restricción alimentaria (opcional)",f_diet_ph:"Ej.: vegetariano, sin gluten",f_msg:"Mensaje para los novios",f_send:"Enviar confirmación",err_name:"Escribe tu nombre, por favor.",
+done_yes:"¡Qué alegría! Asistencia confirmada 💛",done_no:"¡Qué pena! Gracias por avisar 💛",done_p:"Recibimos tu respuesta. ¡Hasta pronto!",demo:"Sitio de ejemplo: no se envió nada de verdad.",
+gifts_label:"Regalos",gifts_title:"Lista de <em>regalos</em>",gifts_sub:"Tu presencia es nuestro mayor regalo. Si quieres consentirnos, elige una experiencia de nuestra luna de miel.",
+g1:"Cena romántica en la luna de miel",g2:"Paseo en barco",g3:"Desayuno en el hotel",g4:"Ayuda con los pasajes",g5:"Una noche más en el hotel",g6:"Monto libre",free:"A tu manera",give:"Regalar",
+pix_t:"Regalar con Pix",pix_k:"Clave Pix",copy:"Copiar",copied:"¡Copiado!",pix_n:"Después de enviarlo, si quieres, mándanos un mensaje. ¡Gracias! 💛",close:"Cerrar",
+gal_label:"Momentos",gal_title:"Un poco de <em>nosotros</em>",faq_label:"Preguntas",faq_title:"Preguntas <em>frecuentes</em>",
+q1:"¿Puedo llevar acompañante?",a1:"La invitación es nominal. En el formulario indica cuántas personas de tu invitación asistirán.",
+q2:"¿Los niños son bienvenidos?",a2:"¡Claro! Habrá un espacio infantil con cuidadoras durante la recepción.",
+q3:"¿Hay estacionamiento?",a3:"Sí, con valet en el lugar.",
+q4:"¿Cuál es la vestimenta?",a4:"Semiformal. La ceremonia es en el jardín: recomendamos tacón ancho.",
+q5:"¿Dónde hospedarse?",a5:"Para quienes vienen de fuera, el barrio Batel está a 15 minutos y tiene excelentes hoteles.",
+end_t:"Te esperamos",made:"Sitio de ejemplo hecho con cariño por",badge:"Sitio de ejemplo en 3 idiomas"},
+en:{privacy:"🔒 Your details are used only to organize the wedding, are visible only to the couple and are deleted after the party.",direct:"💛 Your gift goes straight to the couple's account, with no wedding-site commission. Any fees depend only on the payment system the couple chose.",nav_story:"Our story",nav_day:"The big day",nav_rsvp:"RSVP",nav_gifts:"Gifts",nav_faq:"FAQ",
+hero_kicker:"We're getting married",city:"Curitiba · Brazil",cd_d:"days",cd_h:"hours",cd_m:"min",cd_s:"sec",rsvp_cta:"RSVP",save_date:"Save the date",
+story_label:"Our story",story_title:"How it all <em>began</em>",
+s1_t:"The first coffee",s1_p:"A chance meeting at a coffee shop turned into a three-hour conversation, and the feeling that it was only the beginning.",
+s2_t:"The first trip",s2_p:"A backpack, a map and the discovery that together, anywhere feels like home.",
+s3_t:"The proposal",s3_p:"By the sea, at sunset. She said yes before he could even finish the question.",
+day_label:"The big day",day_title:"Where and <em>when</em>",cer:"Ceremony",cer_p:"Outdoors in the garden. Please arrive 20 minutes early.",rec:"Reception",rec_p:"Dinner, dancing and lots of joy until late.",map:"View on map",dress_l:"Dress code:",dress:"semi-formal. Just avoid white 😉",
+rsvp_label:"RSVP",rsvp_title:"Will you <em>join us?</em>",rsvp_sub:"Please reply by {deadline} so we can prepare everything with care.",
+f_name:"Full name",yes:"Yes, I'll be there!",no:"Sadly, I can't make it",f_adults:"Adults",f_kids:"Children",f_diet:"Dietary restrictions (optional)",f_diet_ph:"E.g. vegetarian, gluten-free",f_msg:"Message for the couple",f_send:"Send RSVP",err_name:"Please enter your name.",
+done_yes:"Wonderful! You're on the list 💛",done_no:"We'll miss you! Thanks for letting us know 💛",done_p:"We got your reply. See you soon!",demo:"Sample site: nothing was actually sent.",
+gifts_label:"Gifts",gifts_title:"Gift <em>registry</em>",gifts_sub:"Your presence is our greatest gift. If you'd like to spoil us, choose an experience from our honeymoon.",
+g1:"Romantic honeymoon dinner",g2:"Boat trip",g3:"Breakfast at the hotel",g4:"Help with the flights",g5:"One more night at the hotel",g6:"Any amount",free:"Your choice",give:"Give",
+pix_t:"Give with Pix",pix_k:"Pix key",copy:"Copy",copied:"Copied!",pix_n:"After sending, feel free to drop us a message. Thank you! 💛",close:"Close",
+gal_label:"Moments",gal_title:"A little bit <em>of us</em>",faq_label:"FAQ",faq_title:"Good to <em>know</em>",
+q1:"Can I bring a plus-one?",a1:"Invitations are personal. In the RSVP form, tell us how many people from your invitation will attend.",
+q2:"Are children welcome?",a2:"Of course! There will be a supervised kids' area during the reception.",
+q3:"Is there parking?",a3:"Yes, with valet service on site.",
+q4:"What should I wear?",a4:"Semi-formal. The ceremony is in the garden, so block heels are a good idea.",
+q5:"Where should I stay?",a5:"For out-of-town guests, the Batel neighborhood is 15 minutes away and has great hotels.",
+end_t:"We can't wait to see you",made:"Sample site lovingly made by",badge:"Sample site in 3 languages"},
+it:{privacy:"🔒 I tuoi dati servono solo per organizzare il matrimonio, li vedono solo gli sposi e vengono cancellati dopo la festa.",direct:"💛 Il regalo arriva direttamente sul conto degli sposi, senza commissioni di siti di matrimonio. Eventuali costi dipendono solo dal sistema di pagamento scelto dagli sposi.",nav_story:"La nostra storia",nav_day:"Il grande giorno",nav_rsvp:"Presenza",nav_gifts:"Regali",nav_faq:"Domande",
+hero_kicker:"Ci sposiamo",city:"Curitiba · Brasile",cd_d:"giorni",cd_h:"ore",cd_m:"min",cd_s:"sec",rsvp_cta:"Conferma la presenza",save_date:"Salva in agenda",
+story_label:"La nostra storia",story_title:"Come è <em>iniziato</em> tutto",
+s1_t:"Il primo caffè",s1_p:"Un incontro per caso in una caffetteria è diventato una chiacchierata di tre ore, e la certezza che era solo l'inizio.",
+s2_t:"Il primo viaggio",s2_p:"Uno zaino, una mappa e la scoperta che insieme ogni posto diventa casa.",
+s3_t:"La proposta",s3_p:"In riva al mare, al tramonto. Lei ha detto sì prima ancora che lui finisse la domanda.",
+day_label:"Il grande giorno",day_title:"Dove e <em>quando</em>",cer:"Cerimonia",cer_p:"In giardino, all'aperto. Arriva con 20 minuti di anticipo.",rec:"Ricevimento",rec_p:"Cena, pista da ballo e tanta allegria fino a tardi.",map:"Vedi sulla mappa",dress_l:"Dress code:",dress:"elegante sportivo. Evita solo il bianco 😉",
+rsvp_label:"Conferma",rsvp_title:"<em>Ci sarai?</em>",rsvp_sub:"Conferma entro il {deadline} per permetterci di preparare tutto con cura.",
+f_name:"Nome e cognome",yes:"Sì, ci sarò!",no:"Purtroppo non potrò esserci",f_adults:"Adulti",f_kids:"Bambini",f_diet:"Esigenze alimentari (facoltativo)",f_diet_ph:"Es.: vegetariano, senza glutine",f_msg:"Un messaggio per gli sposi",f_send:"Invia conferma",err_name:"Scrivi il tuo nome, per favore.",
+done_yes:"Che gioia! Presenza confermata 💛",done_no:"Che peccato! Grazie per averci avvisato 💛",done_p:"Abbiamo ricevuto la tua risposta. A presto!",demo:"Sito di esempio: non è stato inviato nulla.",
+gifts_label:"Regali",gifts_title:"Lista <em>nozze</em>",gifts_sub:"La tua presenza è il regalo più bello. Se vuoi viziarci, scegli un'esperienza della nostra luna di miele.",
+g1:"Cena romantica in luna di miele",g2:"Gita in barca",g3:"Colazione in hotel",g4:"Un aiuto per i voli",g5:"Una notte in più in hotel",g6:"Importo libero",free:"Come preferisci",give:"Regala",
+pix_t:"Regala con Pix",pix_k:"Chiave Pix",copy:"Copia",copied:"Copiato!",pix_n:"Dopo l'invio, se vuoi, mandaci un messaggio. Grazie! 💛",close:"Chiudi",
+gal_label:"Momenti",gal_title:"Un po' di <em>noi</em>",faq_label:"Domande",faq_title:"Domande <em>frequenti</em>",
+q1:"Posso portare un accompagnatore?",a1:"L'invito è nominativo. Nel modulo indica quante persone del tuo invito parteciperanno.",
+q2:"I bambini sono i benvenuti?",a2:"Certo! Ci sarà un'area bimbi con animatrici durante il ricevimento.",
+q3:"C'è il parcheggio?",a3:"Sì, con servizio di parcheggiatori.",
+q4:"Qual è il dress code?",a4:"Elegante sportivo. La cerimonia è in giardino: consigliamo tacchi larghi.",
+q5:"Dove alloggiare?",a5:"Per chi viene da fuori, il quartiere Batel è a 15 minuti e offre ottimi hotel.",
+end_t:"Ti aspettiamo",made:"Sito di esempio realizzato con cura da",badge:"Sito di esempio in 5 lingue"},
+he:{privacy:"🔒 הפרטים שלך משמשים רק לארגון החתונה, רק הזוג רואה אותם והם יימחקו אחרי האירוע.",direct:"💛 המתנה עוברת ישירות לחשבון של הזוג, בלי עמלה של אתר חתונות. העמלות תלויות רק במערכת התשלום שהזוג בחר.",nav_story:"הסיפור שלנו",nav_day:"היום הגדול",nav_rsvp:"אישור הגעה",nav_gifts:"מתנות",nav_faq:"שאלות",
+hero_kicker:"אנחנו מתחתנים",city:"קוריטיבה · ברזיל",cd_d:"ימים",cd_h:"שעות",cd_m:"דקות",cd_s:"שניות",rsvp_cta:"אישור הגעה",save_date:"שמירה ביומן",
+story_label:"הסיפור שלנו",story_title:"איך הכול <em>התחיל</em>",
+s1_t:"הקפה הראשון",s1_p:"פגישה מקרית בבית קפה הפכה לשיחה של שלוש שעות, ולתחושה שזו רק ההתחלה.",
+s2_t:"הטיול הראשון",s2_p:"תרמיל, מפה והגילוי שביחד כל מקום מרגיש כמו בית.",
+s3_t:"ההצעה",s3_p:"על שפת הים, בשקיעה. היא אמרה כן עוד לפני שהוא סיים לשאול.",
+day_label:"היום הגדול",day_title:"איפה <em>ומתי</em>",cer:"טקס",cer_p:"בגן, בחוץ. מומלץ להגיע 20 דקות לפני.",rec:"קבלת פנים",rec_p:"ארוחה, רחבת ריקודים והרבה שמחה עד מאוחר.",map:"צפייה במפה",dress_l:"קוד לבוש:",dress:"חגיגי-קליל. רק לא לבן 😉",
+rsvp_label:"אישור הגעה",rsvp_title:"<em>מגיעים?</em>",rsvp_sub:"נשמח לאישור עד {deadline}, כדי שנוכל להכין הכול באהבה.",
+f_name:"שם מלא",yes:"כן, אני מגיע/ה!",no:"לצערי לא אוכל להגיע",f_adults:"מבוגרים",f_kids:"ילדים",f_diet:"הגבלות תזונה (לא חובה)",f_diet_ph:"לדוגמה: צמחוני, ללא גלוטן",f_msg:"ברכה לזוג",f_send:"שליחת אישור",err_name:"נא לכתוב את שמך.",
+done_yes:"איזה כיף! ההגעה אושרה 💛",done_no:"חבל! תודה שעדכנת 💛",done_p:"קיבלנו את התשובה שלך. נתראה!",demo:"אתר לדוגמה: שום דבר לא נשלח באמת.",
+gifts_label:"מתנות",gifts_title:"רשימת <em>מתנות</em>",gifts_sub:"ההגעה שלכם היא המתנה הכי גדולה. מי שרוצה לפנק, מוזמן לבחור חוויה מירח הדבש שלנו.",
+g1:"ארוחה רומנטית בירח הדבש",g2:"שיט בסירה",g3:"ארוחת בוקר במלון",g4:"עזרה בכרטיסי הטיסה",g5:"עוד לילה במלון",g6:"סכום חופשי",free:"כמה שתרצו",give:"לתת מתנה",
+pix_t:"מתנה ב-Pix",pix_k:"מפתח Pix",copy:"העתקה",copied:"הועתק!",pix_n:"אחרי השליחה, אפשר לשלוח לנו הודעה. תודה! 💛",close:"סגירה",
+gal_label:"רגעים",gal_title:"קצת <em>עלינו</em>",faq_label:"שאלות",faq_title:"שאלות <em>נפוצות</em>",
+q1:"אפשר להביא בן/בת זוג?",a1:"ההזמנה אישית. בטופס אישור ההגעה ציינו כמה אנשים מההזמנה שלכם מגיעים.",
+q2:"ילדים מוזמנים?",a2:"בטח! יהיה מתחם ילדים עם מטפלות במהלך קבלת הפנים.",
+q3:"יש חניה?",a3:"כן, עם שירות חניה במקום.",
+q4:"מה ללבוש?",a4:"חגיגי-קליל. הטקס בגן, אז עדיף עקב רחב.",
+q5:"איפה לישון?",a5:"לאורחים מחוץ לעיר, שכונת בטל נמצאת במרחק 15 דקות ויש בה מלונות מצוינים.",
+end_t:"מחכים לכם",made:"אתר לדוגמה שנבנה באהבה על ידי",badge:"אתר לדוגמה ב-5 שפות"},
+};
+const LOC = { pt:"pt-BR", es:"es", en:"en-US", it:"it-IT", he:"he-IL" };
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+let lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("wed-lang") || "pt";
+if (!T[lang]) lang = "pt";
+const t = k => T[lang][k] ?? T.pt[k] ?? "";
+const when = new Date(WEDDING.date);
+const fmt = (d, o) => new Intl.DateTimeFormat(LOC[lang], { timeZone: "America/Sao_Paulo", ...o }).format(d);
+
+function apply(){
+  const he = lang === "he";
+  document.documentElement.lang = LOC[lang]; document.documentElement.dir = he ? "rtl" : "ltr";
+  $$("[data-t]").forEach(el => { const v = t(el.dataset.t).replace("{deadline}", fmt(new Date(WEDDING.rsvpDeadline + "T12:00:00-03:00"), { day:"numeric", month:"long" })); el.hasAttribute("data-html") ? el.innerHTML = v : el.textContent = v; });
+  $$("[data-ph]").forEach(el => el.placeholder = t(el.dataset.ph));
+  $$('[data-date="long"]').forEach(el => el.textContent = fmt(when, { weekday:"long", day:"numeric", month:"long", year:"numeric" }));
+  $$('[data-date="short"]').forEach(el => el.textContent = fmt(when, { day:"2-digit", month:"2-digit", year:"numeric" }));
+  $$("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  renderGifts();
+}
+$$("[data-lang]").forEach(b => b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("wed-lang", lang); apply(); }));
+
+/* contagem regressiva */
+function tick(){
+  let s = Math.max(0, Math.floor((when - Date.now()) / 1000));
+  const d = Math.floor(s / 86400); s -= d * 86400; const h = Math.floor(s / 3600); s -= h * 3600; const m = Math.floor(s / 60); s -= m * 60;
+  $('[data-cd="d"]').textContent = d; $('[data-cd="h"]').textContent = String(h).padStart(2, "0");
+  $('[data-cd="m"]').textContent = String(m).padStart(2, "0"); $('[data-cd="s"]').textContent = String(s).padStart(2, "0");
+}
+tick(); setInterval(tick, 1000);
+
+/* agenda e mapa */
+const z = d => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+$("#saveDate").href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("Casamento Ana & Pedro") +
+  "&dates=" + z(when) + "/" + z(new Date(when.getTime() + 7 * 3600e3)) + "&ctz=America/Sao_Paulo&location=" + encodeURIComponent(WEDDING.place);
+$$("[data-map]").forEach(a => a.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(WEDDING.place));
+
+/* presença */
+const form = $("#rsvpForm");
+form.addEventListener("change", () => { const vai = form.vai.value === "sim"; $("#qty").hidden = !vai; $("#diet").hidden = !vai; });
+form.addEventListener("submit", e => {
+  e.preventDefault(); $("#err").textContent = "";
+  const nome = form.nome.value.trim(); if (nome.length < 2) { $("#err").textContent = t("err_name"); return form.nome.focus(); }
+  const vai = form.vai.value === "sim";
+  if (WEDDING.whatsapp) {
+    const msg = [`Confirmação de presença · Ana & Pedro`, `Nome: ${nome}`, vai ? `Vai: sim · adultos ${form.adultos.value} · crianças ${form.criancas.value}` : "Vai: não",
+      form.restricao.value && vai ? `Restrição: ${form.restricao.value}` : "", form.msg.value ? `Mensagem: ${form.msg.value}` : ""].filter(Boolean).join("\n");
+    window.open(`https://wa.me/${WEDDING.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+  }
+  $("#doneT").textContent = t(vai ? "done_yes" : "done_no");
+  $("#done small").hidden = !!WEDDING.whatsapp;
+  form.hidden = true; $("#done").hidden = false;
+});
+
+/* presentes + pix */
+const brl = v => "\u2066R$\u00a0" + v.toLocaleString(LOC[lang]) + "\u2069";
+function renderGifts(){
+  $("#gifts").innerHTML = WEDDING.gifts.map((g, i) => `<article class="gift rv shown"><i aria-hidden="true">${g.i}</i><h3>${t(g.k)}</h3><span class="v">${g.v ? brl(g.v) : t("free")}</span><button class="btn line" type="button" data-gift="${i}">${t("give")}</button></article>`).join("");
+}
+$("#gifts").addEventListener("click", e => {
+  const b = e.target.closest("[data-gift]"); if (!b) return; const g = WEDDING.gifts[+b.dataset.gift];
+  $("#pixG").textContent = t(g.k); $("#pixV").textContent = g.v ? brl(g.v) : t("free"); $("#pixKey").textContent = WEDDING.pix;
+  $("#copy").textContent = t("copy"); $("#pix").showModal();
+});
+$("#copy").addEventListener("click", async () => { try { await navigator.clipboard.writeText(WEDDING.pix); } catch (e) {} $("#copy").textContent = t("copied"); });
+$("#pixClose").addEventListener("click", () => $("#pix").close());
+$("#pix").addEventListener("click", e => { if (e.target.id === "pix") $("#pix").close(); });
+
+/* topo + entrada suave */
+const onScroll = () => $("#nav").classList.toggle("solid", scrollY > innerHeight * .8);
+addEventListener("scroll", onScroll, { passive: true }); onScroll();
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -10% 0px" });
+$$(".rv").forEach((el, i) => { el.style.transitionDelay = (i % 3) * 100 + "ms"; io.observe(el); });
+apply();
+</script>
+</body>
+</html>

@@ -326,6 +326,39 @@ footer{background:var(--night);color:var(--on-night-muted);border-top:1px solid 
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer a{text-decoration:none;color:var(--on-night)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important}}
+
+/* casamentos · parceria Pitangueira */
+.wed{background:#FFF7EE;position:relative;overflow:hidden}
+.wed .kick{color:#AD2A49}
+.wed h2 i.t{color:#FF7C38}
+.wed-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:center}
+.wed-grid>*{min-width:0}
+.wed-duo{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:22px 0 26px}
+.wed-duo .p{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:#AD2A49;color:#fff;font-weight:600;font-size:14.5px}
+.wed-duo .p img{height:26px;width:auto}
+.wed-duo .g{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;font-size:14.5px}
+.wed-duo .g i{display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#fff;color:var(--ink);font:italic 17px/1 "Instrument Serif",serif}
+.wed-duo .x{font:italic 26px/1 "Instrument Serif",serif;color:#FF7C38}
+.wed .lead2{color:var(--ink-soft);font-size:17px;max-width:34em}
+.wed .lead2 b{color:var(--ink)}
+.wed-feats{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin:26px 0 30px;padding:0;list-style:none}
+.wed-feats li{position:relative;padding-left:22px;font-size:15.5px;color:var(--ink)}
+.wed-feats li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:2px;background:#FF7C38;transform:rotate(45deg)}
+.wed-feats li small{display:block;color:var(--muted);font-size:13px}
+.wed .cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn-wed{background:#AD2A49;color:#fff}
+@media (hover:hover){.btn-wed:hover{background:#7E1C35}}
+.wed-vis{position:relative;height:clamp(460px,48vw,600px)}
+.wed-vis .wp{position:absolute;width:42%;aspect-ratio:9/19.4;border-radius:34px;padding:7px;background:#AD2A49;box-shadow:0 50px 80px -30px rgba(59,22,34,.5)}
+.wed-vis .wp img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:28px}
+.wed-vis .w1{left:4%;top:8%;transform:rotate(-6deg)}
+.wed-vis .w2{left:31%;top:0;z-index:2;background:#FF7C38}
+.wed-vis .w3{right:2%;top:10%;transform:rotate(6deg)}
+.wed-vis .star{position:absolute;color:#FFCE59}
+.wed-vis .star path{fill:currentColor}
+.wed-note{margin-top:14px;font-size:13px;color:var(--muted)}
+@media (max-width:900px){.wed-grid{grid-template-columns:minmax(0,1fr)}.wed-vis{height:clamp(380px,100vw,520px)}}
+@media (max-width:520px){.wed-feats{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -334,6 +367,7 @@ footer a{text-decoration:none;color:var(--on-night)}
   <div class="wrap nav">
     <a class="brand" href="#" aria-label="Gueta Studio, início"><b>Gueta</b><small>Studio</small></a>
     <nav aria-label="Seções">
+      <a href="#casamentos">Casamentos</a>
       <a href="#trabalhos">Trabalhos</a>
       <a href="#interacoes">Interações</a>
       <a href="#restaurantes">Restaurantes</a>
@@ -351,7 +385,7 @@ footer a{text-decoration:none;color:var(--on-night)}
       <div>
         <span class="kick">Sites e plataformas sob medida</span>
         <h1>Sites com a <i class="t">alma</i> do seu negócio.</h1>
-        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites e plataformas únicos para <b>cafés, restaurantes, escolas e negócios locais</b>: cardápio interativo, pedidos pelo WhatsApp, cursos online, <b>painéis de administração</b> e três idiomas. Nada de modelo pronto.</p>
+        <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites e plataformas únicos para <b>casamentos, cafés, restaurantes, escolas e negócios locais</b>: cardápio interativo, pedidos pelo WhatsApp, cursos online, <b>painéis de administração</b> e três idiomas. Nada de modelo pronto.</p>
         <div class="cta">
           <a class="btn btn-terra" data-contact href="#contato">Quero um site assim
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -380,8 +414,42 @@ footer a{text-decoration:none;color:var(--on-night)}
   </section>
 
   <div class="strip" aria-label="Projetos no ar">
-    <div class="wrap"><span class="dot" aria-hidden="true"></span><span>No ar</span><b>Hebraico <i>Fluente</i></b><b>El Tumi <i>Café</i></b><b>Balcão <i>Pizza Napoletana</i></b><b>Draft <i>Interiores</i></b><b>Pitangueira <i>Casamentos</i></b></div>
+    <div class="wrap"><span class="dot" aria-hidden="true"></span><span>No ar</span><b>Pitangueira <i>Casamentos</i></b><b>El Tumi <i>Café</i></b><b>Balcão <i>Pizza Napoletana</i></b><b>Hebraico <i>Fluente</i></b><b>Draft <i>Interiores</i></b></div>
   </div>
+
+  <section id="casamentos" class="wed">
+    <div class="wrap wed-grid">
+      <div>
+        <span class="kick">Novo · Sites de casamento</span>
+        <h2>O site do casamento com a <i class="t">essência</i> de vocês.</h2>
+        <div class="wed-duo" aria-label="Parceria Pitangueira e Gueta Studio">
+          <span class="p"><img src="shots/pitangueira-logo-branco.svg" alt="Pitangueira" width="104" height="26"> cria o visual</span>
+          <span class="x">×</span>
+          <span class="g"><i>G</i>Gueta Studio cria o site</span>
+        </div>
+        <p class="lead2">Em parceria com a <b>Pitangueira</b>, design para casamentos criativos: elas criam a identidade visual e a papelaria, e eu transformo tudo num site. Do convite à tela, o casamento inteiro com a mesma cara, <b>nada de modelo pronto</b>.</p>
+        <ul class="wed-feats">
+          <li>Confirmação de presença<small>com painel para o casal ver quem falta</small></li>
+          <li>Presentes direto na conta<small>sem comissão de site de casamento</small></li>
+          <li>Em várias línguas<small>para os convidados de fora</small></li>
+          <li>Convite com link pessoal<small>“Oi, Tio Carlos!”</small></li>
+          <li>Mapa de mesas por QR code<small>na entrada da festa</small></li>
+          <li>Save the date<small>para mandar no WhatsApp</small></li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-wed" href="casamento/" target="_blank" rel="noopener">Ver um site de exemplo ↗</a>
+          <a class="btn btn-line" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">Montar o orçamento na Pitangueira ↗</a>
+        </div>
+        <p class="wed-note">O exemplo usa a identidade da própria Pitangueira. Cada casal recebe a identidade criada para ele.</p>
+      </div>
+      <div class="wed-vis" aria-hidden="true">
+        <svg class="star" viewBox="0 0 100 100" style="width:70px;left:0;top:0" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:40px;right:6%;top:2%;color:#FF7C38" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:54px;right:30%;bottom:4%;color:#FFC9A8" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg>
+        <div class="wp w1"><img src="shots/wed-rsvp.jpg" alt="" loading="lazy"></div>
+        <div class="wp w2"><img src="shots/wed-hero.jpg" alt="" loading="lazy"></div>
+        <div class="wp w3"><img src="shots/wed-pix.jpg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
 
   <section id="interacoes" class="sig-sec">
     <div class="wrap">
@@ -472,11 +540,51 @@ footer a{text-decoration:none;color:var(--on-night)}
 
       <article class="case">
         <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev</span></div><img src="shots/pitang-hero.jpg" alt="Site da Pitangueira, papelaria criativa para casamentos, com Pétala e Isa como adesivos no topo laranja" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="shots/pitang-phone.jpg" alt="Orçamento interativo da Pitangueira no celular, com itens escolhidos e o total na barra de baixo" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">01 · Papelaria para casamentos</span>
+          <h3>Pitangueira</h3>
+          <p class="place">Casais do Brasil e do mundo</p>
+          <p class="story">Pétala e Isa criam identidade visual e papelaria para casamentos com cor, humor e personalidade. O site tem a mesma energia e transforma a tabela de valores em um <b>orçamento que o casal monta sozinho</b>.</p>
+          <ul class="built">
+            <li>Orçamento interativo: 38 itens, do convite ao rótulo de vinho, com o total na hora</li>
+            <li>Pedido pronto no WhatsApp, com data, convidados e a história do casal</li>
+            <li>Painel de pedidos com senha, do “Novo” ao “Fechado”, e aviso no celular</li>
+            <li>Portfólio com galeria e vídeos do Instagram em clima de cinema</li>
+            <li>A marca em tudo: coração, estrelas e as duas como adesivos no topo</li>
+          </ul>
+          <a class="link" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
+        </div>
+      </article>
+      <article class="case rev" id="painel-pitangueira">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev/painel</span></div><img src="shots/pitang-painel-hero.jpg" alt="Painel de leads da Pitangueira: números do mês e pedidos organizados em colunas, de Novo a Fechado" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="shots/pitang-painel-phone.jpg" alt="Detalhe de um pedido no painel da Pitangueira no celular, com dados do casal, botão de WhatsApp e itens escolhidos" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">02 · Painel de administração <span class="badge">Pitangueira</span></span>
+          <h3>Painel de leads</h3>
+          <p class="place">Uso interno da Pétala e da Isa</p>
+          <p class="story">Cada orçamento enviado pelo site da Pitangueira cai aqui, organizado. Em vez de procurar pedidos perdidos no WhatsApp, as duas <b>acompanham cada casal do primeiro contato ao contrato fechado</b>.</p>
+          <ul class="built">
+            <li>Quadro por etapa: Novo, Em conversa, Proposta enviada, Fechado e Perdido</li>
+            <li>Arrastar o card para mudar de etapa, com valor somado em cada coluna</li>
+            <li>Números do mês: novos, em negociação, fechados e taxa de fechamento</li>
+            <li>Ficha do casal com itens, data, anotações e WhatsApp a um toque</li>
+            <li>Aviso no celular a cada pedido novo, e leads do Instagram cadastrados à mão</li>
+          </ul>
+          <p class="place">Área privada, com senha. Os prints usam pedidos de exemplo.</p>
+        </div>
+      </article>
+      <article class="case">
+        <div class="case-media">
           <div class="browser"><div class="bar"><i></i><i></i><i></i><span>hebraicofluente.com.br/cursos</span></div><img src="shots/hf-cursos.jpg" alt="Página de cursos do Hebraico Fluente" width="2160" height="1350" loading="lazy"></div>
           <div class="phone"><img src="shots/hf-mapa.jpg" alt="Mapa da jornada do aluno na plataforma Hebraico Fluente" width="540" height="1169" loading="lazy"></div>
         </div>
         <div>
-          <span class="case-num">01 · Plataforma de ensino <span class="badge">Projeto próprio</span></span>
+          <span class="case-num">03 · Plataforma de ensino <span class="badge">Projeto próprio</span></span>
           <h3>Hebraico Fluente</h3>
           <p class="place">Curso online de hebraico para brasileiros</p>
           <p class="story">A minha própria escola, construída do zero. Não é um site com vídeos: é uma <b>plataforma completa</b>, em que o aluno se cadastra, paga e aprende a ler hebraico lição por lição.</p>
@@ -489,14 +597,13 @@ footer a{text-decoration:none;color:var(--on-night)}
           <a class="link" href="https://hebraicofluente.com.br" target="_blank" rel="noopener">Ver a plataforma ao vivo ↗</a>
         </div>
       </article>
-
       <article class="case rev">
         <div class="case-media">
           <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/El-tumi</span></div><img src="shots/tumi-menu.jpg" alt="Cardápio digital do El Tumi Café com filtros e busca" width="2160" height="1350" loading="lazy"></div>
           <div class="phone"><img src="shots/tumi-phone.jpg" alt="Site do El Tumi no celular" width="1170" height="2532" loading="lazy"></div>
         </div>
         <div>
-          <span class="case-num">02 · Café peruano</span>
+          <span class="case-num">04 · Café peruano</span>
           <h3>El Tumi Café</h3>
           <p class="place">Bigorrilho, Curitiba</p>
           <p class="story">Um café de especialidade com alma peruana e um método raro, o <b>Mupeco</b>, de cerâmica. O desafio era explicar sabores que pouca gente conhece e receber turistas.</p>
@@ -510,14 +617,13 @@ footer a{text-decoration:none;color:var(--on-night)}
           <a class="link" href="https://moshikgueta.github.io/El-tumi/" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
         </div>
       </article>
-
       <article class="case">
         <div class="case-media">
           <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/balcao-pizza</span></div><img src="shots/balcao-menu.jpg" alt="Cardápio da Balcão Pizza Napoletana com a pizza em destaque" width="2160" height="1350" loading="lazy"></div>
           <div class="phone"><img src="shots/balcao-phone.jpg" alt="Site da Balcão no celular" width="1170" height="2532" loading="lazy"></div>
         </div>
         <div>
-          <span class="case-num">03 · Pizzaria napoletana</span>
+          <span class="case-num">05 · Pizzaria napoletana</span>
           <h3>Balcão Pizza Napoletana</h3>
           <p class="place">Bigorrilho, Curitiba</p>
           <p class="story">Uma pizzaria de bairro que queria <b>vender direto, sem a comissão dos aplicativos</b>. O site virou o balcão digital da casa.</p>
@@ -531,14 +637,13 @@ footer a{text-decoration:none;color:var(--on-night)}
           <a class="link" href="https://moshikgueta.github.io/balcao-pizza/" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
         </div>
       </article>
-
       <article class="case rev">
         <div class="case-media">
           <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/draft-interiores</span></div><img src="shots/draft-hero.jpg" alt="Site da Draft Interiores, marcenaria sob medida, com fotos reais dos móveis" width="1600" height="1000" loading="lazy"></div>
           <div class="phone"><img src="shots/draft-phone.jpg" alt="Galeria de um projeto da Draft Interiores no celular, com materiais e cores" width="780" height="1328" loading="lazy"></div>
         </div>
         <div>
-          <span class="case-num">04 · Marcenaria sob medida</span>
+          <span class="case-num">06 · Marcenaria sob medida</span>
           <h3>Draft Interiores</h3>
           <p class="place">Pinhais e Curitiba</p>
           <p class="story">Uma marcenaria de alto padrão com um site com cara de modelo pronto. Refiz do zero com o visual de um <b>estúdio de móveis</b>: nogueira, carvalho, fotos grandes e o próprio Marcos em destaque.</p>
@@ -553,47 +658,10 @@ footer a{text-decoration:none;color:var(--on-night)}
         </div>
       </article>
 
-      <article class="case">
-        <div class="case-media">
-          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev</span></div><img src="shots/pitang-hero.jpg" alt="Site da Pitangueira, papelaria criativa para casamentos, com Pétala e Isa como adesivos no topo laranja" width="1600" height="1000" loading="lazy"></div>
-          <div class="phone"><img src="shots/pitang-phone.jpg" alt="Orçamento interativo da Pitangueira no celular, com itens escolhidos e o total na barra de baixo" width="780" height="1328" loading="lazy"></div>
-        </div>
-        <div>
-          <span class="case-num">05 · Papelaria para casamentos</span>
-          <h3>Pitangueira</h3>
-          <p class="place">Casais do Brasil e do mundo</p>
-          <p class="story">Pétala e Isa criam identidade visual e papelaria para casamentos com cor, humor e personalidade. O site tem a mesma energia e transforma a tabela de valores em um <b>orçamento que o casal monta sozinho</b>.</p>
-          <ul class="built">
-            <li>Orçamento interativo: 38 itens, do convite ao rótulo de vinho, com o total na hora</li>
-            <li>Pedido pronto no WhatsApp, com data, convidados e a história do casal</li>
-            <li>Painel de pedidos com senha, do “Novo” ao “Fechado”, e aviso no celular</li>
-            <li>Portfólio com galeria e vídeos do Instagram em clima de cinema</li>
-            <li>A marca em tudo: coração, estrelas e as duas como adesivos no topo</li>
-          </ul>
-          <a class="link" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
-        </div>
-      </article>
 
-      <article class="case rev" id="painel-pitangueira">
-        <div class="case-media">
-          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev/painel</span></div><img src="shots/pitang-painel-hero.jpg" alt="Painel de leads da Pitangueira: números do mês e pedidos organizados em colunas, de Novo a Fechado" width="1600" height="1000" loading="lazy"></div>
-          <div class="phone"><img src="shots/pitang-painel-phone.jpg" alt="Detalhe de um pedido no painel da Pitangueira no celular, com dados do casal, botão de WhatsApp e itens escolhidos" width="780" height="1328" loading="lazy"></div>
-        </div>
-        <div>
-          <span class="case-num">06 · Painel de administração <span class="badge">Pitangueira</span></span>
-          <h3>Painel de leads</h3>
-          <p class="place">Uso interno da Pétala e da Isa</p>
-          <p class="story">Cada orçamento enviado pelo site da Pitangueira cai aqui, organizado. Em vez de procurar pedidos perdidos no WhatsApp, as duas <b>acompanham cada casal do primeiro contato ao contrato fechado</b>.</p>
-          <ul class="built">
-            <li>Quadro por etapa: Novo, Em conversa, Proposta enviada, Fechado e Perdido</li>
-            <li>Arrastar o card para mudar de etapa, com valor somado em cada coluna</li>
-            <li>Números do mês: novos, em negociação, fechados e taxa de fechamento</li>
-            <li>Ficha do casal com itens, data, anotações e WhatsApp a um toque</li>
-            <li>Aviso no celular a cada pedido novo, e leads do Instagram cadastrados à mão</li>
-          </ul>
-          <p class="place">Área privada, com senha. Os prints usam pedidos de exemplo.</p>
-        </div>
-      </article>
+
+
+
     </div>
   </section>
 
