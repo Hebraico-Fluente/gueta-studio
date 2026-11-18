@@ -11,6 +11,7 @@
 <meta property="og:description" content="Sites únicos para negócios com história. Por Moshik Gueta.">
 <meta property="og:image" content="https://moshikgueta.github.io/gueta-studio/shots/tumi-hero.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="marca/gueta-avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -59,6 +60,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(243,237,227,.95);backdro
 header.scrolled{border-bottom-color:var(--line)}
 .nav{display:flex;align-items:center;gap:36px;height:76px}
 .brand{text-decoration:none;display:flex;align-items:baseline;gap:8px;line-height:1}
+.brand-ic{width:40px;height:38px;align-self:center;margin-right:2px;flex:none}
 .brand b{font:400 31px/1 var(--serif);font-style:italic}
 .brand small{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--terra)}
 .nav nav{display:flex;gap:30px;margin-left:auto;font-size:14.5px}
@@ -374,13 +376,15 @@ footer a{text-decoration:none;color:var(--on-night)}
 .wed-pit li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:2px;background:#AD2A49;transform:rotate(45deg)}
 .wed-pit .cta{display:flex;flex-wrap:wrap;gap:12px}
 @media (max-width:900px){.wed-pit{grid-template-columns:minmax(0,1fr)}.wed-pit .media{margin-right:4%}}
+.foot-brand{display:inline-flex;align-items:center;gap:10px}
+@media (max-width:420px){.brand-ic{width:32px;height:30px}.brand small{display:none}.nav .btn{white-space:nowrap}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#" aria-label="Gueta Studio, início"><b>Gueta</b><small>Studio</small></a>
+    <a class="brand" href="#" aria-label="Gueta Studio, início"><svg class="brand-ic" viewBox="0 0 106 100" aria-hidden="true"><path d="M50 6C24 6 6 22 6 44s18 38 44 38c5 0 9-.5 13-1.6L84 94l-4-20c12-7 20-17 20-30C100 22 76 6 50 6z" fill="#B4512D"/><path d="M48.53575 66.909Q43.20375 66.909 40.16575 62.724000000000004Q37.127750000000006 58.539 37.127750000000006 50.665Q37.127750000000006 47.379 37.96475 43.411Q38.80175 39.443 40.50675 35.506Q42.21175 31.569000000000003 44.75375 28.314Q47.29575 25.058999999999997 50.76775 23.075Q54.23975 21.091 58.579750000000004 21.091Q61.30775 21.091 63.22975 21.556Q65.15175 22.021 66.45375 22.765Q67.01175 23.075000000000003 66.82575 24.067L64.96575 33.491Q64.77975 34.545 63.97375 34.545Q63.22975 34.545 63.22975 33.739L63.16775 31.941000000000003Q62.981750000000005 26.609 61.83475 24.656000000000002Q60.68775 22.703000000000003 58.26975 22.703000000000003Q55.41775 22.703000000000003 53.09275 24.253Q50.76775000000001 25.802999999999997 48.87675 28.407Q46.98575 31.011000000000003 45.59075 34.173Q44.195750000000004 37.335 43.29675 40.620999999999995Q42.39775 43.907 41.93275 46.821Q41.46775 49.735 41.46775 51.781Q41.46775 58.539 43.48275 61.918Q45.49775 65.297 48.72175 65.297Q50.70575 65.297 52.255750000000006 64.15Q53.80575 63.003 54.487750000000005 59.964999999999996L57.58775 46.387Q57.89775 45.147 57.68075 44.620000000000005Q57.463750000000005 44.093 56.03775 43.968999999999994L53.86775 43.721000000000004Q53.06175 43.659 53.06175 43.039Q53.06175 42.295 54.17775 42.295H65.39975Q66.20575 42.295 66.20575 42.915Q66.20575 43.596999999999994 65.27575 43.721000000000004L64.34575000000001 43.845Q62.981750000000005 44.031 62.57875 44.589Q62.17575 45.147 61.865750000000006 46.449L58.26975 62.010999999999996Q58.14575000000001 62.693 57.618750000000006 63.313Q57.091750000000005 63.933 55.975750000000005 64.615Q54.42575 65.545 52.627750000000006 66.227Q50.829750000000004 66.909 48.53575 66.909Z" fill="#F3EDE3"/></svg><b>Gueta</b><small>Studio</small></a>
     <nav aria-label="Seções">
       <a href="#casamentos">Casamentos</a>
       <a href="#trabalhos">Trabalhos</a>
@@ -819,7 +823,7 @@ footer a{text-decoration:none;color:var(--on-night)}
 </main>
 
 <footer>
-  <div class="wrap"><span>© <span data-year></span> Gueta Studio · Sites e plataformas sob medida</span><span><a href="#trabalhos">Trabalhos</a> · <a href="#contato">Contato</a></span></div>
+  <div class="wrap"><span class="foot-brand"><img src="marca/gueta-icone.svg" alt="" width="28" height="26">© <span data-year></span> Gueta Studio · Sites e plataformas sob medida</span><span><a href="#trabalhos">Trabalhos</a> · <a href="#contato">Contato</a></span></div>
 </footer>
 
 <script>
