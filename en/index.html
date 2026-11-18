@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gueta Studio · Custom websites and platforms</title>
+<meta name="description" content="Gueta Studio, by Moshik Gueta: custom websites for weddings, cafés, restaurants and local businesses, shaped by each client's identity. Bilingual sites, WhatsApp orders, admin dashboards and online courses. Curitiba, Brazil.">
+<meta name="theme-color" content="#F3EDE3">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gueta Studio · Custom websites and platforms">
+<meta property="og:description" content="Custom websites for weddings, cafés, restaurants and local businesses. Bilingual when you need it. By Moshik Gueta.">
+<meta property="og:image" content="https://moshikgueta.github.io/gueta-studio/shots/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://moshikgueta.github.io/gueta-studio/en/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://moshikgueta.github.io/gueta-studio/en/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Gueta Studio","description":"Sites e plataformas sob medida para casamentos, cafés, restaurantes e negócios locais. Sites bilíngues.","url":"https://moshikgueta.github.io/gueta-studio/","logo":"https://moshikgueta.github.io/gueta-studio/marca/gueta-avatar.png","image":"https://moshikgueta.github.io/gueta-studio/shots/og.jpg","founder":{"@type":"Person","name":"Moshik Gueta","sameAs":["https://www.linkedin.com/in/moshikgueta/","https://www.instagram.com/guetastudio/"]},"areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},"telephone":"+55 41 99991-9434","knowsLanguage":["pt","es","en","it","he"]}</script>
+<link rel="alternate" hreflang="pt-BR" href="https://moshikgueta.github.io/gueta-studio/">
+<link rel="alternate" hreflang="en" href="https://moshikgueta.github.io/gueta-studio/en/">
+<link rel="alternate" hreflang="es" href="https://moshikgueta.github.io/gueta-studio/es/">
+<link rel="alternate" hreflang="x-default" href="https://moshikgueta.github.io/gueta-studio/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../marca/gueta-avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400&text=%D7%A2%D7%91%D7%A8%D7%99%D7%AA&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../media/atalhos.jpg">
+<style>
+:root{
+  /* Pedra de Jerusalém, tinta azul-marinho e terracota: a mesma família de cores dos meus projetos */
+  --stone:#F3EDE3; --paper:#FBF8F3;
+  --ink:#14233B; --ink-soft:#3B4759; --muted:#6A6459;
+  --line:rgba(20,35,59,.13); --line-2:rgba(20,35,59,.22);
+  --terra:#B4512D; --terra-2:#9C4224; --terra-soft:#F2E1D6;
+  --night:#101D31; --night-2:#18294A; --on-night:#F3EDE3; --on-night-muted:#A9B2C1; --night-line:rgba(243,237,227,.14);
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Instrument Sans",system-ui,-apple-system,sans-serif; --he:"Frank Ruhl Libre","Times New Roman",serif;
+  --ease:cubic-bezier(.23,1,.32,1);
+  --shadow:0 1px 2px rgba(20,35,59,.06),0 30px 60px -28px rgba(20,35,59,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--stone);color:var(--ink);font:400 16.5px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+::selection{background:var(--terra);color:#fff}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+@media (max-width:600px){.wrap{width:calc(100% - 36px)}}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:4px}
+.he{font-family:var(--he);direction:rtl;unicode-bidi:isolate}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.kick::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.012em;margin:0;text-wrap:balance}
+i.t{font-style:italic;color:var(--terra)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:500 15px var(--sans);text-decoration:none;cursor:pointer;border:0;transition:background-color .2s ease,color .2s ease,box-shadow .2s ease,transform .12s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ink{background:var(--ink);color:var(--paper)}
+@media (hover:hover){.btn-ink:hover{background:var(--night-2)}}
+.btn-terra{background:var(--terra);color:#fff}
+@media (hover:hover){.btn-terra:hover{background:var(--terra-2)}}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line-2)}
+@media (hover:hover){.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}}
+.night .btn-line{color:var(--on-night);box-shadow:inset 0 0 0 1px rgba(243,237,227,.3)}
+@media (hover:hover){.night .btn-line:hover{box-shadow:inset 0 0 0 1px var(--on-night)}}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(243,237,227,.95);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease}
+header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;gap:36px;height:76px}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:8px;line-height:1}
+.brand-ic{width:40px;height:38px;align-self:center;margin-right:2px;flex:none}
+.brand b{font:400 31px/1 var(--serif);font-style:italic}
+.brand small{font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--terra)}
+.nav nav{display:flex;gap:30px;margin-left:auto;font-size:14.5px}
+.nav nav a{text-decoration:none;color:var(--ink-soft);transition:color .15s ease}
+@media (hover:hover){.nav nav a:hover{color:var(--terra)}}
+.nav .btn{min-height:44px;padding:0 20px;font-size:14px}
+@media (max-width:880px){.nav nav{display:none}.nav .btn{margin-left:auto}}
+@media (max-width:420px){.nav .btn{min-height:42px;padding:0 16px;font-size:13.5px}.brand b{font-size:27px}}
+
+/* hero */
+.hero{position:relative;padding:clamp(48px,7vw,100px) 0 clamp(64px,8vw,110px);overflow:hidden}
+.hero::before{content:"";position:absolute;right:-18%;top:-35%;width:75vw;height:75vw;max-width:1000px;max-height:1000px;background:radial-gradient(closest-side,rgba(180,81,45,.12),rgba(180,81,45,0));pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(54px,7.2vw,106px);line-height:.95;margin:24px 0 28px}
+.lead{font-size:clamp(17px,1.45vw,19.5px);color:var(--ink-soft);max-width:33em;margin:0 0 36px;text-wrap:pretty}
+.lead b{color:var(--ink);font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:40px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
+.proof b{display:block;font:400 36px/1 var(--serif);color:var(--ink);font-variant-numeric:lining-nums}
+.proof span{font-size:13.5px;color:var(--muted)}
+@media (max-width:600px){.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}.proof b{font-size:30px;margin-bottom:6px}.proof span{font-size:12.5px;line-height:1.35;display:block}}
+.devices{position:relative;aspect-ratio:1/.9;width:100%}
+.browser{position:absolute;left:0;top:3%;width:90%;border-radius:12px;overflow:hidden;background:var(--paper);box-shadow:var(--shadow),0 0 0 1px var(--line)}
+.browser .bar{height:30px;display:flex;align-items:center;gap:6px;padding:0 12px;background:#E9E1D3}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:#CDBFA9}
+.browser .bar span{margin-left:12px;flex:1;height:17px;border-radius:9px;background:var(--paper);font-size:10px;color:var(--muted);display:flex;align-items:center;padding:0 10px;white-space:nowrap;overflow:hidden}
+.browser img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.phone{position:absolute;right:0;bottom:0;width:32%;aspect-ratio:9/19.4;border-radius:34px;padding:7px;background:var(--night);box-shadow:0 50px 80px -30px rgba(16,29,49,.55),0 0 0 1px rgba(16,29,49,.4)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:28px;background:var(--paper)}
+.phone::after{content:"";position:absolute;top:13px;left:50%;transform:translateX(-50%);width:30%;height:15px;border-radius:10px;background:var(--night)}
+.phone.p2{right:26%;bottom:-6%;width:27%;z-index:1}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px}.devices{max-width:580px}}
+
+/* vídeo das interações no hero */
+.hero-v{position:relative;width:100%}
+.hero-v .browser{position:relative;left:auto;top:auto;width:100%}
+.hero-v .browser .bar span{transition:opacity .2s ease}
+.hero-v video{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;background:#101D31}
+.hv-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.hv-tabs button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:58px;padding:12px 10px 8px;border:0;border-radius:12px;background:transparent;text-align:left;cursor:pointer;color:var(--muted);transition:background-color .2s ease,color .2s ease}
+.hv-tabs button::before{content:"";position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--line-2)}
+.hv-tabs button i{position:absolute;left:10px;right:10px;top:0;height:2px;border-radius:1px;background:var(--terra);transform-origin:left;transform:scaleX(0)}
+.hv-tabs b{font:600 13px/1.25 var(--sans);color:inherit}
+.hv-tabs small{font-size:11.5px;line-height:1.3;color:var(--muted)}
+.hv-tabs button[aria-current=true]{color:var(--ink);background:rgba(255,255,255,.55)}
+@media (hover:hover){.hv-tabs button:hover{color:var(--ink)}}
+@media (max-width:600px){.hv-tabs{grid-template-columns:1fr 1fr}.hv-tabs button{min-height:52px}}
+
+/* strip */
+.strip{border-block:1px solid var(--line);padding:22px 0;background:var(--paper)}
+.strip .wrap{display:flex;align-items:center;gap:18px 40px;flex-wrap:wrap;color:var(--muted);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.strip b{font:400 26px/1 var(--serif);letter-spacing:0;text-transform:none;color:var(--ink)}
+.strip b i{font-style:italic;color:var(--terra)}
+.strip .dot{width:7px;height:7px;border-radius:50%;background:#3E8E5E;box-shadow:0 0 0 4px rgba(62,142,94,.15)}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:64px}
+h2{font-size:clamp(42px,5.4vw,74px);line-height:1;margin-top:18px}
+.sec-head p{margin:0;color:var(--ink-soft);justify-self:end;max-width:30em}
+@media (max-width:900px){.sec-head{grid-template-columns:1fr;gap:16px;margin-bottom:44px}.sec-head p{justify-self:start}}
+
+/* cases */
+.case{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center;padding:0 0 clamp(90px,11vw,140px)}
+.case:last-child{padding-bottom:0}
+.case.rev{grid-template-columns:.85fr 1.15fr}
+.case.rev .case-media{order:2}
+.case-media{position:relative;padding-bottom:7%}
+.case-media .browser{position:relative;width:100%;top:0}
+.case-media .phone{width:28%;right:-3%;bottom:0}
+.case-num{font-size:13px;font-weight:600;color:var(--terra);letter-spacing:.14em;text-transform:uppercase}
+.case h3{font-size:clamp(40px,4.4vw,60px);line-height:1;margin:14px 0 8px}
+.case .place{color:var(--muted);font-size:14.5px;margin:0 0 22px}
+.case p.story{color:var(--ink-soft);margin:0 0 24px}
+.case p.story b{color:var(--ink);font-weight:600}
+.built{list-style:none;margin:0 0 30px;padding:0}
+.built li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-size:15.5px}
+.built li::before{content:"";width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--terra)}
+.case .link{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--ink);text-decoration:none;font-weight:600;background-image:linear-gradient(var(--terra),var(--terra));background-size:100% 1.5px;background-position:0 calc(100% - 8px);background-repeat:no-repeat;transition:color .15s ease}
+@media (hover:hover){.case .link:hover{color:var(--terra)}}
+.badge{display:inline-block;margin-left:10px;padding:3px 10px;border-radius:999px;background:var(--terra-soft);color:var(--terra-2);font:600 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;vertical-align:middle}
+@media (max-width:900px){.case,.case.rev{grid-template-columns:1fr;gap:48px}.case.rev .case-media{order:0}.case-media{margin-right:5%}}
+
+/* interações assinatura */
+.sig-sec{background:var(--night);color:var(--on-night)}
+.sig-sec .kick{color:#E08A62}
+.sig-sec i.t{color:#E9A07C}
+.sig-sec .sec-head p{color:var(--on-night-muted)}
+.sgrid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:20px}
+.scard{display:flex;flex-direction:column;border-radius:22px;background:var(--night-2);box-shadow:0 0 0 1px var(--night-line);overflow:hidden}
+.stage-v{position:relative;display:grid;place-items:center;padding:32px 28px;min-height:420px;background:radial-gradient(80% 70% at 50% 40%,rgba(224,138,98,.16),rgba(224,138,98,0))}
+.stage-v video{display:block;width:100%;height:auto;background:#000}
+.vb{width:100%;border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08)}
+.vb .bar{height:24px;display:flex;align-items:center;gap:5px;padding:0 10px;background:#22314F}
+.vb .bar i{width:7px;height:7px;border-radius:50%;background:#3C4D6E}
+.vp{width:min(230px,70%);border-radius:30px;padding:6px;background:#060B14;box-shadow:0 30px 60px -25px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.1)}
+.vp video{border-radius:24px}
+.vm{width:min(300px,88%);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.7)}
+.scard .txt{padding:26px 28px 30px;border-top:1px solid var(--night-line)}
+.scard .who{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#E08A62}
+.scard h3{font-size:32px;line-height:1.05;margin:8px 0 10px}
+.scard p{margin:0;color:var(--on-night-muted);font-size:15px}
+.sig-note{margin:28px 0 0;color:var(--on-night-muted);font-size:15px;max-width:52em}
+.sig-note b{color:var(--on-night);font-weight:600}
+@media (max-width:1000px){.sgrid{grid-template-columns:1fr 1fr}.scard:first-child{grid-column:1/-1}}
+@media (max-width:640px){.sgrid{grid-template-columns:1fr}.stage-v{min-height:0;padding:28px 20px}}
+
+/* restaurantes e cafés */
+.resto{background:var(--stone)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.tile{position:relative;display:flex;flex-direction:column;border-radius:22px;background:var(--paper);box-shadow:0 0 0 1px var(--line);overflow:hidden}
+.tile.feedt{grid-column:span 2;grid-row:span 2;background:var(--night);color:var(--on-night)}
+.tile.w2{grid-column:span 2}
+.tile .vis{position:relative;flex:1;display:grid;place-items:center;padding:56px 24px 8px;min-height:220px}
+.tile .cap{padding:18px 24px 24px}
+.tile h3{font-size:29px;line-height:1.05;margin:0 0 6px}
+.tile p{margin:0;color:var(--ink-soft);font-size:14.5px}
+.tile.feedt p{color:var(--on-night-muted)}
+.chip{position:absolute;top:16px;left:16px;z-index:1;font:600 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--terra-soft);color:var(--terra-2)}
+.chip.live{background:#E3EFE6;color:#2F6B45}
+.feedt .chip.live{background:rgba(62,142,94,.22);color:#9BD4AE}
+.feedt .phone{position:relative;right:auto;bottom:auto;width:min(250px,70%);margin-top:18px}
+.loja-img{width:100%;border-radius:12px;box-shadow:0 20px 40px -24px rgba(20,35,59,.45),0 0 0 1px var(--line)}
+/* mini interfaces */
+.ui{width:100%;max-width:330px;background:#fff;border-radius:16px;box-shadow:0 24px 48px -28px rgba(20,35,59,.5),0 0 0 1px var(--line);padding:16px;font-size:13.5px;color:var(--ink)}
+.ui h4{margin:0 0 10px;font:400 21px/1.1 var(--serif)}
+.rank{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.rank li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center}
+.rank .n{font:400 20px/1 var(--serif);color:var(--terra)}
+.rank .bar{height:6px;border-radius:3px;background:var(--terra-soft);margin-top:5px;overflow:hidden}
+.rank .bar i{display:block;height:100%;background:var(--terra);border-radius:3px}
+.rank svg{width:16px;height:16px;color:#D9483B}
+.ev{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.ev:first-of-type{border-top:0;padding-top:0}
+.ev .d{display:grid;place-items:center;height:52px;border-radius:12px;background:var(--night);color:var(--on-night);line-height:1}
+.ev .d b{font:400 22px var(--serif)}
+.ev .d small{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#E9A07C}
+.ev strong{display:block;font-weight:600}
+.ev span{color:var(--muted);font-size:12.5px}
+.ev .go{display:inline-block;margin-top:5px;font-size:12px;font-weight:600;color:var(--terra)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.filters span{padding:5px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);font-size:12px;color:var(--ink-soft)}
+.filters span.on{background:#2F6B45;color:#fff;box-shadow:none}
+.dish{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line)}
+.dish b{font-weight:600}
+.dish em{font-style:normal;display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;background:#E3EFE6;color:#2F6B45;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+.resto-cta{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:28px;padding:26px 30px;border-radius:22px;background:var(--paper);box-shadow:0 0 0 1px var(--line)}
+.resto-cta p{margin:0;font:400 26px/1.2 var(--serif);max-width:28ch}
+@media (max-width:1000px){.bento{grid-template-columns:repeat(2,1fr)}.tile.feedt{grid-column:1/-1;grid-row:auto}.tile.w2{grid-column:span 1}}
+@media (max-width:640px){.bento{grid-template-columns:1fr}.tile.w2{grid-column:auto}.resto-cta{padding:22px}.resto-cta p{font-size:23px}}
+
+/* features */
+.feat{background:var(--paper);border-block:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.f{padding:36px 32px 40px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.f svg{width:28px;height:28px;color:var(--terra);margin-bottom:22px}
+.f h3{font-size:30px;line-height:1.05;margin-bottom:10px}
+.f p{margin:0;color:var(--ink-soft);font-size:15px}
+@media (max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.fgrid{grid-template-columns:1fr}.f{padding:28px 22px 32px}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+.step{counter-increment:s;border-top:1px solid var(--line-2);padding-top:24px}
+.step::before{content:counter(s,decimal-leading-zero);display:block;font:400 56px/1 var(--serif);color:var(--terra);margin-bottom:18px}
+.step h3{font-size:29px;margin-bottom:8px}
+.step p{margin:0;color:var(--ink-soft);font-size:15px}
+.step .when{display:inline-block;margin-top:14px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:36px 24px}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* pricing */
+.night{background:var(--night);color:var(--on-night)}
+.night .kick{color:#E08A62}
+.night .sec-head p{color:var(--on-night-muted)}
+.night i.t{color:#E9A07C}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.plan{position:relative;background:var(--night-2);border-radius:22px;padding:40px;box-shadow:0 0 0 1px var(--night-line);display:flex;flex-direction:column}
+.plan.pro{background:var(--paper);color:var(--ink);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.plan .tag{position:absolute;top:22px;right:22px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--terra);padding:6px 12px;border-radius:999px;font-weight:600}
+.plan h3{font-size:40px}
+.plan .desc{color:var(--on-night-muted);margin:8px 0 26px}
+.plan.pro .desc{color:var(--ink-soft)}
+.amount{display:flex;align-items:baseline;gap:10px;margin-bottom:28px}
+.amount small{color:var(--on-night-muted);font-size:14px}
+.plan.pro .amount small{color:var(--muted)}
+.amount b{font:400 66px/1 var(--serif);letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.plan ul{list-style:none;margin:0 0 32px;padding:0;flex:1}
+.plan li{padding:11px 0;border-top:1px solid var(--night-line);font-size:15px;display:grid;grid-template-columns:20px 1fr;gap:10px}
+.plan.pro li{border-top-color:var(--line)}
+.plan li::before{content:"";width:12px;height:7px;border-left:1.5px solid #E08A62;border-bottom:1.5px solid #E08A62;transform:rotate(-45deg);margin-top:7px}
+.plan.pro li::before{border-color:var(--terra)}
+.plan li.plus{font-weight:600}
+.rows{margin-top:20px;display:grid;gap:12px}
+.row{display:grid;grid-template-columns:220px 1fr auto;gap:32px;align-items:center;border-radius:22px;padding:28px 40px;box-shadow:0 0 0 1px var(--night-line)}
+.row h3{font-size:28px}
+.row p{margin:0;color:var(--on-night-muted);font-size:15px}
+.row b{font:400 36px/1 var(--serif);white-space:nowrap}
+.row b small{font:400 14px var(--sans);color:var(--on-night-muted)}
+.fine{margin:22px 0 0;font-size:13.5px;color:var(--on-night-muted)}
+@media (max-width:900px){.plans{grid-template-columns:1fr}.plan{padding:32px 24px}.row{grid-template-columns:1fr;gap:10px;padding:26px 24px}}
+
+/* about */
+.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:center}
+.portrait{position:relative;margin:0}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:var(--shadow)}
+.portrait figcaption{position:absolute;left:18px;bottom:18px;background:rgba(251,248,243,.94);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--ink-soft)}
+.about .big{font:400 clamp(30px,3.3vw,46px)/1.15 var(--serif);margin:22px 0 26px;text-wrap:balance}
+.about p{color:var(--ink-soft);margin:0 0 18px;max-width:36em}
+.langs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none}
+.langs li{padding:7px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);font-size:14px;color:var(--ink-soft)}
+.langs .he{font-size:16px;line-height:1}
+.sig{margin-top:40px;font:400 italic 40px/1 var(--serif);color:var(--ink)}
+.sig small{display:block;font:600 12.5px var(--sans);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-top:10px}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:40px}.portrait{max-width:420px}}
+
+/* sobre (trajetória) */
+.about2{display:grid;grid-template-columns:.78fr 1.22fr;gap:80px;align-items:start}
+.about2 .portrait{position:sticky;top:104px;margin:0}
+.about2 .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;box-shadow:var(--shadow)}
+.about2 .portrait figcaption{position:static;margin-top:16px;background:none;padding:0;border-radius:0}
+.about2 .portrait figcaption b{display:block;font:400 30px/1.1 var(--serif);color:var(--ink)}
+.about2 .portrait figcaption span{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+.about2 .portrait .li{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:8px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+.about2 .portrait .li svg{width:18px;height:18px;color:#0A66C2}
+@media (hover:hover){.about2 .portrait .li:hover{color:var(--terra)}}
+.about2 .big{font:400 clamp(30px,3.3vw,46px)/1.12 var(--serif);margin:22px 0 24px;text-wrap:balance}
+.about2 .intro p{color:var(--ink-soft);margin:0 0 16px;max-width:38em;font-size:17px}
+.about2 .intro p b{color:var(--ink);font-weight:600}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:38px 0 46px}
+.pillar{padding:24px 22px 26px;border-radius:18px;background:var(--paper);box-shadow:0 0 0 1px var(--line)}
+.pillar .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--terra-soft);color:var(--terra-2);margin-bottom:18px}
+.pillar .ic svg{width:20px;height:20px}
+.pillar h3{font-size:25px;line-height:1.08;margin-bottom:10px}
+.pillar p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+.tline-h{font:600 12.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--terra);margin:0 0 6px}
+.tline{list-style:none;margin:0;padding:0}
+.tline li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.tline li:last-child{border-bottom:1px solid var(--line)}
+.tline .when{font:400 22px/1.2 var(--serif);color:var(--terra);font-variant-numeric:lining-nums}
+.tline b{display:block;font-weight:600;font-size:16px;margin-bottom:3px}
+.tline span{display:block;font-size:14.5px;color:var(--ink-soft)}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0;list-style:none}
+.creds li{padding:7px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);font-size:13.5px;color:var(--ink-soft)}
+.creds .he{font-size:16px;line-height:1}
+@media (max-width:1000px){.pillars{grid-template-columns:1fr}}
+@media (max-width:900px){.about2{grid-template-columns:1fr;gap:36px}.about2 .portrait{position:static;max-width:380px}}
+@media (max-width:560px){.tline li{grid-template-columns:1fr;gap:4px}}
+
+/* faq */
+.faq{max-width:860px}
+details{border-top:1px solid var(--line-2)}
+details:last-child{border-bottom:1px solid var(--line-2)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:44px;padding:22px 0;font:400 27px/1.2 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:300 28px var(--sans);color:var(--terra);transition:transform .25s var(--ease);flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 26px;color:var(--ink-soft);max-width:44em}
+
+/* final */
+.final{text-align:center;padding:clamp(100px,12vw,170px) 0;background:radial-gradient(60% 90% at 50% 110%,rgba(180,81,45,.35),rgba(180,81,45,0)),var(--night)}
+.final h2{font-size:clamp(48px,7vw,96px);max-width:14ch;margin:20px auto 26px}
+.final p{color:var(--on-night-muted);margin:0 auto 36px;max-width:34em}
+.final .cta{justify-content:center}
+footer{background:var(--night);color:var(--on-night-muted);border-top:1px solid var(--night-line);padding:30px 0 40px;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--on-night)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important}}
+
+/* casamentos · parceria Pitangueira */
+.wed{background:#FFF7EE;position:relative;overflow:hidden}
+.wed .kick{color:#AD2A49}
+.wed h2 i.t{color:#FF7C38}
+.wed-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:center}
+.wed-grid>*{min-width:0}
+.wed-duo{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:22px 0 26px}
+.wed-duo .p{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:#AD2A49;color:#fff;font-weight:600;font-size:14.5px}
+.wed-duo .p img{height:26px;width:auto}
+.wed-duo .g{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;font-size:14.5px}
+.wed-duo .g i{display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#fff;color:var(--ink);font:italic 17px/1 "Instrument Serif",serif}
+.wed-duo .x{font:italic 26px/1 "Instrument Serif",serif;color:#FF7C38}
+.wed .lead2{color:var(--ink-soft);font-size:17px;max-width:34em}
+.wed .lead2 b{color:var(--ink)}
+.wed-feats{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin:26px 0 30px;padding:0;list-style:none}
+.wed-feats li{position:relative;padding-left:22px;font-size:15.5px;color:var(--ink)}
+.wed-feats li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:2px;background:#FF7C38;transform:rotate(45deg)}
+.wed-feats li small{display:block;color:var(--muted);font-size:13px}
+.wed .cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn-wed{background:#AD2A49;color:#fff}
+@media (hover:hover){.btn-wed:hover{background:#7E1C35}}
+.wed-vis{position:relative;height:clamp(460px,48vw,600px)}
+.wed-vis .wp{position:absolute;width:42%;aspect-ratio:9/19.4;border-radius:34px;padding:7px;background:#AD2A49;box-shadow:0 50px 80px -30px rgba(59,22,34,.5)}
+.wed-vis .wp img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:28px}
+.wed-vis .w1{left:4%;top:8%;transform:rotate(-6deg)}
+.wed-vis .w2{left:31%;top:0;z-index:2;background:#FF7C38}
+.wed-vis .w3{right:2%;top:10%;transform:rotate(6deg)}
+.wed-vis .star{position:absolute;color:#FFCE59}
+.wed-vis .star path{fill:currentColor}
+.wed-note{margin-top:14px;font-size:13px;color:var(--muted)}
+@media (max-width:900px){.wed-grid{grid-template-columns:minmax(0,1fr)}.wed-vis{height:clamp(380px,100vw,520px)}}
+@media (max-width:520px){.wed-feats{grid-template-columns:minmax(0,1fr)}}
+
+.wed-pit{margin-top:clamp(70px,9vw,110px);padding:clamp(28px,4vw,48px);border-radius:28px;background:#fff;box-shadow:0 40px 80px -50px rgba(59,22,34,.45);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(30px,5vw,64px);align-items:center}
+.wed-pit>*{min-width:0}
+.wed-pit .media{position:relative;padding-bottom:9%}
+.wed-pit .media .browser{position:relative;width:100%;top:0}
+.wed-pit .media .phone{width:28%;right:-2%;bottom:0}
+.wed-pit .kick{color:#FF7C38}
+.wed-pit h3{font:400 clamp(34px,3.6vw,48px)/1.05 "Instrument Serif",serif;margin:12px 0 12px}
+.wed-pit h3 i{color:#AD2A49}
+.wed-pit p{color:var(--ink-soft);margin:0 0 18px}
+.wed-pit ul{margin:0 0 24px;padding:0;list-style:none;display:grid;gap:9px}
+.wed-pit li{position:relative;padding-left:22px;font-size:15.5px}
+.wed-pit li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:2px;background:#AD2A49;transform:rotate(45deg)}
+.wed-pit .cta{display:flex;flex-wrap:wrap;gap:12px}
+@media (max-width:900px){.wed-pit{grid-template-columns:minmax(0,1fr)}.wed-pit .media{margin-right:4%}}
+.foot-brand{display:inline-flex;align-items:center;gap:10px}
+@media (max-width:420px){.brand-ic{width:32px;height:30px}.brand small{display:none}.nav .btn{white-space:nowrap}}
+
+/* depoimentos */
+#depoimentos[hidden]{display:none}
+.deps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:22px}
+.dep{margin:0;padding:30px 30px 26px;border-radius:22px;background:var(--paper);box-shadow:0 0 0 1px var(--line)}
+.dep blockquote{margin:0;font:400 clamp(22px,2vw,26px)/1.35 var(--serif);color:var(--ink)}
+.dep blockquote::before{content:"“";display:block;font:400 64px/.6 var(--serif);color:var(--terra);margin-bottom:10px}
+.dep figcaption{margin-top:20px;font-size:14.5px;color:var(--muted)}
+.dep figcaption b{display:block;color:var(--ink);font-weight:600}
+/* botão fixo de WhatsApp */
+.wa-fix{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 16px;border-radius:999px;background:#1F9D55;color:#fff;font-weight:600;font-size:15px;text-decoration:none;box-shadow:0 18px 40px -14px rgba(16,29,49,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.wa-fix svg{width:22px;height:22px}
+.wa-fix.on{transform:none}
+@media (min-width:901px){.wa-fix span{display:none}.wa-fix{padding:0;width:56px;justify-content:center}}
+@media (prefers-reduced-motion:reduce){.wa-fix{transition:none}}
+
+/* acabamento */
+p{text-wrap:pretty}
+.browser img,.phone img,.pi img{outline:1px solid rgba(16,29,49,.08);outline-offset:-1px}
+/* garantias no topo */
+.assure{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;padding:0;list-style:none;font-size:14.5px;color:var(--ink-soft)}
+.assure li{display:inline-flex;align-items:center;gap:8px}
+.assure svg{width:18px;height:18px;flex:none;color:#3E8E5E}
+/* caminhos */
+.paths{padding:clamp(40px,5vw,64px) 0 0}
+.paths-k{margin:0 0 18px;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:center;padding:14px 20px 14px 14px;border-radius:22px;background:var(--paper);text-decoration:none;color:var(--ink);box-shadow:0 0 0 1px var(--line),0 12px 30px -24px rgba(16,29,49,.4);transition:box-shadow .2s ease,transform .2s ease}
+.pi{width:64px;height:78px;border-radius:12px;overflow:hidden;background:var(--stone)}
+.pi img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pt b{display:block;font:400 24px/1.1 var(--serif)}
+.pt small{display:block;margin-top:4px;color:var(--muted);font-size:13.5px;line-height:1.4}
+.pa{font-size:22px;color:var(--terra);transition:transform .2s ease}
+@media (hover:hover){.pcard:hover{box-shadow:0 0 0 1px var(--terra),0 18px 40px -24px rgba(16,29,49,.45)}.pcard:hover .pa{transform:translateX(4px)}}
+.pcard:active{transform:scale(.985)}
+@media (max-width:900px){.pgrid{grid-template-columns:minmax(0,1fr)}}
+/* contato com formulário */
+.final{text-align:left}
+.final-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(40px,6vw,90px);align-items:start}
+.final-grid>*{min-width:0}
+.final .final-txt h2{margin:20px 0 22px;max-width:12ch}
+.final .final-txt p{margin:0 0 28px}
+.final .cta{justify-content:flex-start}
+.promise{margin:0 0 30px;padding:0;list-style:none;display:grid;gap:16px}
+.promise li{display:flex;gap:12px;align-items:flex-start;color:var(--on-night-muted);font-size:15px;line-height:1.45}
+.promise b{display:block;color:var(--on-night);font-weight:600}
+.promise svg{width:20px;height:20px;flex:none;margin-top:2px;color:#7FD3A2}
+.brief{display:grid;gap:16px;padding:clamp(24px,3vw,34px);border-radius:28px;background:var(--paper);color:var(--ink);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.brief h3{font-size:32px;line-height:1.05;margin:0 0 4px}
+.brief label{display:grid;gap:7px;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.brief small{font-weight:400;color:var(--muted)}
+.brief input:not([type=radio]),.brief textarea{width:100%;box-sizing:border-box;min-height:50px;padding:12px 14px;border-radius:14px;border:0;background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);font:400 16px/1.4 var(--sans);color:var(--ink);transition:box-shadow .15s ease}
+.brief textarea{resize:vertical;min-height:92px}
+.brief input:focus,.brief textarea:focus{outline:none;box-shadow:inset 0 0 0 2px var(--terra)}
+.brief fieldset{border:0;margin:0;padding:0}
+.brief legend{padding:0;margin-bottom:8px;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opts label{display:block;position:relative}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:6px 10px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);text-align:center;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;transition:box-shadow .15s ease,background .15s ease,color .15s ease}
+.opts input:checked+span{background:var(--ink);color:#fff;box-shadow:none}
+.opts input:focus-visible+span{outline:2px solid var(--terra);outline-offset:2px}
+.brief .btn{width:100%;margin-top:4px}
+.brief .btn svg{width:20px;height:20px}
+.brief .err{margin:0;min-height:1.2em;color:#A33A2A;font-size:14px}
+.fine2{margin:-4px 0 0;font-size:12.5px;color:var(--muted);text-align:center}
+@media (max-width:900px){.final-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:380px){.opts{grid-template-columns:minmax(0,1fr)}}
+.langsw{display:flex;gap:2px;padding:3px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);margin-left:auto}
+.langsw a{display:grid;place-items:center;min-width:38px;height:34px;padding:0 8px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted);text-decoration:none;transition:background .15s ease,color .15s ease}
+.langsw a[aria-current=true]{background:var(--ink);color:#fff}
+@media (hover:hover){.langsw a:not([aria-current=true]):hover{color:var(--ink)}}
+@media (max-width:900px){.langsw{margin-left:auto}}
+@media (max-width:420px){.langsw a{min-width:32px;padding:0 5px}}
+@media (max-width:600px){header .nav > .btn-ink{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Gueta Studio, home"><svg class="brand-ic" viewBox="0 0 106 100" aria-hidden="true"><path d="M50 6C24 6 6 22 6 44s18 38 44 38c5 0 9-.5 13-1.6L84 94l-4-20c12-7 20-17 20-30C100 22 76 6 50 6z" fill="#B4512D"/><path d="M48.53575 66.909Q43.20375 66.909 40.16575 62.724000000000004Q37.127750000000006 58.539 37.127750000000006 50.665Q37.127750000000006 47.379 37.96475 43.411Q38.80175 39.443 40.50675 35.506Q42.21175 31.569000000000003 44.75375 28.314Q47.29575 25.058999999999997 50.76775 23.075Q54.23975 21.091 58.579750000000004 21.091Q61.30775 21.091 63.22975 21.556Q65.15175 22.021 66.45375 22.765Q67.01175 23.075000000000003 66.82575 24.067L64.96575 33.491Q64.77975 34.545 63.97375 34.545Q63.22975 34.545 63.22975 33.739L63.16775 31.941000000000003Q62.981750000000005 26.609 61.83475 24.656000000000002Q60.68775 22.703000000000003 58.26975 22.703000000000003Q55.41775 22.703000000000003 53.09275 24.253Q50.76775000000001 25.802999999999997 48.87675 28.407Q46.98575 31.011000000000003 45.59075 34.173Q44.195750000000004 37.335 43.29675 40.620999999999995Q42.39775 43.907 41.93275 46.821Q41.46775 49.735 41.46775 51.781Q41.46775 58.539 43.48275 61.918Q45.49775 65.297 48.72175 65.297Q50.70575 65.297 52.255750000000006 64.15Q53.80575 63.003 54.487750000000005 59.964999999999996L57.58775 46.387Q57.89775 45.147 57.68075 44.620000000000005Q57.463750000000005 44.093 56.03775 43.968999999999994L53.86775 43.721000000000004Q53.06175 43.659 53.06175 43.039Q53.06175 42.295 54.17775 42.295H65.39975Q66.20575 42.295 66.20575 42.915Q66.20575 43.596999999999994 65.27575 43.721000000000004L64.34575000000001 43.845Q62.981750000000005 44.031 62.57875 44.589Q62.17575 45.147 61.865750000000006 46.449L58.26975 62.010999999999996Q58.14575000000001 62.693 57.618750000000006 63.313Q57.091750000000005 63.933 55.975750000000005 64.615Q54.42575 65.545 52.627750000000006 66.227Q50.829750000000004 66.909 48.53575 66.909Z" fill="#F3EDE3"/></svg><b>Gueta</b><small>Studio</small></a>
+    <nav aria-label="Sections">
+      <a href="#casamentos">Weddings</a>
+      <a href="#trabalhos">Work</a>
+      <a href="#interacoes">Interactions</a>
+      <a href="#restaurantes">Restaurants</a>
+            <a href="#processo">Process</a>
+      <a href="#sobre">About</a>
+    </nav>
+    <div class="langsw" aria-label="Idioma"><a href="../" hreflang="pt">PT</a><a href="./" hreflang="en" aria-current="true">EN</a><a href="../es/" hreflang="es">ES</a></div>
+    <a class="btn btn-ink" href="#orcamento">Start a project</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kick">Custom websites · weddings and businesses</span>
+        <h1>Websites with the <i class="t">soul</i> of your business.</h1>
+        <p class="lead">I'm <b>Moshik Gueta</b>. I design and build one-of-a-kind websites for <b>weddings, cafés, restaurants and local businesses</b>, shaped by each client's identity: online RSVPs and gifts, WhatsApp orders, <b>admin dashboards</b>  and courses. I'm a polyglot, so your site can be <b>bilingual</b>. No templates.</p>
+        <div class="cta">
+          <a class="btn btn-terra" href="#orcamento">Get a free preview
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#trabalhos">See my work</a>
+        </div>
+        <ul class="assure" aria-label="Guarantees">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>See your site before you commit</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Reply within 1 day</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>The site and domain are yours</li>
+        </ul>
+        <div class="proof">
+          <div><b>5</b><span>live projects</span></div>
+          <div><b>PT · EN · ES</b><span>bilingual sites, carefully written</span></div>
+          <div><b>100%</b><span>custom, no templates</span></div>
+        </div>
+      </div>
+      <div class="hero-v">
+        <div class="browser"><div class="bar"><i></i><i></i><i></i><span id="hvUrl">moshikgueta.github.io/balcao-pizza</span></div>
+          <video id="hv" muted loop playsinline preload="metadata" poster="../media/atalhos.jpg" width="1280" height="800" aria-label="Vídeo com as interações criadas para os sites: a pizza que gira, o cardápio em modo feed, o Mupeco interativo, a luz que acende nos móveis o orçamento de casamento montado na hora e o painel de leads, com os pedidos arrastados de etapa"><source src="../media/atalhos.mp4" type="video/mp4"></video>
+        </div>
+        <div class="hv-tabs" id="hvTabs" aria-label="Interações no vídeo">
+          <button type="button" data-t="0" data-u="moshikgueta.github.io/balcao-pizza" aria-current="true"><i></i><b>The spinning pizza</b><small>Balcão</small></button>
+          <button type="button" data-t="9.77" data-u="moshikgueta.github.io/balcao-pizza" aria-current="false"><i></i><b>Feed-style menu</b><small>Balcão · El Tumi</small></button>
+          <button type="button" data-t="16.63" data-u="moshikgueta.github.io/El-tumi" aria-current="false"><i></i><b>Interactive Mupeco</b><small>El Tumi</small></button>
+          <button type="button" data-t="22.1" data-u="moshikgueta.github.io/draft-interiores" aria-current="false"><i></i><b>Turn on the light</b><small>Draft Interiores</small></button>
+          <button type="button" data-t="29.77" data-u="pitangueira.moshikg10.workers.dev" aria-current="false"><i></i><b>Instant quote</b><small>Pitangueira</small></button>
+          <button type="button" data-t="39.43" data-u="pitangueira.moshikg10.workers.dev/painel" aria-current="false"><i></i><b>Leads dashboard</b><small>Pitangueira</small></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="Live projects">
+    <div class="wrap"><span class="dot" aria-hidden="true"></span><span>Live</span><b>Pitangueira <i>Weddings</i></b><b>El Tumi <i>Café</i></b><b>Balcão <i>Pizza Napoletana</i></b><b>Hebraico <i>Fluente</i></b><b>Draft <i>Interiores</i></b></div>
+  </div>
+
+  <section class="paths" aria-label="Choose your path">
+    <div class="wrap">
+      <p class="paths-k">What do you need?</p>
+      <div class="pgrid">
+        <a class="pcard" href="#casamentos"><span class="pi"><img src="../shots/wed-hero.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Wedding website</b><small>RSVPs, gifts straight to your account, several languages</small></span><span class="pa" aria-hidden="true">→</span></a>
+        <a class="pcard" href="#restaurantes"><span class="pi"><img src="../shots/tumi-phone.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Restaurant or café</b><small>A menu that sells, WhatsApp orders and events</small></span><span class="pa" aria-hidden="true">→</span></a>
+        <a class="pcard" href="#trabalhos"><span class="pi"><img src="../shots/draft-phone.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Brand or local business</b><small>Portfolio, online quotes, dashboards and courses</small></span><span class="pa" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="casamentos" class="wed">
+    <div class="wrap wed-grid">
+      <div>
+        <span class="kick">New · Wedding websites</span>
+        <h2>The wedding website with <i class="t">your</i>  essence.</h2>
+        <div class="wed-duo" aria-label="Parceria Pitangueira e Gueta Studio">
+          <span class="p"><img src="../shots/pitangueira-logo-branco.svg" alt="Pitangueira" width="104" height="26"> creates the look</span>
+          <span class="x">×</span>
+          <span class="g"><i>G</i>Gueta Studio builds the site</span>
+        </div>
+        <p class="lead2">In partnership with <b>Pitangueira</b>, design for creative weddings: they create the visual identity and stationery, and I turn it all into a website. From invitation to screen, the whole wedding with the same look, <b>no templates</b>.</p>
+        <ul class="wed-feats">
+          <li>RSVPs<small>with a dashboard showing who's missing</small></li>
+          <li>Gifts straight to your account<small>no wedding-site commission</small></li>
+          <li>Several languages<small>for guests from abroad</small></li>
+          <li>Personal invitation link<small>“Hi, Uncle Carlos!”</small></li>
+          <li>QR code seating chart<small>at the party entrance</small></li>
+          <li>Save the date<small>to send on WhatsApp</small></li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-wed" href="../casamento/" target="_blank" rel="noopener">See a sample site ↗</a>
+          <a class="btn btn-line" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">Build your quote with Pitangueira ↗</a>
+        </div>
+        <p class="wed-note">The sample uses Pitangueira's own identity. Each couple gets the identity created for them.</p>
+      </div>
+      <div class="wed-vis" aria-hidden="true">
+        <svg class="star" viewBox="0 0 100 100" style="width:70px;left:0;top:0" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:40px;right:6%;top:2%;color:#FF7C38" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:54px;right:30%;bottom:4%;color:#FFC9A8" aria-hidden="true"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg>
+        <div class="wp w1"><img src="../shots/wed-rsvp.jpg" alt="" loading="lazy"></div>
+        <div class="wp w2"><img src="../shots/wed-hero.jpg" alt="" loading="lazy"></div>
+        <div class="wp w3"><img src="../shots/wed-pix.jpg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="wrap">
+      <article class="wed-pit">
+        <div class="media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev</span></div><img src="../shots/pitang-hero.jpg" alt="Site da Pitangueira, design para casamentos criativos, com o topo laranja, o coração e a Pétala e a Isa como adesivos" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="../shots/pitang-phone.jpg" alt="Orçamento interativo da Pitangueira no celular, com itens escolhidos e o total" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="kick">Pitangueira's website</span>
+          <h3>Where the partnership <i>began.</i></h3>
+          <p>Before the wedding websites, I built Pitangueira's own site: with Pétala and Isa's colour, humour and illustrations, and a quote the bride puts together herself.</p>
+          <ul>
+            <li>Interactive quote with 38 items and an instant total</li>
+            <li>Ready-made WhatsApp order, with the couple's story</li>
+            <li>Orders dashboard, from “new” to “closed”, with phone alerts</li>
+            <li>Portfolio with a gallery and Instagram videos</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-wed" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">See Pitangueira's site ↗</a>
+            <a class="btn btn-line" href="#projeto-pitangueira">See the full project</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="interacoes" class="sig-sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Signature interactions</span><h2>Details people <i class="t">talk about</i>.</h2></div>
+        <p>Every project gets at least one moment the customer doesn't expect, built around what makes the place unique. That's what makes someone send the link to their friends.</p>
+      </div>
+      <div class="sgrid">
+        <article class="scard">
+          <div class="stage-v"><div class="vb"><div class="bar"><i></i><i></i><i></i></div><video data-v muted loop playsinline preload="none" poster="../media/pizza.jpg" width="960" height="600" aria-label="Vídeo: a pizza desce girando até o prato e troca ao passar o mouse"><source src="../media/pizza.mp4" type="video/mp4"></video></div></div>
+          <div class="txt"><span class="who">Balcão Pizza Napoletana</span><h3>The spinning pizza</h3><p>As you scroll to the menu, the pizza spins down onto the plate. Hover over another and it slides in with flour falling, fresh out of the oven.</p></div>
+        </article>
+        <article class="scard">
+          <div class="stage-v"><div class="vp"><video data-v muted loop playsinline preload="none" poster="../media/feed.jpg" width="390" height="664" aria-label="Vídeo: cardápio em modo feed, deslizando entre as pizzas e curtindo uma"><source src="../media/feed.mp4" type="video/mp4"></video></div></div>
+          <div class="txt"><span class="who">Balcão · El Tumi</span><h3>Feed-style menu</h3><p>One dish per screen, like social media. Customers swipe, double-tap to like, and the most liked dishes become a ranking.</p></div>
+        </article>
+        <article class="scard">
+          <div class="stage-v"><div class="vm"><video data-v muted loop playsinline preload="none" poster="../media/mupeco.jpg" width="524" height="616" aria-label="Vídeo: o cliente arrasta e vê o café passar pelo Mupeco"><source src="../media/mupeco.mp4" type="video/mp4"></video></div></div>
+          <div class="txt"><span class="who">El Tumi Café</span><h3>The interactive Mupeco</h3><p>Customers drag and watch the coffee flow through the ceramic, from hot water to the finished cup. A rare method, explained in five seconds.</p></div>
+        </article>
+      </div>
+      <p class="sig-note">In every project, your place can get its own interaction: dough rising, coffee brewing, a dish arriving at the table.</p>
+    </div>
+  </section>
+
+  <section id="restaurantes" class="resto">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">For restaurants and cafés</span><h2>The menu that <i class="t">sells</i>  for you.</h2></div>
+        <p>Features made for places that live on full tables. You pick the ones that fit your place, and I design each one in its style.</p>
+      </div>
+      <div class="bento">
+        <article class="tile feedt">
+          <span class="chip live">Live at El Tumi and Balcão</span>
+          <div class="vis"><div class="phone"><img src="../shots/tumi-feed.jpg" alt="Cardápio do El Tumi em modo feed, um item por tela" width="780" height="1688" loading="lazy"></div></div>
+          <div class="cap"><h3>Feed mode</h3><p>The menu becomes a social feed: one dish per screen, big photo, swipe to the next and double-tap to like. Customers spend longer looking and order hungry.</p></div>
+        </article>
+        <article class="tile w2">
+          <span class="chip live">Live</span>
+          <div class="vis"><div class="ui" role="img" aria-label="Exemplo do ranking dos itens mais curtidos">
+            <h4>Most loved</h4>
+            <ol class="rank">
+              <li><span class="n">1</span><div>Margherita<div class="bar"><i style="width:100%"></i></div></div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.5 5c2 0 3.6 1.1 4.5 2.6C11.9 6.1 13.5 5 15.5 5 19 5 21.1 8.5 19.6 11.8 17.5 16.4 12 21 12 21z"/></svg></li>
+              <li><span class="n">2</span><div>Cappuccino<div class="bar"><i style="width:78%"></i></div></div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.5 5c2 0 3.6 1.1 4.5 2.6C11.9 6.1 13.5 5 15.5 5 19 5 21.1 8.5 19.6 11.8 17.5 16.4 12 21 12 21z"/></svg></li>
+              <li><span class="n">3</span><div>House alfajor<div class="bar"><i style="width:61%"></i></div></div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.5 5c2 0 3.6 1.1 4.5 2.6C11.9 6.1 13.5 5 15.5 5 19 5 21.1 8.5 19.6 11.8 17.5 16.4 12 21 12 21z"/></svg></li>
+            </ol>
+          </div></div>
+          <div class="cap"><h3>Most loved</h3><p>Likes become a live ranking. Anyone unsure what to order goes straight to the house favourite, and you learn what people want most.</p></div>
+        </article>
+        <article class="tile w2">
+          <span class="chip live">Live at El Tumi</span>
+          <div class="vis"><img class="loja-img" src="../shots/tumi-loja.jpg" alt="Loja digital do El Tumi com café em grão, Mupeco e alfajores" width="1000" height="645" loading="lazy"></div>
+          <div class="cap"><h3>Online shop</h3><p>Coffee beans, products and souvenirs for sale on the site itself. Customers build their order and pick it up at the counter.</p></div>
+        </article>
+        <article class="tile w2">
+          <span class="chip">Custom</span>
+          <div class="vis"><div class="ui" role="img" aria-label="Exemplo de agenda de eventos dentro do site">
+            <h4>House events</h4>
+            <div class="ev"><div class="d"><small>Fri</small><b>14</b></div><div><strong>Live music night</strong><span>8 pm · book on WhatsApp</span><br><span class="go">I'm going →</span></div></div>
+            <div class="ev"><div class="d"><small>Sat</small><b>22</b></div><div><strong>Latte art workshop</strong><span>10 am · 8 spots</span><br><span class="go">Save my spot →</span></div></div>
+          </div></div>
+          <div class="cap"><h3>Events on the site</h3><p>Live music, tastings, workshops, special-date menus. The calendar lives on the site and every event has a booking button straight to WhatsApp.</p></div>
+        </article>
+        <article class="tile w2">
+          <span class="chip">Custom</span>
+          <div class="vis"><div class="ui" role="img" aria-label="Exemplo de filtro de cardápio por comida vegana e vegetariana">
+            <div class="filters"><span>All</span><span class="on">Vegan</span><span>Vegetarian</span><span>Gluten-free</span></div>
+            <div class="dish"><span><b>Quinoa bowl</b><em>Vegan</em></span><span>R$ 38</span></div>
+            <div class="dish"><span><b>Mushroom pizza</b><em>Vegan</em></span><span>R$ 49</span></div>
+            <div class="dish"><span><b>Oat latte</b><em>Vegan</em></span><span>R$ 19</span></div>
+          </div></div>
+          <div class="cap"><h3>Vegan and vegetarian filter</h3><p>With one tap, customers see only what they can eat: vegan, vegetarian, gluten-free, dairy-free. Fewer questions for the waiter and more confidence when ordering.</p></div>
+        </article>
+      </div>
+      <div class="resto-cta">
+        <p>Want to see it on your own menu?</p>
+        <a class="btn btn-terra" data-contact href="#contato">Get a no-obligation preview</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalhos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Selected work</span><h2>Every project, <i class="t">a different</i>  place.</h2></div>
+        <p>There's no template I adapt. Every project starts by understanding what makes that business special and becomes a site only it has.</p>
+      </div>
+
+      <article class="case" id="projeto-pitangueira">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev</span></div><img src="../shots/pitang-hero.jpg" alt="Site da Pitangueira, papelaria criativa para casamentos, com Pétala e Isa como adesivos no topo laranja" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="../shots/pitang-phone.jpg" alt="Orçamento interativo da Pitangueira no celular, com itens escolhidos e o total na barra de baixo" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">01 · Wedding stationery</span>
+          <h3>Pitangueira</h3>
+          <p class="place">Couples from Brazil and around the world</p>
+          <p class="story">Pétala and Isa create visual identity and stationery for weddings with colour, humour and personality. The site has the same energy and turns the price list into a <b>quote the couple builds themselves</b>.</p>
+          <ul class="built">
+            <li>Interactive quote: 38 items, from invitations to wine labels, with an instant total</li>
+            <li>Ready-made WhatsApp order, with date, guests and the couple's story</li>
+            <li>Password-protected orders dashboard, from “New” to “Closed”, with phone alerts</li>
+            <li>Portfolio with a gallery and cinema-style Instagram videos</li>
+            <li>The brand everywhere: heart, stars and the two of them as stickers at the top</li>
+          </ul>
+          <a class="link" href="https://pitangueira.moshikg10.workers.dev/" target="_blank" rel="noopener">See the live site ↗</a>
+        </div>
+      </article>
+      <article class="case rev" id="painel-pitangueira">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>pitangueira.moshikg10.workers.dev/painel</span></div><img src="../shots/pitang-painel-hero.jpg" alt="Painel de leads da Pitangueira: números do mês e pedidos organizados em colunas, de Novo a Fechado" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="../shots/pitang-painel-phone.jpg" alt="Detalhe de um pedido no painel da Pitangueira no celular, com dados do casal, botão de WhatsApp e itens escolhidos" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">02 · Admin dashboard <span class="badge">Pitangueira</span></span>
+          <h3>Leads dashboard</h3>
+          <p class="place">Internal use by Pétala and Isa</p>
+          <p class="story">Every quote sent through Pitangueira's site lands here, organised. Instead of hunting for lost orders on WhatsApp, the two of them <b>follow each couple from first contact to signed contract</b>.</p>
+          <ul class="built">
+            <li>Board by stage: New, In conversation, Proposal sent, Closed and Lost</li>
+            <li>Drag the card to change stage, with values added up in each column</li>
+            <li>Monthly numbers: new, in negotiation, closed and closing rate</li>
+            <li>Couple card with items, date, notes and one-tap WhatsApp</li>
+            <li>Phone alert for every new order, plus Instagram leads added by hand</li>
+          </ul>
+          <p class="place">Private, password-protected area. Screenshots use sample orders.</p>
+        </div>
+      </article>
+      <article class="case">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>hebraicofluente.com.br/cursos</span></div><img src="../shots/hf-cursos.jpg" alt="Página de cursos do Hebraico Fluente" width="2160" height="1350" loading="lazy"></div>
+          <div class="phone"><img src="../shots/hf-mapa.jpg" alt="Mapa da jornada do aluno na plataforma Hebraico Fluente" width="540" height="1169" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">03 · Learning platform <span class="badge">Own project</span></span>
+          <h3>Hebraico Fluente</h3>
+          <p class="place">Online Hebrew course for Brazilians</p>
+          <p class="story">My own school, built from scratch. It's not a site with videos: it's a <b>complete platform</b>, where students sign up, pay and learn to read Hebrew lesson by lesson.</p>
+          <ul class="built">
+            <li>Student account, saved progress and a journey map</li>
+            <li>Lessons with interactive exercises: listen, write and build words</li>
+            <li>Pix and card payments, with instant access</li>
+            <li>Content pages and a blog to attract students through Google</li>
+          </ul>
+          <a class="link" href="https://hebraicofluente.com.br" target="_blank" rel="noopener">See the live platform ↗</a>
+        </div>
+      </article>
+      <article class="case rev">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/El-tumi</span></div><img src="../shots/tumi-menu.jpg" alt="Cardápio digital do El Tumi Café com filtros e busca" width="2160" height="1350" loading="lazy"></div>
+          <div class="phone"><img src="../shots/tumi-phone.jpg" alt="Site do El Tumi no celular" width="1170" height="2532" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">04 · Peruvian café</span>
+          <h3>El Tumi Café</h3>
+          <p class="place">Bigorrilho, Curitiba</p>
+          <p class="story">A specialty café with a Peruvian soul and a rare ceramic brewing method, the <b>Mupeco</b>. The challenge was explaining flavours few people know and welcoming tourists.</p>
+          <ul class="built">
+            <li>Full menu with 55 items, filters and search</li>
+            <li>Feed-style menu, with likes and “most loved”</li>
+            <li>Interactive Mupeco brewing: customers drag and watch</li>
+            <li>Automatic Portuguese, Spanish and English</li>
+            <li>House shop and real reviews with photos</li>
+          </ul>
+          <a class="link" href="https://moshikgueta.github.io/El-tumi/" target="_blank" rel="noopener">See the live site ↗</a>
+        </div>
+      </article>
+      <article class="case">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/balcao-pizza</span></div><img src="../shots/balcao-menu.jpg" alt="Cardápio da Balcão Pizza Napoletana com a pizza em destaque" width="2160" height="1350" loading="lazy"></div>
+          <div class="phone"><img src="../shots/balcao-phone.jpg" alt="Site da Balcão no celular" width="1170" height="2532" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">05 · Neapolitan pizzeria</span>
+          <h3>Balcão Pizza Napoletana</h3>
+          <p class="place">Bigorrilho, Curitiba</p>
+          <p class="story">A neighbourhood pizzeria that wanted to <b>sell direct, without delivery-app commissions</b>. The site became the place's digital counter.</p>
+          <ul class="built">
+            <li>Ready-made WhatsApp order, with pickup time</li>
+            <li>Pizza showcase, with notes for each item</li>
+            <li>Live open/closed status, and pickup times only when open</li>
+            <li>Loyalty card: 10 orders, 1 free pizza</li>
+            <li>Flyer with a QR code for the neighbours</li>
+          </ul>
+          <a class="link" href="https://moshikgueta.github.io/balcao-pizza/" target="_blank" rel="noopener">See the live site ↗</a>
+        </div>
+      </article>
+      <article class="case rev">
+        <div class="case-media">
+          <div class="browser"><div class="bar"><i></i><i></i><i></i><span>moshikgueta.github.io/draft-interiores</span></div><img src="../shots/draft-hero.jpg" alt="Site da Draft Interiores, marcenaria sob medida, com fotos reais dos móveis" width="1600" height="1000" loading="lazy"></div>
+          <div class="phone"><img src="../shots/draft-phone.jpg" alt="Galeria de um projeto da Draft Interiores no celular, com materiais e cores" width="780" height="1328" loading="lazy"></div>
+        </div>
+        <div>
+          <span class="case-num">06 · Custom joinery</span>
+          <h3>Draft Interiores</h3>
+          <p class="place">Pinhais and Curitiba</p>
+          <p class="story">A high-end joinery with a site that looked like a template. I rebuilt it from scratch with the look of a <b>furniture studio</b>: walnut, oak, big photos and Marcos himself in the spotlight.</p>
+          <ul class="built">
+            <li>Header with a light that turns on and off, and shortcuts to each room</li>
+            <li>Editorial portfolio with a filter and a gallery for each project</li>
+            <li>Materials, colours and dimensions for each piece, like a spec sheet</li>
+            <li>“Turn on the light”: the same piece by day and by night, with the LED on</li>
+            <li>Guided quote that arrives organised on WhatsApp</li>
+          </ul>
+          <a class="link" href="https://moshikgueta.github.io/draft-interiores/" target="_blank" rel="noopener">See the live site ↗</a>
+        </div>
+      </article>
+
+
+
+
+
+    </div>
+  </section>
+
+  <section id="diferenciais" class="feat">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">What sets me apart</span><h2>What a template <i class="t">can't do</i>.</h2></div>
+        <p>Generic sites make every business look the same. A Gueta Studio project is designed for your customers to open, use and share with friends.</p>
+      </div>
+      <div class="fgrid">
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/></svg><h3>Truly custom</h3><p>Colours, photos, copy and details that come from your business. No two projects of mine look alike.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M12 10.5c-1-1.5-3.5-1-3.5 1 0 1.8 3.5 3.5 3.5 3.5s3.5-1.7 3.5-3.5c0-2-2.5-2.5-3.5-1z"/></svg><h3>Genuinely interactive</h3><p>Feed-style menus, exercises, likes: visitors take part instead of just scrolling.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.2A8 8 0 1 1 20 12z"/></svg><h3>Sells direct</h3><p>Ready-made WhatsApp orders or online payment, with no app commission in between.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><h3>Truly bilingual</h3><p>I'm a polyglot, an academic coordinator and a university language teacher. The English and Spanish copy is written by me, not by a machine translator.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><h3>See it before you commit</h3><p>First I build a preview with your brand. You only decide after seeing the site on your phone.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><h3>The site is yours</h3><p>Domain and files in your business's name. No mandatory monthly fee and no lock-in.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick">Process</span><h2>From the first coffee <i class="t">to the site going live</i>.</h2></div>
+        <p>Simple for you, careful on my side. On average, 10 to 15 working days from our first chat to launch.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Conversation</h3><p>I get to know your business, your audience and what makes your place unique.</p><span class="when">Day 1</span></div>
+        <div class="step"><h3>Preview</h3><p>You get a link to see on your phone, already with your content and photos.</p><span class="when">Up to 7 days</span></div>
+        <div class="step"><h3>Adjustments</h3><p>Two rounds of changes to copy, photos and details, until it feels like you.</p><span class="when">Week 2</span></div>
+        <div class="step"><h3>Live</h3><p>Site published, QR codes ready and a step-by-step guide for your team.</p><span class="when">10–15 days</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about2">
+      <figure class="portrait">
+        <img src="../shots/moshik.jpg" alt="Moshik Gueta, fundador do Gueta Studio" width="680" height="850" loading="lazy">
+        <figcaption><b>Moshik Gueta</b><span>Founder of Gueta Studio · educator and developer</span>
+          <a class="li" href="https://www.linkedin.com/in/moshikgueta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.4 3H3.6A.6.6 0 0 0 3 3.6v16.8c0 .3.3.6.6.6h16.8c.3 0 .6-.3.6-.6V3.6a.6.6 0 0 0-.6-.6ZM8.3 18.3H5.7V9.8h2.6v8.5ZM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.3 9.7h-2.6v-4.1c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.2h-2.6V9.8h2.5v1.2c.4-.7 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4v4.7Z"/></svg>See my LinkedIn profile</a>
+        </figcaption>
+      </figure>
+      <div>
+        <span class="kick">About me</span>
+        <p class="big">Before building websites, I spent years teaching people. That's why my sites <i class="t">explain themselves</i>.</p>
+        <div class="intro">
+          <p>I'm <b>Moshik Gueta</b>, Israeli, living in Curitiba since 2021. My career began in <b>education</b>: I taught, led the academic side of a language school and created courses in Brazil, Israel and Argentina. That work taught me to listen before proposing and to explain complex things without jargon.</p>
+          <p>Creating courses is what led me to <b>web development</b>. I built my own learning platform from scratch, with student accounts, interactive exercises and online payment. Today, at Gueta Studio, I use all of it to build sites that help my clients' customers understand, trust and act.</p>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
+            <h3>Development</h3>
+            <p>Complete platforms with login, payment and interactive content, and custom sites for weddings, a pizzeria, a café and a joinery. From design to launch, all done by me.</p>
+          </div>
+          <div class="pillar">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 5l9 4.5-9 4.5z"/><path d="M7 11.5V16c1.5 1.3 3.2 2 5 2s3.5-.7 5-2v-4.5"/></svg></span>
+            <h3>Education and methodology</h3>
+            <p>Academic Manager in Tel Aviv, university lecturer in Buenos Aires and school teacher in Curitiba. CELTA and a degree in English (Letras).</p>
+          </div>
+          <div class="pillar">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.8-3 3.2-4.6 6-4.6s5.2 1.6 6 4.6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.6c2.4.2 4.2 1.6 5 4.4"/></svg></span>
+            <h3>All kinds of people</h3>
+            <p>School and university students, communities, teaching teams and business owners. I work in five languages and adapt to each client's style.</p>
+          </div>
+        </div>
+
+        <p class="tline-h">Journey</p>
+        <ol class="tline">
+          <li><span class="when">Israel</span><div><b>Hebrew as my mother tongue</b><span>Where it all began.</span></div></li>
+          <li><span class="when">2021–2023</span><div><b>Escola Israelita de Curitiba</b><span>Hebrew teacher and shaliach in the Jewish community. In the classroom, I learned to teach Brazilians from very different backgrounds.</span></div></li>
+          <li><span class="when">Tel Aviv</span><div><b>Academic Manager at New School</b><span>Designing language courses, materials and learning experiences, leading the academic side.</span></div></li>
+          <li><span class="when">Buenos Aires</span><div><b>Universidad Isaac Abarbanel</b><span>Hebrew teacher in Argentina, with Spanish-speaking students.</span></div></li>
+          <li><span class="when">Platform</span><div><b>Hebraico Fluente</b><span>My online school, built from scratch: accounts, progress, interactive exercises and Pix and card payments.</span></div></li>
+          <li><span class="when">Today</span><div><b>Gueta Studio</b><span>Custom websites and platforms for weddings and local businesses: Pitangueira, a pizzeria, a Peruvian café and a joinery, each with its own look.</span></div></li>
+        </ol>
+
+        <ul class="creds" aria-label="Formação e idiomas">
+          <li>CELTA (Cambridge)</li><li>Letras · English (UNINTER)</li><li>Português</li><li>Español</li><li>English</li><li>Italiano</li><li><span class="he" lang="he">עברית</span></li>
+        </ul>
+        <p class="sig">Moshik Gueta<small>Founder · Gueta Studio</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" hidden>
+    <div class="wrap">
+      <div class="sec-head"><div><span class="kick">People I've worked with</span><h2>What clients <i class="t">say</i>.</h2></div></div>
+      <div class="deps" id="deps"></div>
+    </div>
+  </section>
+
+  <section id="faq" class="feat">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:28px">
+        <div><span class="kick">Questions</span><h2>Before we <i class="t">start</i>.</h2></div>
+      </div>
+      <div class="faq">
+        <details><summary>Do I need to understand technology?</summary><p>No. You send me the content, the photos and what makes your business special. I take care of everything else, including putting the site live.</p></details>
+        <details><summary>What if I change prices or the menu?</summary><p>With maintenance, I update it for you (up to four requests a month). Without maintenance, we agree on each update separately.</p></details>
+        <details><summary>How long does a site take?</summary><p>On average 10 to 15 working days, counted from when I receive your material. The first preview arrives within seven days. Platforms have their own schedule.</p></details>
+        <details><summary>How much does a website cost?</summary><p>It depends on each project: what your business needs, the pages and the features. First I prepare a no-obligation preview and, with it, a tailored quote.</p></details>
+        <details><summary>How does payment work?</summary><p>50% when the project is approved and 50% on delivery, by Pix or bank transfer.</p></details>
+        <details><summary>Am I tied to you?</summary><p>No. The domain and files are in your business's name. Maintenance is optional and can be cancelled with 30 days' notice.</p></details>
+        <details><summary>Do you work outside Curitiba?</summary><p>Yes. Our first call can be by video, in Portuguese, Spanish, English, Italian or Hebrew, and the site works the same in any city or country.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="final night">
+    <div class="wrap final-grid">
+      <div class="final-txt">
+        <span class="kick">Let's talk</span>
+        <h2>Your business deserves a site <i class="t">that lives up to it</i>.</h2>
+        <p>Tell me in a few words what you need. I reply within a day and, if it makes sense, I prepare a preview with your brand, no obligation.</p>
+        <ul class="promise">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Preview before you commit</b>you see the site on your phone before deciding</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Tailored quote</b>based on what your project needs, no rigid packages</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Payment in two parts</b>50% on approval and 50% on delivery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Everything in your name</b>domain and files are yours, no mandatory monthly fee</span></li>
+        </ul>
+        <div class="cta"><a class="btn btn-line" data-ig href="#" target="_blank" rel="noopener">Instagram @guetastudio</a></div>
+      </div>
+      <form class="brief" id="orcamento" novalidate>
+        <h3>Get a free preview</h3>
+        <label>Your name<input name="nome" autocomplete="name" required placeholder="What should I call you?"></label>
+        <fieldset><legend>The site is for</legend>
+          <div class="opts">
+            <label><input type="radio" name="tipo" value="a wedding" checked><span>Wedding</span></label>
+            <label><input type="radio" name="tipo" value="a restaurant or café"><span>Restaurant or café</span></label>
+            <label><input type="radio" name="tipo" value="a brand or business"><span>Brand or business</span></label>
+            <label><input type="radio" name="tipo" value="a school or course"><span>School or course</span></label>
+          </div>
+        </fieldset>
+        <label>What do you have in mind?<textarea name="ideia" rows="3" placeholder="E.g. our wedding site in English and Portuguese, for September"></textarea></label>
+        <label><span>Instagram or current site <small>(optional)</small></span><input name="link" placeholder="@yourbusiness"></label>
+        <p class="err" id="briefErr" role="alert"></p>
+        <button class="btn btn-terra" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Send on WhatsApp</button>
+        <p class="fine2">Opens WhatsApp with the message ready. Nothing is stored on this site.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<a class="wa-fix" data-contact href="#contato" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg><span>Talk to me</span></a>
+
+<footer>
+  <div class="wrap"><span class="foot-brand"><img src="../marca/gueta-icone.svg" alt="" width="28" height="26">© <span data-year></span> Gueta Studio · Custom websites and platforms</span><span><a href="#trabalhos">Work</a> · <a href="#contato">Contact</a></span></div>
+</footer>
+
+<script>
+/* ========= EDITE AQUI ========= */
+const STUDIO = {
+  whatsapp: "5541999919434",   // só dígitos, com DDI e DDD
+  instagram: "guetastudio"     // @ do Instagram, sem o @ (vazio = botão escondido)
+};
+/* ============================== */
+const $$ = s => [...document.querySelectorAll(s)];
+$$("[data-year]").forEach(e => e.textContent = new Date().getFullYear());
+$$("[data-contact]").forEach(a => {
+  if (!STUDIO.whatsapp) return;
+  const plan = a.dataset.plan ? ` Tenho interesse no pacote ${a.dataset.plan}.` : "";
+  a.href = "https://wa.me/" + STUDIO.whatsapp + "?text=" + encodeURIComponent("Hi Moshik! I saw the Gueta Studio website and I'd like a site for my business." + plan);
+  a.target = "_blank"; a.rel = "noopener";
+});
+$$("[data-ig]").forEach(a => { if (STUDIO.instagram) a.href = "https://instagram.com/" + STUDIO.instagram; else a.hidden = true; });
+/* vídeos tocam só quando aparecem na tela (e nunca com "reduzir movimento") */
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const vids = $$("[data-v]");
+if (reduceMotion) vids.forEach(v => { v.controls = true; });
+else if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    const v = e.target;
+    if (e.isIntersecting) { if (v.preload === "none") { v.preload = "auto"; v.load(); } v.play().catch(()=>{}); }
+    else v.pause();
+  }), {threshold: .35});
+  vids.forEach(v => io.observe(v));
+}
+/* vídeo do hero: as abas acompanham o trecho que está passando e pulam para ele */
+(() => {
+  const v = document.getElementById("hv"); if (!v) return;
+  const tabs = [...document.querySelectorAll("#hvTabs button")], url = document.getElementById("hvUrl");
+  const starts = tabs.map(b => +b.dataset.t), end = () => v.duration || 51.13;
+  let cur = -1;
+  function sync(){
+    const t = v.currentTime; let k = 0; starts.forEach((s, i) => { if (t >= s) k = i; });
+    if (k !== cur) { cur = k; tabs.forEach((b, i) => b.setAttribute("aria-current", i === k)); url.textContent = tabs[k].dataset.u; }
+    const next = starts[k + 1] ?? end();
+    tabs.forEach((b, i) => b.firstElementChild.style.transform = `scaleX(${i < k ? 1 : i === k ? Math.min(1, (t - starts[k]) / (next - starts[k])) : 0})`);
+    if (!v.paused) requestAnimationFrame(sync);
+  }
+  v.addEventListener("play", () => requestAnimationFrame(sync));
+  v.addEventListener("seeked", sync);
+  tabs.forEach(b => b.addEventListener("click", () => { v.currentTime = +b.dataset.t + .05; v.play().catch(()=>{}); sync(); }));
+  if (reduceMotion) { v.controls = true; return; }
+  if ("IntersectionObserver" in window) new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? v.play().catch(()=>{}) : v.pause()), {threshold:.25}).observe(v);
+  else v.play().catch(()=>{});
+})();
+
+/* depoimentos: escreva aqui as frases reais dos clientes (a seção só aparece quando houver alguma) */
+const DEPOIMENTOS = [
+  // { texto: "Frase do cliente.", nome: "Pétala e Isa", negocio: "Pitangueira · casamentos criativos" },
+];
+if (DEPOIMENTOS.length) {
+  const box = document.getElementById("deps");
+  DEPOIMENTOS.forEach(d => {
+    const f = document.createElement("figure"); f.className = "dep";
+    const q = document.createElement("blockquote"); q.textContent = d.texto;
+    const c = document.createElement("figcaption"); const b = document.createElement("b"); b.textContent = d.nome;
+    c.append(b, document.createTextNode(d.negocio || "")); f.append(q, c); box.append(f);
+  });
+  document.getElementById("depoimentos").hidden = false;
+}
+/* botão fixo de WhatsApp: aparece depois do topo e some no contato final */
+(() => {
+  const w = document.querySelector(".wa-fix"), end = document.getElementById("contato"); if (!w) return;
+  let nearEnd = false;
+  if ("IntersectionObserver" in window && end) new IntersectionObserver(es => { nearEnd = es[0].isIntersecting; tick(); }, {threshold: 0, rootMargin: "0px 0px -30% 0px"}).observe(end);
+  const tick = () => w.classList.toggle("on", scrollY > innerHeight * .9 && !nearEnd);
+  addEventListener("scroll", tick, {passive: true}); tick();
+})();
+
+/* formulário do contato: monta a mensagem e abre o WhatsApp */
+(() => {
+  const f = document.getElementById("orcamento"); if (!f) return;
+  f.addEventListener("submit", e => {
+    e.preventDefault();
+    const err = document.getElementById("briefErr"); err.textContent = "";
+    const nome = f.nome.value.trim();
+    if (nome.length < 2) { err.textContent = "Please write your name."; f.nome.focus(); return; }
+    const linhas = [
+      `Hi Moshik! I'm ${nome} and I'd like a website preview for ${f.tipo.value}.`,
+      f.ideia.value.trim() && `What I have in mind: ${f.ideia.value.trim()}`,
+      f.link.value.trim() && `Instagram or site: ${f.link.value.trim()}`,
+    ].filter(Boolean);
+    window.open("https://wa.me/" + STUDIO.whatsapp + "?text=" + encodeURIComponent(linhas.join("\n")), "_blank", "noopener");
+  });
+})();
+const hd = document.querySelector("header");
+addEventListener("scroll", () => hd.classList.toggle("scrolled", scrollY > 20), {passive:true});
+</script>
+</body>
+</html>

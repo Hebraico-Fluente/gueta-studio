@@ -17,6 +17,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://moshikgueta.github.io/gueta-studio/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Gueta Studio","description":"Sites e plataformas sob medida para casamentos, cafés, restaurantes e negócios locais. Sites bilíngues.","url":"https://moshikgueta.github.io/gueta-studio/","logo":"https://moshikgueta.github.io/gueta-studio/marca/gueta-avatar.png","image":"https://moshikgueta.github.io/gueta-studio/shots/og.jpg","founder":{"@type":"Person","name":"Moshik Gueta","sameAs":["https://www.linkedin.com/in/moshikgueta/","https://www.instagram.com/guetastudio/"]},"areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},"telephone":"+55 41 99991-9434","knowsLanguage":["pt","es","en","it","he"]}</script>
+<link rel="alternate" hreflang="pt-BR" href="https://moshikgueta.github.io/gueta-studio/">
+<link rel="alternate" hreflang="en" href="https://moshikgueta.github.io/gueta-studio/en/">
+<link rel="alternate" hreflang="es" href="https://moshikgueta.github.io/gueta-studio/es/">
+<link rel="alternate" hreflang="x-default" href="https://moshikgueta.github.io/gueta-studio/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="marca/gueta-avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -453,6 +457,13 @@ p{text-wrap:pretty}
 .fine2{margin:-4px 0 0;font-size:12.5px;color:var(--muted);text-align:center}
 @media (max-width:900px){.final-grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:380px){.opts{grid-template-columns:minmax(0,1fr)}}
+.langsw{display:flex;gap:2px;padding:3px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line-2);margin-left:auto}
+.langsw a{display:grid;place-items:center;min-width:38px;height:34px;padding:0 8px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted);text-decoration:none;transition:background .15s ease,color .15s ease}
+.langsw a[aria-current=true]{background:var(--ink);color:#fff}
+@media (hover:hover){.langsw a:not([aria-current=true]):hover{color:var(--ink)}}
+@media (max-width:900px){.langsw{margin-left:auto}}
+@media (max-width:420px){.langsw a{min-width:32px;padding:0 5px}}
+@media (max-width:600px){header .nav > .btn-ink{display:none}}
 </style>
 </head>
 <body>
@@ -468,6 +479,7 @@ p{text-wrap:pretty}
             <a href="#processo">Processo</a>
       <a href="#sobre">Sobre</a>
     </nav>
+    <div class="langsw" aria-label="Idioma"><a href="./" hreflang="pt" aria-current="true">PT</a><a href="en/" hreflang="en">EN</a><a href="es/" hreflang="es">ES</a></div>
     <a class="btn btn-ink" href="#orcamento">Começar um projeto</a>
   </div>
 </header>
@@ -849,7 +861,7 @@ p{text-wrap:pretty}
           <div class="pillar">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
             <h3>Desenvolvimento</h3>
-            <p>Plataformas completas, com login, pagamento e conteúdo interativo, e sites sob medida para pizzaria, café e marcenaria. Do desenho ao site no ar, tudo feito por mim.</p>
+            <p>Plataformas completas, com login, pagamento e conteúdo interativo, e sites sob medida para casamentos, pizzaria, café e marcenaria. Do desenho ao site no ar, tudo feito por mim.</p>
           </div>
           <div class="pillar">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 5l9 4.5-9 4.5z"/><path d="M7 11.5V16c1.5 1.3 3.2 2 5 2s3.5-.7 5-2v-4.5"/></svg></span>
@@ -870,7 +882,7 @@ p{text-wrap:pretty}
           <li><span class="when">Tel Aviv</span><div><b>Gerente Pedagógico na New School</b><span>Estruturação de cursos, materiais e experiências de aprendizagem de idiomas, liderando o lado pedagógico.</span></div></li>
           <li><span class="when">Buenos Aires</span><div><b>Universidad Isaac Abarbanel</b><span>Professor de hebraico na Argentina, com alunos que falam espanhol.</span></div></li>
           <li><span class="when">Plataforma</span><div><b>Hebraico Fluente</b><span>A minha escola online, construída do zero: contas, progresso, exercícios interativos e pagamento por PIX e cartão.</span></div></li>
-          <li><span class="when">Hoje</span><div><b>Gueta Studio</b><span>Sites e plataformas sob medida para negócios locais: uma pizzaria, um café peruano e uma marcenaria, cada um com a sua cara.</span></div></li>
+          <li><span class="when">Hoje</span><div><b>Gueta Studio</b><span>Sites e plataformas sob medida para casamentos e negócios locais: a Pitangueira, uma pizzaria, um café peruano e uma marcenaria, cada um com a sua cara.</span></div></li>
         </ol>
 
         <ul class="creds" aria-label="Formação e idiomas">
