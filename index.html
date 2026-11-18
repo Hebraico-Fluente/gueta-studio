@@ -400,6 +400,59 @@ footer a{text-decoration:none;color:var(--on-night)}
 .wa-fix.on{transform:none}
 @media (min-width:901px){.wa-fix span{display:none}.wa-fix{padding:0;width:56px;justify-content:center}}
 @media (prefers-reduced-motion:reduce){.wa-fix{transition:none}}
+
+/* acabamento */
+p{text-wrap:pretty}
+.browser img,.phone img,.pi img{outline:1px solid rgba(16,29,49,.08);outline-offset:-1px}
+/* garantias no topo */
+.assure{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 0;padding:0;list-style:none;font-size:14.5px;color:var(--ink-soft)}
+.assure li{display:inline-flex;align-items:center;gap:8px}
+.assure svg{width:18px;height:18px;flex:none;color:#3E8E5E}
+/* caminhos */
+.paths{padding:clamp(40px,5vw,64px) 0 0}
+.paths-k{margin:0 0 18px;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pcard{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:center;padding:14px 20px 14px 14px;border-radius:22px;background:var(--paper);text-decoration:none;color:var(--ink);box-shadow:0 0 0 1px var(--line),0 12px 30px -24px rgba(16,29,49,.4);transition:box-shadow .2s ease,transform .2s ease}
+.pi{width:64px;height:78px;border-radius:12px;overflow:hidden;background:var(--stone)}
+.pi img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pt b{display:block;font:400 24px/1.1 var(--serif)}
+.pt small{display:block;margin-top:4px;color:var(--muted);font-size:13.5px;line-height:1.4}
+.pa{font-size:22px;color:var(--terra);transition:transform .2s ease}
+@media (hover:hover){.pcard:hover{box-shadow:0 0 0 1px var(--terra),0 18px 40px -24px rgba(16,29,49,.45)}.pcard:hover .pa{transform:translateX(4px)}}
+.pcard:active{transform:scale(.985)}
+@media (max-width:900px){.pgrid{grid-template-columns:minmax(0,1fr)}}
+/* contato com formulário */
+.final{text-align:left}
+.final-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:clamp(40px,6vw,90px);align-items:start}
+.final-grid>*{min-width:0}
+.final .final-txt h2{margin:20px 0 22px;max-width:12ch}
+.final .final-txt p{margin:0 0 28px}
+.final .cta{justify-content:flex-start}
+.promise{margin:0 0 30px;padding:0;list-style:none;display:grid;gap:16px}
+.promise li{display:flex;gap:12px;align-items:flex-start;color:var(--on-night-muted);font-size:15px;line-height:1.45}
+.promise b{display:block;color:var(--on-night);font-weight:600}
+.promise svg{width:20px;height:20px;flex:none;margin-top:2px;color:#7FD3A2}
+.brief{display:grid;gap:16px;padding:clamp(24px,3vw,34px);border-radius:28px;background:var(--paper);color:var(--ink);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.brief h3{font-size:32px;line-height:1.05;margin:0 0 4px}
+.brief label{display:grid;gap:7px;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.brief small{font-weight:400;color:var(--muted)}
+.brief input:not([type=radio]),.brief textarea{width:100%;box-sizing:border-box;min-height:50px;padding:12px 14px;border-radius:14px;border:0;background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);font:400 16px/1.4 var(--sans);color:var(--ink);transition:box-shadow .15s ease}
+.brief textarea{resize:vertical;min-height:92px}
+.brief input:focus,.brief textarea:focus{outline:none;box-shadow:inset 0 0 0 2px var(--terra)}
+.brief fieldset{border:0;margin:0;padding:0}
+.brief legend{padding:0;margin-bottom:8px;font-size:14px;font-weight:500;color:var(--ink-soft)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opts label{display:block;position:relative}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:6px 10px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);text-align:center;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer;transition:box-shadow .15s ease,background .15s ease,color .15s ease}
+.opts input:checked+span{background:var(--ink);color:#fff;box-shadow:none}
+.opts input:focus-visible+span{outline:2px solid var(--terra);outline-offset:2px}
+.brief .btn{width:100%;margin-top:4px}
+.brief .btn svg{width:20px;height:20px}
+.brief .err{margin:0;min-height:1.2em;color:#A33A2A;font-size:14px}
+.fine2{margin:-4px 0 0;font-size:12.5px;color:var(--muted);text-align:center}
+@media (max-width:900px){.final-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:380px){.opts{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -415,7 +468,7 @@ footer a{text-decoration:none;color:var(--on-night)}
             <a href="#processo">Processo</a>
       <a href="#sobre">Sobre</a>
     </nav>
-    <a class="btn btn-ink" data-contact href="#contato">Começar um projeto</a>
+    <a class="btn btn-ink" href="#orcamento">Começar um projeto</a>
   </div>
 </header>
 
@@ -427,10 +480,15 @@ footer a{text-decoration:none;color:var(--on-night)}
         <h1>Sites com a <i class="t">alma</i> do seu negócio.</h1>
         <p class="lead">Sou <b>Moshik Gueta</b>. Desenho e construo sites únicos para <b>casamentos, cafés, restaurantes e negócios locais</b>, com a identidade de cada cliente: presença e presentes online, pedidos pelo WhatsApp, <b>painéis de administração</b> e cursos. Sou poliglota, então o site pode ser <b>bilíngue</b>. Nada de modelo pronto.</p>
         <div class="cta">
-          <a class="btn btn-terra" data-contact href="#contato">Quero um site assim
+          <a class="btn btn-terra" href="#orcamento">Pedir uma prévia grátis
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn-line" href="#trabalhos">Ver trabalhos</a>
         </div>
+        <ul class="assure" aria-label="Garantias">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Você vê o site antes de fechar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Resposta em até 1 dia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>O site e o domínio são seus</li>
+        </ul>
         <div class="proof">
           <div><b>5</b><span>projetos no ar</span></div>
           <div><b>PT · EN · ES</b><span>sites bilíngues, com texto revisado</span></div>
@@ -456,6 +514,17 @@ footer a{text-decoration:none;color:var(--on-night)}
   <div class="strip" aria-label="Projetos no ar">
     <div class="wrap"><span class="dot" aria-hidden="true"></span><span>No ar</span><b>Pitangueira <i>Casamentos</i></b><b>El Tumi <i>Café</i></b><b>Balcão <i>Pizza Napoletana</i></b><b>Hebraico <i>Fluente</i></b><b>Draft <i>Interiores</i></b></div>
   </div>
+
+  <section class="paths" aria-label="Escolha o seu caminho">
+    <div class="wrap">
+      <p class="paths-k">O que você precisa?</p>
+      <div class="pgrid">
+        <a class="pcard" href="#casamentos"><span class="pi"><img src="shots/wed-hero.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Site de casamento</b><small>Presença, presentes direto na conta e várias línguas</small></span><span class="pa" aria-hidden="true">→</span></a>
+        <a class="pcard" href="#restaurantes"><span class="pi"><img src="shots/tumi-phone.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Restaurante ou café</b><small>Cardápio que vende, pedidos no WhatsApp e eventos</small></span><span class="pa" aria-hidden="true">→</span></a>
+        <a class="pcard" href="#trabalhos"><span class="pi"><img src="shots/draft-phone.jpg" alt="" width="780" height="1328" loading="lazy"></span><span class="pt"><b>Marca ou negócio local</b><small>Portfólio, orçamento online, painéis e cursos</small></span><span class="pa" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
 
   <section id="casamentos" class="wed">
     <div class="wrap wed-grid">
@@ -738,8 +807,8 @@ footer a{text-decoration:none;color:var(--on-night)}
         <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/></svg><h3>Feito sob medida</h3><p>Cores, fotos, textos e detalhes que vêm do seu negócio. Nenhum projeto meu parece com outro.</p></div>
         <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M12 10.5c-1-1.5-3.5-1-3.5 1 0 1.8 3.5 3.5 3.5 3.5s3.5-1.7 3.5-3.5c0-2-2.5-2.5-3.5-1z"/></svg><h3>Interativo de verdade</h3><p>Cardápio em modo feed, exercícios, curtidas: o visitante participa em vez de só rolar a página.</p></div>
         <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.2A8 8 0 1 1 20 12z"/></svg><h3>Vende direto</h3><p>Pedido pronto no WhatsApp ou pagamento online, sem comissão de aplicativo no meio.</p></div>
-        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><h3>Três idiomas</h3><p>Português, espanhol e inglês, escolhidos sozinhos pelo idioma do celular do visitante.</p></div>
-        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><h3>Rápido no celular</h3><p>Leve, sem aplicativo para baixar e testado em iPhone e Android, das telas pequenas às grandes.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><h3>Bilíngue de verdade</h3><p>Sou poliglota, coordenador pedagógico e professor universitário de línguas. O texto em inglês e espanhol é escrito por mim, não por um tradutor automático.</p></div>
+        <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><h3>Você vê antes de fechar</h3><p>Primeiro eu monto uma prévia com a sua marca. Você só decide depois de ver o site no seu celular.</p></div>
         <div class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><h3>O site é seu</h3><p>Domínio e arquivos no nome do seu negócio. Sem mensalidade obrigatória e sem prender você.</p></div>
       </div>
     </div>
@@ -837,16 +906,36 @@ footer a{text-decoration:none;color:var(--on-night)}
   </section>
 
   <section id="contato" class="final night">
-    <div class="wrap">
-      <span class="kick">Vamos conversar</span>
-      <h2>O seu negócio merece um site <i class="t">à altura</i>.</h2>
-      <p>Me conte sobre o seu negócio. Em até um dia eu respondo e, se fizer sentido, preparo uma prévia sem compromisso.</p>
-      <div class="cta">
-        <a class="btn btn-terra" data-contact href="#contato">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
-          Falar no WhatsApp</a>
-        <a class="btn btn-line" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+    <div class="wrap final-grid">
+      <div class="final-txt">
+        <span class="kick">Vamos conversar</span>
+        <h2>O seu negócio merece um site <i class="t">à altura</i>.</h2>
+        <p>Me conte em poucas palavras o que você precisa. Eu respondo em até um dia e, se fizer sentido, preparo uma prévia com a sua marca, sem compromisso.</p>
+        <ul class="promise">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Prévia antes de fechar</b>você vê o site no celular antes de decidir</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Orçamento sob medida</b>depende do que o seu projeto precisa, sem pacote engessado</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Pagamento em duas partes</b>50% na aprovação e 50% na entrega</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>Tudo no seu nome</b>domínio e arquivos são seus, sem mensalidade obrigatória</span></li>
+        </ul>
+        <div class="cta"><a class="btn btn-line" data-ig href="#" target="_blank" rel="noopener">Instagram</a></div>
       </div>
+      <form class="brief" id="orcamento" novalidate>
+        <h3>Pedir uma prévia grátis</h3>
+        <label>Seu nome<input name="nome" autocomplete="name" required placeholder="Como posso te chamar?"></label>
+        <fieldset><legend>O site é para</legend>
+          <div class="opts">
+            <label><input type="radio" name="tipo" value="um casamento" checked><span>Casamento</span></label>
+            <label><input type="radio" name="tipo" value="um restaurante ou café"><span>Restaurante ou café</span></label>
+            <label><input type="radio" name="tipo" value="uma marca ou negócio"><span>Marca ou negócio</span></label>
+            <label><input type="radio" name="tipo" value="uma escola ou curso"><span>Escola ou curso</span></label>
+          </div>
+        </fieldset>
+        <label>O que você imagina?<textarea name="ideia" rows="3" placeholder="Ex.: site do nosso casamento em português e inglês, para setembro"></textarea></label>
+        <label><span>Instagram ou site atual <small>(opcional)</small></span><input name="link" placeholder="@seunegocio"></label>
+        <p class="err" id="briefErr" role="alert"></p>
+        <button class="btn btn-terra" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Enviar pelo WhatsApp</button>
+        <p class="fine2">Abre o WhatsApp com a mensagem pronta. Nada é salvo neste site.</p>
+      </form>
     </div>
   </section>
 </main>
@@ -927,6 +1016,23 @@ if (DEPOIMENTOS.length) {
   if ("IntersectionObserver" in window && end) new IntersectionObserver(es => { nearEnd = es[0].isIntersecting; tick(); }, {threshold: 0, rootMargin: "0px 0px -30% 0px"}).observe(end);
   const tick = () => w.classList.toggle("on", scrollY > innerHeight * .9 && !nearEnd);
   addEventListener("scroll", tick, {passive: true}); tick();
+})();
+
+/* formulário do contato: monta a mensagem e abre o WhatsApp */
+(() => {
+  const f = document.getElementById("orcamento"); if (!f) return;
+  f.addEventListener("submit", e => {
+    e.preventDefault();
+    const err = document.getElementById("briefErr"); err.textContent = "";
+    const nome = f.nome.value.trim();
+    if (nome.length < 2) { err.textContent = "Escreva o seu nome, por favor."; f.nome.focus(); return; }
+    const linhas = [
+      `Olá, Moshik! Sou ${nome} e quero uma prévia de site para ${f.tipo.value}.`,
+      f.ideia.value.trim() && `O que eu imagino: ${f.ideia.value.trim()}`,
+      f.link.value.trim() && `Instagram ou site: ${f.link.value.trim()}`,
+    ].filter(Boolean);
+    window.open("https://wa.me/" + STUDIO.whatsapp + "?text=" + encodeURIComponent(linhas.join("\n")), "_blank", "noopener");
+  });
 })();
 const hd = document.querySelector("header");
 addEventListener("scroll", () => hd.classList.toggle("scrolled", scrollY > 20), {passive:true});
