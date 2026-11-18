@@ -1,0 +1,10 @@
+// Gueta Studio na Cloudflare (Workers com arquivos estáticos).
+// Cada push no GitHub publica o site automaticamente.
+{
+  "name": "gueta-studio",
+  "compatibility_date": "2025-11-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
