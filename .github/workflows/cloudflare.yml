@@ -1,0 +1,43 @@
+name: Publicar na Cloudflare
+
+# Publica o site no Worker "gueta-studio" (guetastudio.com.br) a cada mudança.
+# Precisa do segredo CLOUDFLARE_API_TOKEN neste repositório
+# (Settings → Secrets and variables → Actions), o mesmo token usado na Balcão.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Conferir o token
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Falta o segredo CLOUDFLARE_API_TOKEN neste repositório (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+
+      - name: Publicar o site
+        run: npx -y wrangler@4 deploy
+
+      - name: Conferir no ar
+        run: |
+          sleep 10
+          for u in https://guetastudio.com.br/ https://guetastudio.com.br/en/ https://guetastudio.com.br/es/ https://guetastudio.com.br/casamento/; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$u")
+            echo "$u -> $code"
+            [ "$code" = "200" ] || { echo "::warning::$u respondeu $code"; }
+          done
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://guetastudio.com.br/.git/config)
+          [ "$code" != "200" ] || { echo "::error::Arquivo interno exposto."; exit 1; }
+          echo "## Publicado: https://guetastudio.com.br" >> "$GITHUB_STEP_SUMMARY"
