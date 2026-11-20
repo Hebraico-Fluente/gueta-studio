@@ -17,10 +17,12 @@
       vids.forEach(v => io.observe(v));
     }
     /* cada vídeo ganha um botão de pausar (os loops passam de 5 segundos) */
+    const lang = (document.documentElement.lang || "pt").slice(0, 2);
+    const VLBL = {pt: ["Pausar vídeo", "Tocar vídeo"], en: ["Pause video", "Play video"], es: ["Pausar video", "Reproducir video"]}[lang] || ["Pausar vídeo", "Tocar vídeo"];
     const ICON = {pause: '<svg viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg>', play: '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9.5-5.5z" fill="currentColor"/></svg>'};
     vids.forEach(v => {
       const b = document.createElement("button"); b.type = "button"; b.className = "vbtn";
-      const paint = () => { const on = !v.paused; b.innerHTML = on ? ICON.pause : ICON.play; b.setAttribute("aria-label", on ? "Pausar vídeo" : "Tocar vídeo"); };
+      const paint = () => { const on = !v.paused; b.innerHTML = on ? ICON.pause : ICON.play; b.setAttribute("aria-label", on ? VLBL[0] : VLBL[1]); };
       b.addEventListener("click", () => { if (v.paused) { v.dataset.hold = ""; if (v.preload === "none") { v.preload = "auto"; v.load(); } v.play().catch(() => {}); } else { v.dataset.hold = "1"; v.pause(); } });
       v.addEventListener("play", paint); v.addEventListener("pause", paint); paint();
       v.parentElement.append(b);
