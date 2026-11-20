@@ -272,11 +272,69 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
 .badge a{color:var(--amarelo)!important}
 .idv{display:block;margin-top:10px;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--bordo-e)}
 </style>
-<style>.langs [data-lang=it],.langs [data-lang=he]{display:none!important}</style></head>
+<style>.langs [data-lang=it],.langs [data-lang=he]{display:none!important}</style>
+<style>
+/* ===== Novidades do site-modelo ===== */
+/* save the date animado */
+.std{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--bordo);color:#fff;text-align:center;overflow:hidden;transition:opacity .7s var(--ease),visibility 0s .7s}
+.std.out{opacity:0;visibility:hidden}
+.std .in2{position:relative;z-index:1;padding:0 24px}
+.std .k{font:600 13px/1 var(--sans);letter-spacing:.42em;color:var(--amarelo);opacity:0;animation:stdUp .8s .2s var(--ease) forwards}
+.std .nm{font:400 clamp(64px,16vw,128px)/1 var(--script);margin:22px 0 10px;opacity:0;animation:stdUp 1s .7s var(--ease) forwards}
+.std .dt{font:400 clamp(38px,9vw,64px)/1 var(--serif);color:var(--amarelo);opacity:0;animation:stdUp 1s 1.3s var(--ease) forwards}
+.std .ct{margin-top:14px;font:500 14px/1 var(--sans);letter-spacing:.3em;opacity:0;animation:stdUp 1s 1.6s var(--ease) forwards}
+.std .hrt{width:120px;height:120px;margin:46px auto 0;background:var(--laranja);transform:rotate(-45deg) scale(0);animation:stdHeart .9s 2s cubic-bezier(.34,1.56,.64,1) forwards;position:relative}
+.std .hrt::before,.std .hrt::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:var(--laranja)}
+.std .hrt::before{top:-60px;left:0}.std .hrt::after{left:60px;top:0}
+.std .stx{position:absolute;color:var(--laranja);opacity:0;animation:stdStar 1.2s var(--ease) forwards}
+.std .stx path{fill:currentColor}
+.std .skip{position:absolute;right:18px;bottom:max(18px,env(safe-area-inset-bottom));z-index:2;min-height:44px;padding:0 18px;border:1px solid rgba(255,255,255,.5);border-radius:999px;background:none;color:#fff;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+@keyframes stdUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes stdHeart{to{transform:rotate(-45deg) scale(.55)}}
+@keyframes stdStar{from{opacity:0;transform:scale(.3) rotate(-30deg)}to{opacity:1;transform:none}}
+/* convite pessoal */
+.hi{display:none;margin:0 auto 14px;width:max-content;max-width:100%;padding:12px 22px;border-radius:999px;background:#fff;color:var(--bordo);font:400 30px/1 var(--script)}
+.personal .hi{display:block}
+.invite{display:none;max-width:640px;margin:clamp(40px,5vw,56px) auto -24px;padding:26px 28px;border-radius:24px;background:var(--bordo);color:#fff;text-align:center}
+.personal .invite{display:block}
+.invite b{display:block;font:400 34px/1.1 var(--script);color:var(--amarelo)}
+.invite p{margin:8px 0 18px;color:rgba(255,255,255,.9)}
+.invite .seats{display:inline-block;margin-bottom:18px;padding:9px 16px;border-radius:999px;background:var(--pessego);color:var(--bordo-e);font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.invite .btn{background:var(--amarelo)!important;border-color:var(--amarelo)!important;color:var(--bordo-e)!important}
+/* paleta do traje */
+.palette{margin:clamp(40px,5vw,56px) auto 0;max-width:760px;padding:clamp(26px,4vw,40px);border-radius:24px;background:#fff;text-align:center;box-shadow:0 26px 50px -34px rgba(59,22,34,.45)}
+.palette h3{font-size:clamp(28px,3vw,36px)}
+.palette p{color:var(--soft);margin-top:8px}
+.sw{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:22px}
+.sw span{display:grid;justify-items:center;gap:8px;font:500 12px/1.2 var(--sans);color:var(--soft)}
+.sw i{width:clamp(44px,11vw,60px);height:clamp(44px,11vw,60px);border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.sw .no i{background:#fff;position:relative;box-shadow:inset 0 0 0 1.5px var(--sand)}
+.sw .no i::after{content:"";position:absolute;left:50%;top:8px;bottom:8px;width:2px;background:#9E3B2C;transform:rotate(45deg)}
+.playlist{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:22px;padding-top:20px;border-top:1px solid var(--sand);color:var(--soft)}
+.playlist a{color:var(--bordo);font-weight:600}
+/* encontre sua mesa */
+.mesa{max-width:640px;margin:clamp(40px,5vw,56px) auto 0;padding:clamp(26px,4vw,40px);border-radius:24px;background:var(--ivory);box-shadow:0 26px 50px -34px rgba(59,22,34,.45)}
+.mesa form{display:flex;gap:10px}
+.mesa .in{flex:1}
+.mesa .btn{flex:none}
+.res{display:none;margin-top:18px;padding:20px;border-radius:18px;background:var(--bordo);color:#fff;text-align:center}
+.res.on{display:block}
+.res b{display:block;font:400 64px/1 var(--serif);color:var(--amarelo)}
+.res span{font-size:15px}
+.res.miss{background:var(--cream);color:var(--bordo-e)}
+.salao{position:relative;margin-top:18px;aspect-ratio:16/10;border-radius:18px;background:var(--cream)}
+.salao i{position:absolute;width:13%;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2px var(--sand);display:grid;place-items:center;font:600 14px/1 var(--sans);font-style:normal;color:var(--soft);transform:translate(-50%,-50%);transition:background .4s,box-shadow .4s,color .4s}
+.salao i.on{background:var(--laranja);color:#fff;box-shadow:0 0 0 8px rgba(255,124,56,.25)}
+.salao .pista{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 20px;border-radius:12px;background:var(--pessego);color:var(--bordo-e);font:600 12px/1 var(--sans);letter-spacing:.14em}
+.qrn{margin-top:14px;text-align:center;font-size:14px;color:var(--muted)}
+@media (max-width:520px){.mesa form{flex-direction:column}.mesa .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.std{display:none}}
+</style></head>
 <body>
 
 <svg width="0" height="0" style="position:absolute"><symbol id="orn" viewBox="0 0 120 14"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width=".8"/><path d="M60 1c3 3 3 9 0 12-3-3-3-9 0-12zM52 7c3-2.5 6-2.5 8 0-2 2.5-5 2.5-8 0zM68 7c-3-2.5-6-2.5-8 0 2 2.5 5 2.5 8 0z" fill="none" stroke="currentColor" stroke-width=".8"/></symbol></svg>
 
+<div class="std" id="std" aria-hidden="true"><svg class="stx" viewBox="0 0 100 100" style="width:130px;left:6%;top:10%;animation-delay:.3s"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="stx" viewBox="0 0 100 100" style="width:70px;right:10%;top:22%;color:#FFCE59;animation-delay:.9s"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="stx" viewBox="0 0 100 100" style="width:90px;left:12%;bottom:14%;color:#FFC9A8;animation-delay:1.5s"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="stx" viewBox="0 0 100 100" style="width:160px;right:-30px;bottom:6%;animation-delay:1.9s"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><div class="in2"><div class="k" data-t="std_k"></div><div class="nm">Ana &amp; Pedro</div><div class="dt" data-date="dots"></div><div class="ct" data-t="std_city"></div><div class="hrt"></div></div><button class="skip" type="button" id="stdSkip" data-t="std_skip"></button></div>
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="mono" href="#">A&amp;P</a>
@@ -285,6 +343,7 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
       <li><a href="#dia" data-t="nav_day"></a></li>
       <li><a href="#rsvp" data-t="nav_rsvp"></a></li>
       <li><a href="#presentes" data-t="nav_gifts"></a></li>
+      <li><a href="#mesa" data-t="nav_mesa"></a></li>
       <li><a href="#duvidas" data-t="nav_faq"></a></li>
     </ul>
     <div class="langs" role="group" aria-label="Idioma">
@@ -298,6 +357,7 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
   <svg class="star" viewBox="0 0 100 100" style="width:160px;left:4%;top:12%;transform:rotate(12deg)"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:90px;right:8%;top:18%;color:#FFCE59"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:200px;right:-40px;bottom:6%;transform:rotate(-14deg)"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg><svg class="star" viewBox="0 0 100 100" style="width:60px;left:14%;bottom:14%;color:#FFCE59"><path d="M50 0 58 38 100 50 58 62 50 100 42 62 0 50 42 38z"/></svg>
   <div class="bg"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=2200&q=80&auto=format&fit=crop" alt="" fetchpriority="high"></div>
   <div class="inner">
+    <p class="hi" id="hi"></p>
     <div class="photo"><img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=500&q=80&auto=format&fit=crop" alt=""></div>
     <span class="label" data-t="hero_kicker"></span>
     <h1>Ana<span>&amp;</span>Pedro</h1>
@@ -333,7 +393,11 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
       <article class="place rv"><figure><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1100&q=78&auto=format&fit=crop" alt=""></figure>
         <div class="bd"><small data-t="rec"></small><h3>Villa Serena · Salão</h3><span class="t">18h00</span><p data-t="rec_p"></p><a class="btn line" data-map target="_blank" rel="noopener" data-t="map"></a></div></article>
     </div>
-    <p class="dress rv"><span><b data-t="dress_l"></b> <span data-t="dress"></span></span></p>
+    <div class="palette rv">
+      <h3 data-t="pal_t"></h3><p data-t="pal_p"></p>
+      <div class="sw"><span><i style="background:#AD2A49"></i><span data-t="c1"></span></span><span><i style="background:#FF7C38"></i><span data-t="c2"></span></span><span><i style="background:#FFCE59"></i><span data-t="c3"></span></span><span><i style="background:#FFC9A8"></i><span data-t="c4"></span></span><span><i style="background:#7F8E74"></i><span data-t="c5"></span></span><span class="no"><i></i><span data-t="c6"></span></span></div>
+      <p class="playlist"><span aria-hidden="true">🎶</span><span><span data-t="pl_t"></span> <a href="#rsvp" data-t="pl_a"></a></span></p>
+    </div>
   </div>
 </section>
 
@@ -341,6 +405,7 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
   <div class="bg"><img loading="lazy" src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=2000&q=70&auto=format&fit=crop" alt=""></div>
   <div class="wrap">
     <div class="center rv"><span class="label" data-t="rsvp_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="rsvp_title" data-html></h2><p class="lead" data-t="rsvp_sub"></p></div>
+    <div class="invite" id="invite"><b id="invHi"></b><p data-t="inv_p"></p><span class="seats" id="invSeats"></span><br><button class="btn" type="button" id="invGo"></button></div>
     <form class="form rv" id="rsvpForm" novalidate>
       <label><span data-t="f_name"></span><input class="in" name="nome" autocomplete="name"></label>
       <div class="going" role="radiogroup">
@@ -352,6 +417,7 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
         <label><span data-t="f_kids"></span><select class="in" name="criancas"><option>0</option><option>1</option><option>2</option><option>3</option></select></label>
       </div>
       <label id="diet"><span data-t="f_diet"></span><input class="in" name="restricao" data-ph="f_diet_ph"></label>
+      <label id="song"><span data-t="f_song"></span><input class="in" name="musica" data-ph="f_song_ph"></label>
       <label><span data-t="f_msg"></span><textarea class="in" name="msg" rows="3"></textarea></label>
       <p class="priv" data-t="privacy"></p>
       <p class="err" id="err" role="alert"></p>
@@ -378,6 +444,18 @@ h1 em,h2 em{font-family:var(--script)!important;font-style:normal!important;colo
       <figure class="t2 rv"><img loading="lazy" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=700&q=78&auto=format&fit=crop" alt=""></figure>
       <figure class="rv"><img loading="lazy" src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?w=700&q=78&auto=format&fit=crop" alt=""></figure>
       <figure class="rv"><img loading="lazy" src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=700&q=78&auto=format&fit=crop" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec cream" id="mesa">
+  <div class="wrap">
+    <div class="center rv"><span class="label" data-t="mesa_label"></span><svg class="orn"><use href="#orn"/></svg><h2 data-t="mesa_title" data-html></h2><p class="lead" data-t="mesa_sub"></p></div>
+    <div class="mesa rv">
+      <form id="mesaForm"><input class="in" name="q" autocomplete="name" data-ph="mesa_ph" aria-label="Nome"><button class="btn solid" type="submit" data-t="mesa_go"></button></form>
+      <div class="res" id="mesaRes" role="status"></div>
+      <div class="salao" id="salao" aria-hidden="true"><span class="pista" data-t="pista"></span></div>
+      <p class="qrn" data-t="mesa_qr"></p>
     </div>
   </div>
 </section>
@@ -419,6 +497,23 @@ const WEDDING = {
   place: "Villa Serena, Curitiba, PR",
   pix: "ana.pedro@example.com",
   whatsapp: "",            // com número (ex.: "5541999999999") a confirmação abre no WhatsApp dos noivos; vazio = demonstração
+  // convites com link pessoal: site/?c=tio-carlos
+  invites: {
+    "tio-carlos": { name: "Tio Carlos", seats: 2 },
+    "giulia": { name: "Giulia", seats: 1 },
+    "familia-levi": { name: "Família Levi", seats: 4 },
+  },
+  // mapa de mesas (para o QR code na entrada da festa)
+  tables: [
+    { n: 1, x: 18, y: 22, guests: ["Maria Souza", "João Souza"] },
+    { n: 2, x: 39, y: 22, guests: ["Família Levi"] },
+    { n: 3, x: 61, y: 22, guests: ["Roberto Alves", "Ana Paula Lima"] },
+    { n: 4, x: 82, y: 22, guests: ["Lucas Prado", "Marina Prado"] },
+    { n: 5, x: 18, y: 78, guests: ["Tio Carlos", "Tia Lúcia"] },
+    { n: 6, x: 39, y: 78, guests: ["Bruno Costa", "Camila Costa"] },
+    { n: 7, x: 61, y: 78, guests: ["Giulia Rossi", "Marco Rossi"] },
+    { n: 8, x: 82, y: 78, guests: ["Pedro Lima", "Sofia Lima"] },
+  ],
   gifts: [
     { i:"🍝", k:"g1", v:250 }, { i:"⛵", k:"g2", v:400 }, { i:"☕", k:"g3", v:120 },
     { i:"✈️", k:"g4", v:600 }, { i:"🏨", k:"g5", v:500 }, { i:"💛", k:"g6", v:0 },
@@ -426,7 +521,7 @@ const WEDDING = {
 };
 
 const T = {
-pt:{privacy:"🔒 Seus dados são usados só para organizar o casamento, ficam visíveis apenas para os noivos e são apagados depois da festa.",direct:"💛 O valor vai direto para a conta dos noivos, sem comissão de site de casamento. As taxas dependem só do sistema de pagamento que os noivos escolheram.",nav_story:"Nossa história",nav_day:"O grande dia",nav_rsvp:"Presença",nav_gifts:"Presentes",nav_faq:"Dúvidas",
+pt:{std_k:"SAVE THE DATE",std_city:"CURITIBA · BRASIL",std_skip:"Entrar no site",hi:"Oi, {name}!",inv_p:"Este convite é especial: fizemos questão de chamar você pelo nome.",inv_seats:"Convite para {n} pessoa{s}",inv_go:"Vamos! Confirmar {n}",inv_go1:"Vamos! Confirmar presença",pal_t:"Paleta de cores do traje",pal_p:"Se quiser combinar com a festa, estas são as cores do casamento. Só evite o branco 😉",c1:"Bordô",c2:"Laranja",c3:"Amarelo",c4:"Pêssego",c5:"Verde-oliva",c6:"Branco, não",pl_t:"Qual música não pode faltar na pista?",pl_a:"Sugerir na confirmação",f_song:"A música que não pode faltar (opcional)",f_song_ph:"Ex.: Evidências, Chitãozinho & Xororó",nav_mesa:"Sua mesa",mesa_label:"No dia da festa",mesa_title:"Encontre a sua <em>mesa</em>",mesa_sub:"Digite o seu nome e veja onde você vai sentar.",mesa_ph:"Seu nome",mesa_go:"Buscar",mesa_hit:"Sua mesa é a",mesa_near:"perto da pista de dança",mesa_far:"perto das janelas do jardim",mesa_miss:"Não encontramos esse nome. Confira como está no convite ou procure a recepção 💛",pista:"PISTA",mesa_qr:"Na festa, é só apontar a câmera para o QR code na entrada.",privacy:"🔒 Seus dados são usados só para organizar o casamento, ficam visíveis apenas para os noivos e são apagados depois da festa.",direct:"💛 O valor vai direto para a conta dos noivos, sem comissão de site de casamento. As taxas dependem só do sistema de pagamento que os noivos escolheram.",nav_story:"Nossa história",nav_day:"O grande dia",nav_rsvp:"Presença",nav_gifts:"Presentes",nav_faq:"Dúvidas",
 hero_kicker:"Vamos nos casar",city:"Curitiba · Brasil",cd_d:"dias",cd_h:"horas",cd_m:"min",cd_s:"seg",rsvp_cta:"Confirmar presença",save_date:"Salvar na agenda",
 story_label:"Nossa história",story_title:"Como tudo <em>começou</em>",
 s1_t:"O primeiro café",s1_p:"Um encontro por acaso numa cafeteria virou uma conversa de três horas, e a certeza de que aquilo era só o começo.",
@@ -446,7 +541,7 @@ q3:"Tem estacionamento?",a3:"Sim, com manobristas no local.",
 q4:"Qual é o traje?",a4:"Esporte fino. A cerimônia é no jardim: para as mulheres, recomendamos salto bloco.",
 q5:"Onde ficar hospedado?",a5:"Para quem vem de fora, o bairro Batel fica a 15 minutos e tem ótimas opções de hotel.",
 end_t:"Esperamos por você",made:"Site-modelo feito com carinho por",badge:"Site-modelo em 3 idiomas"},
-es:{privacy:"🔒 Tus datos se usan solo para organizar la boda, solo los novios pueden verlos y se borran después de la fiesta.",direct:"💛 El dinero va directo a la cuenta de los novios, sin comisión de sitio de bodas. Las tarifas dependen solo del sistema de pago que eligieron los novios.",nav_story:"Nuestra historia",nav_day:"El gran día",nav_rsvp:"Asistencia",nav_gifts:"Regalos",nav_faq:"Preguntas",
+es:{std_k:"SAVE THE DATE",std_city:"CURITIBA · BRASIL",std_skip:"Entrar al sitio",hi:"¡Hola, {name}!",inv_p:"Esta invitación es especial: quisimos llamarte por tu nombre.",inv_seats:"Invitación para {n} persona{s}",inv_go:"¡Vamos! Confirmar {n}",inv_go1:"¡Vamos! Confirmar asistencia",pal_t:"Paleta de colores para vestir",pal_p:"Si quieres combinar con la fiesta, estos son los colores de la boda. Solo evita el blanco 😉",c1:"Burdeos",c2:"Naranja",c3:"Amarillo",c4:"Durazno",c5:"Verde oliva",c6:"Blanco, no",pl_t:"¿Qué canción no puede faltar en la pista?",pl_a:"Sugerir en la confirmación",f_song:"La canción que no puede faltar (opcional)",f_song_ph:"Ej.: Vivir mi vida, Marc Anthony",nav_mesa:"Tu mesa",mesa_label:"El día de la fiesta",mesa_title:"Encuentra tu <em>mesa</em>",mesa_sub:"Escribe tu nombre y mira dónde te sentarás.",mesa_ph:"Tu nombre",mesa_go:"Buscar",mesa_hit:"Tu mesa es la",mesa_near:"cerca de la pista de baile",mesa_far:"junto a las ventanas del jardín",mesa_miss:"No encontramos ese nombre. Revisa cómo aparece en la invitación o busca la recepción 💛",pista:"PISTA",mesa_qr:"En la fiesta, solo apunta la cámara al código QR de la entrada.",privacy:"🔒 Tus datos se usan solo para organizar la boda, solo los novios pueden verlos y se borran después de la fiesta.",direct:"💛 El dinero va directo a la cuenta de los novios, sin comisión de sitio de bodas. Las tarifas dependen solo del sistema de pago que eligieron los novios.",nav_story:"Nuestra historia",nav_day:"El gran día",nav_rsvp:"Asistencia",nav_gifts:"Regalos",nav_faq:"Preguntas",
 hero_kicker:"Nos casamos",city:"Curitiba · Brasil",cd_d:"días",cd_h:"horas",cd_m:"min",cd_s:"seg",rsvp_cta:"Confirmar asistencia",save_date:"Guardar en la agenda",
 story_label:"Nuestra historia",story_title:"Cómo <em>empezó</em> todo",
 s1_t:"El primer café",s1_p:"Un encuentro casual en una cafetería se convirtió en una charla de tres horas, y en la certeza de que era solo el comienzo.",
@@ -466,7 +561,7 @@ q3:"¿Hay estacionamiento?",a3:"Sí, con valet en el lugar.",
 q4:"¿Cuál es la vestimenta?",a4:"Semiformal. La ceremonia es en el jardín: recomendamos tacón ancho.",
 q5:"¿Dónde hospedarse?",a5:"Para quienes vienen de fuera, el barrio Batel está a 15 minutos y tiene excelentes hoteles.",
 end_t:"Te esperamos",made:"Sitio de ejemplo hecho con cariño por",badge:"Sitio de ejemplo en 3 idiomas"},
-en:{privacy:"🔒 Your details are used only to organize the wedding, are visible only to the couple and are deleted after the party.",direct:"💛 Your gift goes straight to the couple's account, with no wedding-site commission. Any fees depend only on the payment system the couple chose.",nav_story:"Our story",nav_day:"The big day",nav_rsvp:"RSVP",nav_gifts:"Gifts",nav_faq:"FAQ",
+en:{std_k:"SAVE THE DATE",std_city:"CURITIBA · BRAZIL",std_skip:"Enter the site",hi:"Hi, {name}!",inv_p:"This invitation is special: we wanted to call you by name.",inv_seats:"Invitation for {n} {s}",inv_go:"Yes! Confirm {n}",inv_go1:"Yes! I'll be there",pal_t:"Dress code colors",pal_p:"If you'd like to match the party, these are the wedding colors. Just avoid white 😉",c1:"Burgundy",c2:"Orange",c3:"Yellow",c4:"Peach",c5:"Olive",c6:"No white",pl_t:"Which song has to be on the dance floor?",pl_a:"Suggest it in your RSVP",f_song:"The song that can't be missing (optional)",f_song_ph:"E.g. September, Earth, Wind & Fire",nav_mesa:"Your table",mesa_label:"On the day",mesa_title:"Find your <em>table</em>",mesa_sub:"Type your name to see where you'll be sitting.",mesa_ph:"Your name",mesa_go:"Search",mesa_hit:"Your table is",mesa_near:"near the dance floor",mesa_far:"by the garden windows",mesa_miss:"We couldn't find that name. Check how it appears on your invitation or ask at the reception 💛",pista:"DANCE FLOOR",mesa_qr:"At the party, just point your camera at the QR code by the entrance.",privacy:"🔒 Your details are used only to organize the wedding, are visible only to the couple and are deleted after the party.",direct:"💛 Your gift goes straight to the couple's account, with no wedding-site commission. Any fees depend only on the payment system the couple chose.",nav_story:"Our story",nav_day:"The big day",nav_rsvp:"RSVP",nav_gifts:"Gifts",nav_faq:"FAQ",
 hero_kicker:"We're getting married",city:"Curitiba · Brazil",cd_d:"days",cd_h:"hours",cd_m:"min",cd_s:"sec",rsvp_cta:"RSVP",save_date:"Save the date",
 story_label:"Our story",story_title:"How it all <em>began</em>",
 s1_t:"The first coffee",s1_p:"A chance meeting at a coffee shop turned into a three-hour conversation, and the feeling that it was only the beginning.",
@@ -545,7 +640,7 @@ function apply(){
   $$("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
   renderGifts();
 }
-$$("[data-lang]").forEach(b => b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("wed-lang", lang); apply(); }));
+$$("[data-lang]").forEach(b => b.addEventListener("click", () => { lang = b.dataset.lang; localStorage.setItem("wed-lang", lang); apply(); if (typeof applyExtras === "function") applyExtras(); }));
 
 /* contagem regressiva */
 function tick(){
@@ -564,14 +659,14 @@ $$("[data-map]").forEach(a => a.href = "https://www.google.com/maps/search/?api=
 
 /* presença */
 const form = $("#rsvpForm");
-form.addEventListener("change", () => { const vai = form.vai.value === "sim"; $("#qty").hidden = !vai; $("#diet").hidden = !vai; });
+form.addEventListener("change", () => { const vai = form.vai.value === "sim"; $("#qty").hidden = !vai; $("#diet").hidden = !vai; $("#song").hidden = !vai; });
 form.addEventListener("submit", e => {
   e.preventDefault(); $("#err").textContent = "";
   const nome = form.nome.value.trim(); if (nome.length < 2) { $("#err").textContent = t("err_name"); return form.nome.focus(); }
   const vai = form.vai.value === "sim";
   if (WEDDING.whatsapp) {
     const msg = [`Confirmação de presença · Ana & Pedro`, `Nome: ${nome}`, vai ? `Vai: sim · adultos ${form.adultos.value} · crianças ${form.criancas.value}` : "Vai: não",
-      form.restricao.value && vai ? `Restrição: ${form.restricao.value}` : "", form.msg.value ? `Mensagem: ${form.msg.value}` : ""].filter(Boolean).join("\n");
+      form.restricao.value && vai ? `Restrição: ${form.restricao.value}` : "", form.musica.value && vai ? `Música: ${form.musica.value}` : "", form.msg.value ? `Mensagem: ${form.msg.value}` : ""].filter(Boolean).join("\n");
     window.open(`https://wa.me/${WEDDING.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
   }
   $("#doneT").textContent = t(vai ? "done_yes" : "done_no");
@@ -599,6 +694,49 @@ addEventListener("scroll", onScroll, { passive: true }); onScroll();
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -10% 0px" });
 $$(".rv").forEach((el, i) => { el.style.transitionDelay = (i % 3) * 100 + "ms"; io.observe(el); });
 apply();
+
+/* ===== novidades: save the date, convite pessoal, mesa, música ===== */
+const q = new URLSearchParams(location.search);
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
+const inv = WEDDING.invites[q.get("c") || ""];
+function applyExtras(){
+  $$('[data-date="dots"]').forEach(el => el.textContent = fmt(when, { day:"2-digit", month:"2-digit", year:"numeric" }).replace(/\//g, " · "));
+  if (inv) {
+    document.body.classList.add("personal");
+    $("#hi").textContent = t("hi").replace("{name}", inv.name);
+    $("#invHi").textContent = t("hi").replace("{name}", inv.name);
+    $("#invSeats").textContent = t("inv_seats").replace("{n}", inv.seats).replace("{s}", lang === "en" ? (inv.seats > 1 ? "people" : "person") : (inv.seats > 1 ? "s" : ""));
+    $("#invGo").textContent = inv.seats > 1 ? t("inv_go").replace("{n}", inv.seats) : t("inv_go1");
+  }
+}
+if (inv) {
+  form.nome.value = inv.name;
+  [...form.adultos.options].forEach(o => o.hidden = +o.value > inv.seats);
+  form.adultos.value = String(Math.min(inv.seats, 4));
+  $("#invGo").addEventListener("click", () => { form.vai.value = "sim"; form.dispatchEvent(new Event("change")); form.requestSubmit(); $("#rsvp").scrollIntoView({ behavior: "smooth", block: "start" }); });
+}
+/* encontre sua mesa */
+const salao = $("#salao");
+salao.insertAdjacentHTML("beforeend", WEDDING.tables.map(m => `<i data-m="${m.n}" style="left:${m.x}%;top:${m.y}%">${m.n}</i>`).join(""));
+$("#mesaForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const v = norm(e.target.q.value); const res = $("#mesaRes");
+  $$("#salao i").forEach(i => i.classList.remove("on"));
+  if (v.length < 2) return;
+  const m = WEDDING.tables.find(t2 => t2.guests.some(g => norm(g).includes(v) || v.split(" ").every(p => norm(g).includes(p))));
+  res.className = "res on" + (m ? "" : " miss");
+  res.innerHTML = m ? `<span>${t("mesa_hit")}</span><b>${m.n}</b><span>${m.x > 30 && m.x < 70 ? t("mesa_near") : t("mesa_far")}</span>` : t("mesa_miss");
+  if (m) $(`#salao [data-m="${m.n}"]`).classList.add("on");
+});
+if (q.has("mesa")) addEventListener("load", () => $("#mesa").scrollIntoView());
+/* save the date animado: na primeira visita (ou com ?std) */
+const std = $("#std");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let seen = false; try { seen = sessionStorage.getItem("wed-std") === "1"; } catch (e) {}
+function closeStd(){ std.classList.add("out"); document.documentElement.style.overflow = ""; try { sessionStorage.setItem("wed-std", "1"); } catch (e) {} }
+if (reduce || (seen && !q.has("std")) || q.has("nostd")) std.remove();
+else { document.documentElement.style.overflow = "hidden"; $("#stdSkip").addEventListener("click", closeStd); setTimeout(closeStd, 4600); }
+applyExtras();
 </script>
 </body>
 </html>
