@@ -220,6 +220,13 @@ footer nav a{color:var(--creme);text-decoration:none;padding:10px 0;transition:c
 @media (hover:hover) and (pointer:fine){footer nav a:hover{color:var(--pessego)}}
 footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:24px;box-shadow:0 -1px 0 rgba(247,241,232,.12)}
 @media (max-width:900px){footer .mark,footer nav{grid-column:1/-1;justify-self:start}}
+/* dados do estúdio no rodapé */
+footer .dados{grid-column:1/-1;font-style:normal;display:flex;justify-content:space-between;align-items:center;gap:4px 32px;flex-wrap:wrap;font-size:14px;padding-top:16px;box-shadow:0 -1px 0 rgba(247,241,232,.12)}
+footer .dados ul{display:flex;flex-wrap:wrap;gap:0 24px}
+footer .dados a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--creme);text-decoration:none;transition:color .15s ease}
+footer .dados a .mono{color:var(--sobre-noite)}
+@media (hover:hover) and (pointer:fine){footer .dados a:hover{color:var(--pessego)}}
+footer .dados+.fin{box-shadow:none;padding-top:0}
 
 /* ===== índice de trabalhos ===== */
 .idx-hero{padding:clamp(28px,4vw,56px) 0 clamp(48px,6vw,88px)}

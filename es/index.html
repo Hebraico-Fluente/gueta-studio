@@ -21,7 +21,8 @@ try{if(!sessionStorage.getItem("gs-intro")&&!matchMedia("(prefers-reduced-motion
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://guetastudio.com.br/es/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Gueta Studio","description":"Sitios y plataformas a medida para bodas, cafés, restaurantes y negocios locales. Sitios bilingües.","url":"https://guetastudio.com.br/","logo":"https://guetastudio.com.br/marca/gueta-codigo-perfil-512.png","image":"https://guetastudio.com.br/shots/og-codigo.jpg","founder":{"@type":"Person","name":"Moshik Gueta","sameAs":["https://www.linkedin.com/in/moshikgueta/","https://www.instagram.com/guetastudio/"]},"areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},"telephone":"+55 41 99991-9434","knowsLanguage":["pt","es","en","it","he"]}</script>
+<!-- Dados do estúdio (schema.org). E-MAIL PROFISSIONAL: quando existir, acrescente "email":"…" aqui e no contactPoint. Sem rua, CNPJ nem avaliações até existirem. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://guetastudio.com.br/#estudio","name":"Gueta Studio","description":"Sitios y plataformas a medida para bodas, cafés, restaurantes y negocios locales. Sitios bilingües.","url":"https://guetastudio.com.br/","logo":"https://guetastudio.com.br/marca/gueta-codigo-perfil-512.png","image":"https://guetastudio.com.br/shots/og-codigo.jpg","founder":{"@type":"Person","name":"Moshik Gueta","sameAs":["https://www.linkedin.com/in/moshikgueta/"]},"areaServed":[{"@type":"City","name":"Curitiba"},{"@type":"Country","name":"Brasil"},"Remoto (en línea)"],"address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},"telephone":"+55 41 99991-9434","contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+55 41 99991-9434","url":"https://wa.me/5541999919434","availableLanguage":["pt","es","en","it","he"]},"sameAs":["https://www.instagram.com/guetastudio/","https://www.linkedin.com/in/moshikgueta/"],"knowsLanguage":["pt","es","en","it","he"]}</script>
 <link rel="alternate" hreflang="pt-BR" href="https://guetastudio.com.br/">
 <link rel="alternate" hreflang="en" href="https://guetastudio.com.br/en/">
 <link rel="alternate" hreflang="es" href="https://guetastudio.com.br/es/">
@@ -434,6 +435,31 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
   .par>img,.par>video{transform:none}
   .intro .hero-t .w,.intro .hero-k,.intro .hero-foot,.intro .tile{animation:none}
 }
+
+/* ===== como trabalhamos (termos claros) ===== */
+.terms-head{align-items:end;row-gap:24px}
+.terms-head .h2{grid-column:1/9;font-size:clamp(48px,7vw,112px)}
+.terms-head .h2 em,.term h3 em{color:var(--terra)}
+.terms-head p{grid-column:9/13;color:var(--tinta-2);font-size:15px;max-width:26em}
+.terms-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:clamp(16px,2vw,28px);row-gap:48px;margin-top:clamp(48px,6vw,88px)}
+.term{box-shadow:0 -1px 0 var(--tinta);padding-top:18px;display:flex;flex-direction:column}
+.term .k{display:flex;gap:12px;color:var(--muted)}
+.term .k b{font-weight:400;color:var(--terra)}
+.term h3{font-size:clamp(28px,2.5vw,38px);line-height:1.04;letter-spacing:-.02em;margin:22px 0 22px;min-height:2.08em}
+.term ul li{padding:11px 0;font-size:14.5px;line-height:1.5;color:var(--tinta-2);box-shadow:0 -1px 0 var(--linha)}
+.terms-foot{display:flex;justify-content:space-between;align-items:center;gap:12px 32px;flex-wrap:wrap;margin-top:clamp(48px,5vw,72px);padding-top:20px;box-shadow:0 -1px 0 var(--linha)}
+.terms-foot p{color:var(--tinta-2);font-size:15px;max-width:44em}
+@media (max-width:1100px){.terms-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.terms-head .h2,.terms-head p{grid-column:1/-1}}
+@media (max-width:560px){.terms-list{grid-template-columns:minmax(0,1fr);row-gap:36px}.term h3{min-height:0;margin:16px 0}}
+
+/* dados do estúdio no rodapé */
+footer .dados{grid-column:1/-1;font-style:normal;display:flex;justify-content:space-between;align-items:center;gap:4px 32px;flex-wrap:wrap;font-size:14px;padding-top:16px;box-shadow:0 -1px 0 rgba(247,241,232,.12)}
+footer .dados ul{display:flex;flex-wrap:wrap;gap:0 24px}
+footer .dados a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--creme);text-decoration:none;transition:color .15s ease}
+footer .dados a .mono{color:var(--sobre-noite)}
+@media (hover:hover) and (pointer:fine){footer .dados a:hover{color:var(--pessego)}}
+footer .dados+.fin{box-shadow:none;padding-top:0}
 </style>
 </head>
 <body>
@@ -490,7 +516,7 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
         <span class="g"><img src="../marca/gueta-codigo-simbolo-claro.svg" alt="" width="42" height="24">Gueta Studio crea el sitio</span>
         <a class="lnk" href="https://pitangueiracriativa.com.br/" target="_blank" rel="noopener">Armar el presupuesto con Pitangueira <span class="ar" aria-hidden="true">↗</span></a>
       </div>
-      <p class="label mono ex"><b>Ejemplo real</b><span>Pétala &amp; Lucas</span><a class="lnk" href="https://universo.moshikg10.workers.dev/c/petala-e-lucas" target="_blank" rel="noopener" translate="no">universo.moshikg10.workers.dev/c/petala-e-lucas <span class="ar" aria-hidden="true">↗</span></a></p>
+      <p class="label mono ex"><b>Ejemplo real</b><span>Pétala &amp; Lucas</span><a class="lnk" href="https://petalaelucas.guetastudio.com.br/" target="_blank" rel="noopener" translate="no">petalaelucas.guetastudio.com.br <span class="ar" aria-hidden="true">↗</span></a></p>
       <div class="wed-phones" role="region" aria-label="Pantallas del sitio de Pétala y Lucas en el celular (desliza para verlas todas)" tabindex="0">
         <figure><div class="phone"><img src="../shots/petalucas-cel-inicio.jpg" alt="Inicio del sitio en el celular: el logo de la pareja, la fecha y la cuenta regresiva" width="780" height="1328" loading="lazy" decoding="async"></div><figcaption><b>Identidad de la pareja</b>Su logo y sus colores, cuenta regresiva y “Guardar en la agenda”.</figcaption></figure>
         <figure><div class="phone"><img src="../shots/petalucas-cel-historia.jpg" alt="Sección Nuestra historia, con la línea de tiempo de la pareja desde 2017" width="780" height="1328" loading="lazy" decoding="async"></div><figcaption><b>La historia</b>Cómo llegaron los dos hasta aquí, año por año.</figcaption></figure>
@@ -500,7 +526,7 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
       </div>
       <div class="grid wed-foot">
         <p>También puedes tener <b>invitación con enlace personal</b>, el sitio <b>en varios idiomas</b>, <b>save the date</b> para WhatsApp y <b>mapa de mesas con código QR</b> en la entrada de la fiesta.</p>
-        <div class="ctas"><a class="lnk" href="bodas/">Para parejas <span class="ar fw" aria-hidden="true">→</span></a><a class="lnk" href="trabajos/petala-e-lucas/">Ver el caso de estudio <span class="ar fw" aria-hidden="true">→</span></a><a class="btn" href="https://universo.moshikg10.workers.dev/c/petala-e-lucas" target="_blank" rel="noopener">Ver un sitio de ejemplo <span aria-hidden="true">↗</span></a></div>
+        <div class="ctas"><a class="lnk" href="bodas/">Para parejas <span class="ar fw" aria-hidden="true">→</span></a><a class="lnk" href="trabajos/petala-e-lucas/">Ver el caso de estudio <span class="ar fw" aria-hidden="true">→</span></a><a class="btn" href="https://petalaelucas.guetastudio.com.br/" target="_blank" rel="noopener">Ver un sitio de ejemplo <span aria-hidden="true">↗</span></a></div>
       </div>
     </div>
   </section>
@@ -698,9 +724,45 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
     </div>
   </section>
 
+  <section id="como-trabalhamos" class="sec terms" aria-labelledby="h-terms">
+    <div class="wrap">
+      <p class="label mono"><b>05</b><span>Cómo trabajamos</span></p>
+      <div class="grid terms-head">
+        <h2 class="h2" id="h-terms">Términos claros, <em>sin sorpresas.</em></h2>
+        <p>Lo esencial para cerrar con tranquilidad, aunque todavía no nos conozcamos: qué incluye, cómo se paga, cuánto tarda y qué pasa después.</p>
+      </div>
+      <ol class="terms-list" aria-label="Términos">
+        <li class="term">
+          <p class="k mono"><b class="num">01</b><span>Qué incluye</span></p>
+          <h3>Vista previa <em>sin compromiso.</em></h3>
+          <ul><li>Presupuesto a medida, junto con la vista previa.</li><li>Dos rondas de ajustes, hasta que tenga tu cara.</li><li>Sitio publicado, con códigos QR y guía paso a paso.</li></ul>
+        </li>
+        <li class="term">
+          <p class="k mono"><b class="num">02</b><span>Pago</span></p>
+          <h3><em class="num">50%</em> al aprobar, <em class="num">50%</em> en la entrega.</h3>
+          <ul><li>Por Pix o transferencia.</li><li>En dos partes, sin mensualidad obligatoria.</li></ul>
+        </li>
+        <li class="term">
+          <p class="k mono"><b class="num">03</b><span>Plazos</span></p>
+          <h3>Primera vista previa <em>en hasta 7 días.</em></h3>
+          <ul><li>Sitio en línea en promedio de 10 a 15 días hábiles, a partir de tu material.</li><li>Las plataformas tienen su propio cronograma.</li></ul>
+        </li>
+        <li class="term">
+          <p class="k mono"><b class="num">04</b><span>Después de publicar</span></p>
+          <h3>No quedas <em>atado.</em></h3>
+          <ul><li>El dominio y los archivos a nombre de tu negocio.</li><li>Mantenimiento opcional: hasta cuatro pedidos de actualización por mes.</li><li>Se puede cancelar con 30 días de aviso.</li></ul>
+        </li>
+      </ol>
+      <div class="terms-foot">
+        <p>Respondo en hasta un día por WhatsApp. También trabajo fuera de Curitiba, por video, en portugués, español, inglés, italiano o hebreo.</p>
+        <a class="lnk" href="#orcamento">Pedir una vista previa gratis <span class="ar down" aria-hidden="true">↘</span></a>
+      </div>
+    </div>
+  </section>
+
   <section id="perguntas" class="sec faq-sec" aria-labelledby="h-faq">
     <div class="wrap">
-      <p class="label mono"><b>05</b><span>Preguntas</span></p>
+      <p class="label mono"><b>06</b><span>Preguntas</span></p>
       <div class="grid">
         <div class="head">
           <h2 class="h2" id="h-faq">Antes de empezar.</h2>
@@ -721,7 +783,7 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
 
   <section id="contato" class="sec dark contact" data-tone="dark" aria-labelledby="h-contato">
     <div class="wrap">
-      <p class="label mono"><b>06</b><span>Contacto</span></p>
+      <p class="label mono"><b>07</b><span>Contacto</span></p>
       <h2 class="huge" id="h-contato">¿Hacemos <em>el tuyo?</em></h2>
       <div class="grid">
         <div class="reach">
@@ -760,7 +822,16 @@ footer .fin{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px
 <footer>
   <div class="wrap grid">
     <div class="mark"><img src="../marca/gueta-codigo-logo-claro.svg" alt="Gueta Studio" width="240" height="72" loading="lazy"><p>Sitios y plataformas a medida, hechos a mano en Curitiba.</p></div>
-    <nav aria-label="Pie de página"><a href="#trabalhos">Trabajos</a><a href="bodas/">Bodas</a><a href="#estudio">Estudio</a><a href="#contato">Contacto</a><a href="../" hreflang="pt" lang="pt">Português</a><a href="../en/" hreflang="en" lang="en">English</a></nav>
+    <nav aria-label="Pie de página"><a href="#trabalhos">Trabajos</a><a href="bodas/">Bodas</a><a href="#estudio">Estudio</a><a href="#como-trabalhamos">Cómo trabajamos</a><a href="#contato">Contacto</a><a href="../" hreflang="pt" lang="pt">Português</a><a href="../en/" hreflang="en" lang="en">English</a></nav>
+    <address class="dados">
+      <p><span translate="no">Gueta Studio</span> · Moshik Gueta · Curitiba, PR, Brasil</p>
+      <ul>
+        <li><a href="https://wa.me/5541999919434" target="_blank" rel="noopener">WhatsApp <span class="mono num">+55 41 99991-9434</span></a></li>
+        <li><a href="https://www.instagram.com/guetastudio/" target="_blank" rel="noopener">Instagram <span class="mono">@guetastudio</span></a></li>
+        <li><a href="https://www.linkedin.com/in/moshikgueta/" target="_blank" rel="noopener">LinkedIn <span class="mono">moshikgueta</span></a></li>
+        <!-- E-MAIL PROFISSIONAL: quando existir, entra aqui como <li><a href="mailto:…">E-mail <span class="mono">…</span></a></li> (e no JSON-LD da home, como "email") -->
+      </ul>
+    </address>
     <p class="fin mono"><span>© <span data-year class="num">2026</span> Gueta Studio</span><span>&lt;G/&gt; hecho a mano, línea por línea</span></p>
   </div>
 </footer>
