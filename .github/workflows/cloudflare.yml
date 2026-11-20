@@ -34,7 +34,7 @@ jobs:
         run: |
           sleep 10
           for u in https://guetastudio.com.br/ https://guetastudio.com.br/en/ https://guetastudio.com.br/es/ https://guetastudio.com.br/casamento/; do
-            code=$(curl -s -o /dev/null -w "%{http_code}" "$u")
+            code=$(curl -sL -o /dev/null -w "%{http_code}" "$u")
             echo "$u -> $code"
             [ "$code" = "200" ] || { echo "::warning::$u respondeu $code"; }
           done
