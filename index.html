@@ -140,12 +140,29 @@ ul,ol{margin:0;padding:0;list-style:none}
 .tile img,.tile video{height:100%;width:auto;object-fit:cover;object-position:top}
 .tile figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;color:var(--muted)}
 .tile figcaption b{font-weight:400;color:var(--tinta)}
-@media (max-width:900px){
-  .strip{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:56px}
-  .strip::-webkit-scrollbar{display:none}
-  .track{will-change:auto}
-  .tile{scroll-snap-align:start;scroll-margin-left:var(--gut)}
-}
+@media (max-width:900px){.strip{padding-bottom:56px}}
+/* faixa arrastável: arraste com o mouse/dedo ou use as setas ao lado */
+.strip-box{position:relative}
+.strip{overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab;-webkit-user-select:none;user-select:none}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.strip.drag .tile{pointer-events:none}
+.track{will-change:auto}
+.tile{scroll-snap-align:start;scroll-margin-left:var(--gut)}
+.strip-arrow{position:absolute;top:calc(clamp(240px,31vw,460px)/2);transform:translateY(-50%);z-index:3;width:56px;height:56px;border-radius:50%;border:0;display:grid;place-items:center;cursor:pointer;background:var(--tinta);color:#F7F1E8;font-size:22px;line-height:1;box-shadow:0 14px 30px -14px rgba(42,26,19,.6);transition:opacity .25s ease,transform .2s ease}
+.strip-arrow:hover{transform:translateY(-50%) scale(1.06)}
+.strip-arrow:active{transform:translateY(-50%) scale(.96)}
+.strip-arrow:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.strip-arrow.prev{left:calc(var(--gut) - 8px)}
+.strip-arrow.next{right:calc(var(--gut) - 8px)}
+.strip-arrow[disabled]{opacity:0;pointer-events:none}
+.strip-hint{position:absolute;right:var(--gut);bottom:clamp(18px,3vw,48px);display:flex;align-items:center;gap:10px;color:var(--muted);pointer-events:none;transition:opacity .4s ease}
+.strip-hint i{font-style:normal;display:inline-block;animation:strip-nudge 1.6s ease-in-out infinite}
+.strip-hint.off{opacity:0}
+@keyframes strip-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@media (max-width:900px){.strip-arrow{width:46px;height:46px;font-size:18px}.strip-hint{bottom:18px}}
+@media (prefers-reduced-motion:reduce){.strip-hint i{animation:none}.strip-arrow{transition:none}}
+
 
 /* ===== cabeçalhos de seção ===== */
 .sec{padding:clamp(96px,11vw,176px) 0}
@@ -544,6 +561,7 @@ footer .dados+.fin{box-shadow:none;padding-top:0}
         <a class="lnk go" href="#casamentos">Ver os trabalhos <span class="ar down" aria-hidden="true">↓</span></a>
       </div>
     </div>
+    <div class="strip-box">
     <div class="strip" id="strip" role="region" aria-label="Trabalhos em destaque" tabindex="0">
       <div class="track" id="track">
         <figure class="tile ph" style="--i:0"><div class="clip"><img src="shots/petalucas-cel-inicio.jpg" alt="Site de casamento de Pétala e Lucas no celular, com o logo do casal e a contagem regressiva" width="780" height="1328" decoding="async"></div><figcaption class="mono"><b>Pétala &amp; Lucas</b></figcaption></figure>
@@ -555,6 +573,10 @@ footer .dados+.fin{box-shadow:none;padding-top:0}
         <figure class="tile ph" style="--i:6"><div class="clip"><video data-v muted loop playsinline preload="none" poster="media/feed.jpg" width="390" height="664" aria-label="Vídeo: cardápio da Balcão em modo feed"><source src="media/feed.mp4" type="video/mp4"></video></div><figcaption class="mono"><b>Modo feed</b></figcaption></figure>
         <figure class="tile" style="--i:7"><div class="clip"><img src="shots/hf-hero.jpg" alt="Página inicial do Hebraico Fluente" width="1600" height="1000" loading="lazy" decoding="async"></div><figcaption class="mono"><b>Hebraico Fluente</b><span>plataforma</span></figcaption></figure>
       </div>
+    </div>
+    <button class="strip-arrow prev" type="button" aria-label="Exemplos anteriores" aria-controls="strip" disabled>←</button>
+    <button class="strip-arrow next" type="button" aria-label="Próximos exemplos" aria-controls="strip">→</button>
+    <p class="strip-hint mono" aria-hidden="true">Arraste para ver todos os exemplos <i>→</i></p>
     </div>
   </section>
 
@@ -988,10 +1010,10 @@ if (!reduceMotion) vids.forEach(v => {
   let ticking = false;
   function frame() {
     ticking = false;
-    if (!wide.matches) { track.style.transform = ""; pars.forEach(p => p.inner.style.transform = ""); return; }
+    if (!wide.matches) { pars.forEach(p => p.inner.style.transform = ""); return; }
     const vh = innerHeight, y = scrollY;
     const range = hero.offsetHeight, max = Math.max(0, track.scrollWidth - strip.clientWidth);
-    track.style.transform = `translate3d(${-Math.min(1, Math.max(0, y / range)) * max}px,0,0)`;
+    /* a faixa agora é arrastável (setas ao lado), sem andar sozinha com a rolagem */
     pars.forEach(p => {
       if (!p.on) return;
       const r = p.el.getBoundingClientRect();
@@ -1060,6 +1082,25 @@ if ("IntersectionObserver" in window) {
   tones.forEach(t => hio.observe(t));
 }
 addEventListener("scroll", () => hd.classList.toggle("scrolled", scrollY > 20), {passive: true});
+
+/* faixa de exemplos: arrastar com o mouse, setas ao lado e aviso que some depois do primeiro uso */
+(() => {
+  const strip = document.getElementById("strip"); if (!strip) return;
+  const prev = document.querySelector(".strip-arrow.prev"), next = document.querySelector(".strip-arrow.next"), hint = document.querySelector(".strip-hint");
+  const used = () => hint && hint.classList.add("off");
+  const upd = () => { const max = strip.scrollWidth - strip.clientWidth - 2; prev.disabled = strip.scrollLeft <= 2; next.disabled = strip.scrollLeft >= max; };
+  const step = d => { used(); strip.scrollBy({left: d * strip.clientWidth * .8, behavior: reduceMotion ? "auto" : "smooth"}); };
+  prev.addEventListener("click", () => step(-1)); next.addEventListener("click", () => step(1));
+  strip.addEventListener("scroll", () => { upd(); if (strip.scrollLeft > 30) used(); }, {passive: true});
+  addEventListener("resize", upd); upd();
+  strip.addEventListener("keydown", e => { if (e.key === "ArrowRight") { e.preventDefault(); step(1); } if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); } });
+  let x0 = 0, s0 = 0, down = false, moved = false;
+  strip.addEventListener("pointerdown", e => { if (e.pointerType !== "mouse" || e.button !== 0) return; down = true; moved = false; x0 = e.clientX; s0 = strip.scrollLeft; });
+  addEventListener("pointermove", e => { if (!down) return; const dx = e.clientX - x0; if (!moved && Math.abs(dx) > 4) { moved = true; strip.classList.add("drag"); used(); } if (moved) strip.scrollLeft = s0 - dx; });
+  addEventListener("pointerup", () => { if (!down) return; down = false; strip.classList.remove("drag"); });
+  strip.addEventListener("click", e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  strip.addEventListener("dragstart", e => e.preventDefault());
+})();
 </script>
 </body>
 </html>
