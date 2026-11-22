@@ -3,3 +3,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
+
+# Prévias para clientes: nunca indexar.
+/previa/*
+  X-Robots-Tag: noindex, nofollow, noarchive
