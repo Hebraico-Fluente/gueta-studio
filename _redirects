@@ -1,3 +1,8 @@
 # O exemplo de site de casamento agora é o de Pétala & Lucas (o modelo "Ana & Pedro" saiu de destaque).
 /casamento https://petalaelucas.guetastudio.com.br/ 302
 /casamento/ https://petalaelucas.guetastudio.com.br/ 302
+
+# El Tumi: atalho no domínio do estúdio até o site ir para eltumi.guetastudio.com.br
+/eltumi https://hebraico-fluente.github.io/El-tumi/ 302
+/eltumi/ https://hebraico-fluente.github.io/El-tumi/ 302
+/eltumi/loja https://hebraico-fluente.github.io/El-tumi/?loja=1 302
