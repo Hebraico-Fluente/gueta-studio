@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<script>if(location.protocol==="http:"&&!/^(localhost|127\.)/.test(location.hostname))location.replace("https:"+location.href.slice(5))</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel para cafeterias: pedidos, estoque e cardápio numa tela só · Gueta Studio</title>
+<meta name="description" content="Painel para cafeterias, feito em Curitiba: pedidos da loja para retirar, estoque com mínimo e validade, esgotado em tempo real no cardápio do site, lista de compras por fornecedor no WhatsApp e resumo do dia. Experimente a demonstração.">
+<meta name="theme-color" content="#F5EEE3">
+<link rel="canonical" href="https://guetastudio.com.br/demo/cafeteria/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gueta Studio">
+<meta property="og:title" content="Painel para cafeterias: pedidos, estoque e cardápio numa tela só">
+<meta property="og:description" content="Pedidos da loja para retirar, estoque com mínimo e validade, esgotados no cardápio do site, compras por fornecedor no WhatsApp e resumo do dia. Experimente a demonstração.">
+<meta property="og:url" content="https://guetastudio.com.br/demo/cafeteria/">
+<meta property="og:image" content="https://guetastudio.com.br/shots/cafeteria-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Título Painel para cafeterias, com o quadro de pedidos da demonstração do Café Modelo, uma cafeteria fictícia">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://guetastudio.com.br/#estudio","name":"Gueta Studio","url":"https://guetastudio.com.br/","logo":"https://guetastudio.com.br/marca/gueta-codigo-perfil-512.png","founder":{"@type":"Person","name":"Moshik Gueta"},"telephone":"+55 41 99991-9434","address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"}},{"@type":"Service","@id":"https://guetastudio.com.br/demo/cafeteria/#servico","name":"Painel para cafeterias","serviceType":"Painel de gestão para cafeterias","description":"Painel para cafeterias: pedidos da loja do site para retirar, estoque com mínimo e validade, itens esgotados no cardápio do site, lista de compras por fornecedor no WhatsApp e resumo do dia.","provider":{"@id":"https://guetastudio.com.br/#estudio"},"areaServed":[{"@type":"City","name":"Curitiba"},{"@type":"Country","name":"Brasil"}],"url":"https://guetastudio.com.br/demo/cafeteria/","image":"https://guetastudio.com.br/shots/cafeteria-og.jpg"},{"@type":"WebPage","@id":"https://guetastudio.com.br/demo/cafeteria/","url":"https://guetastudio.com.br/demo/cafeteria/","name":"Painel para cafeterias: pedidos, estoque e cardápio numa tela só · Gueta Studio","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Gueta Studio","url":"https://guetastudio.com.br/"},"primaryImageOfPage":"https://guetastudio.com.br/shots/cafeteria-og.jpg","mainEntity":{"@id":"https://guetastudio.com.br/demo/cafeteria/#servico"},"breadcrumb":{"@id":"https://guetastudio.com.br/demo/cafeteria/#trilha"}},{"@type":"BreadcrumbList","@id":"https://guetastudio.com.br/demo/cafeteria/#trilha","itemListElement":[{"@type":"ListItem","position":1,"name":"Gueta Studio","item":"https://guetastudio.com.br/"},{"@type":"ListItem","position":2,"name":"Painel para cafeterias","item":"https://guetastudio.com.br/demo/cafeteria/"}]}]}</script>
+<link rel="icon" href="/marca/gueta-codigo-icone.svg" type="image/svg+xml">
+<link rel="icon" href="/marca/gueta-codigo-favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/marca/gueta-codigo-apple-touch.png">
+<link rel="preload" href="/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/estudio.css">
+<link rel="stylesheet" href="/css/cafeteria.css">
+</head>
+<body class="t-cafe">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top" data-tone="light">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Gueta Studio, página inicial"><img class="escuro" src="/marca/gueta-codigo-logo.svg" alt="" width="147" height="44"><img class="claro" src="/marca/gueta-codigo-logo-claro.svg" alt="" width="147" height="44"></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="/casamentos/">Casamentos</a>
+      <a href="/trabalhos/">Trabalhos</a>
+      <a href="/#abordagem">Abordagem</a>
+      <a href="/#estudio">Estúdio</a>
+      <a href="/#perguntas">Perguntas</a>
+    </nav>
+    <a class="lnk" href="#contato">Vamos conversar <span class="ar" aria-hidden="true">↘</span></a>
+  </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <section class="k-hero" data-tone="light" aria-labelledby="h-cafe">
+    <div class="wrap">
+      <nav class="crumbs mono" aria-label="Você está em"><a href="/">Gueta Studio</a><span aria-hidden="true">/</span><span aria-current="page">Painel para cafeterias</span></nav>
+      <p class="case-line mono"><b>&lt;G/&gt;</b><span>Para cafeterias · Curitiba</span><span>Demonstração com dados fictícios</span></p>
+      <h1 class="k-h1" id="h-cafe">Painel para <em>cafeterias.</em></h1>
+      <div class="grid k-intro-row">
+        <p class="say">Pedidos da loja, estoque, esgotados e compras do café numa tela só, no celular do balcão ou no computador.</p>
+        <div class="acts">
+          <a class="btn big" href="./painel/">Abrir a demonstração <span class="ar" aria-hidden="true">→</span></a>
+          <a class="lnk" href="https://wa.me/5541999919434?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20painel%20para%20cafeterias%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Quero no meu café <span class="ar" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="k-cover"><div class="cover"><div class="shot"><img src="/shots/cafeteria-painel-pedidos.jpg" alt="Quadro de pedidos do painel do Café Modelo: colunas Novos, Separando, Prontos para retirar e Retirados, com o botão de mudar a etapa em cada pedido" width="1600" height="1000" fetchpriority="high" decoding="async"></div><div class="phone"><img src="/shots/cafeteria-cel-pedidos.jpg" alt="O mesmo quadro de pedidos no celular, uma coluna por vez" width="780" height="1328" loading="lazy" decoding="async"></div></div><p class="cap mono"><b>O quadro de pedidos.</b> Café Modelo é uma cafeteria fictícia; todos os dados da demonstração são inventados.</p></figure>
+    </div>
+  </section>
+
+  <section class="k-sec" data-tone="light" aria-labelledby="h-faz">
+    <div class="wrap">
+      <h2 class="label" id="h-faz"><b>01</b><span>O que o painel faz</span></h2>
+      <div class="grid k-head">
+        <p class="k-h2">O que hoje fica no caderno, no grupo da equipe e na memória, <em>num lugar só.</em></p>
+        <p class="k-intro">O painel trabalha junto com o site do café: o cardápio e a loja do site são os mesmos do painel. Na demonstração, tudo roda no seu navegador, e você pode mexer à vontade.</p>
+      </div>
+      <ol class="fx">
+        <li><span class="n">01</span><h3>Pedidos da loja, para retirar</h3><p>O cliente monta o pedido na loja do site e retira no café. O pedido chega no quadro com um aviso sonoro e anda por etapas, com um toque.</p>
+          <ul><li>Novo, separando, pronto para retirar, retirado</li><li>Aviso de “pronto” com a mensagem já escrita para o WhatsApp do cliente</li><li>Pedido feito no balcão, pelo mesmo cardápio</li></ul></li>
+        <li><span class="n">02</span><h3>Estoque com mínimo e validade</h3><p>Cada item tem um mínimo e, se quiser, uma validade. O painel avisa o que está acabando e o que vence nos próximos 7 dias.</p>
+          <ul><li>Entrada, saída e ajuste, com o histórico de quem fez e por quê</li><li>Baixa pelo consumo de cada venda: pedido retirado e vendas do dia</li></ul></li>
+        <li><span class="n">03</span><h3>Esgotado em tempo real</h3><p>Acabou o croissant? Um toque no painel e o cardápio do site mostra “Esgotado” em até 1 minuto. Produto esgotado da loja não entra na sacola.</p></li>
+        <li><span class="n">04</span><h3>Compras por fornecedor</h3><p>O que chegou no mínimo vira uma lista separada por fornecedor, com a quantidade sugerida, pronta para mandar no WhatsApp. Chegou a entrega? Um toque dá a entrada no estoque.</p></li>
+        <li><span class="n">05</span><h3>Resumo do dia</h3><p>Pedidos, receita dos pedidos, estoque acabando e validade. Na semana, a receita por dia e os itens mais vendidos.</p></li>
+      </ol>
+      <div class="k-shots">
+        <figure class="wd"><div class="shot"><img src="/shots/cafeteria-painel-estoque.jpg" alt="Aba Estoque: avisos de itens no mínimo e de validade, e a lista de itens por categoria com os botões −1, +1 e Movimentar" width="1200" height="750" loading="lazy" decoding="async"></div><figcaption class="cap mono"><b>Estoque.</b> O que está acabando fica em vermelho; o que vence logo, em amarelo.</figcaption></figure>
+        <figure class="ph"><div class="phone"><img src="/shots/cafeteria-cel-cardapio.jpg" alt="Aba Cardápio no celular: cada item com o botão Disponível ou Esgotado" width="780" height="1328" loading="lazy" decoding="async"></div><figcaption class="cap mono"><b>Cardápio.</b> Disponível ou esgotado, com um toque.</figcaption></figure>
+        <figure class="hf"><div class="shot"><img src="/shots/cafeteria-painel-compras.jpg" alt="Aba Compras: itens no mínimo separados por fornecedor, com a quantidade sugerida, o botão Chegou e Copiar para o WhatsApp" width="1200" height="750" loading="lazy" decoding="async"></div><figcaption class="cap mono"><b>Compras.</b> Uma lista por fornecedor, para o WhatsApp.</figcaption></figure>
+        <figure class="hf"><div class="shot"><img src="/shots/cafeteria-painel-resumo.jpg" alt="Aba Resumo, últimos 7 dias: pedidos, receita, estoque acabando, validade e a receita por dia em barras" width="1200" height="750" loading="lazy" decoding="async"></div><figcaption class="cap mono"><b>Resumo.</b> O dia e a semana, sem planilha.</figcaption></figure>
+      </div>
+      <p class="demo-note mono"><b>Demonstração.</b> O Café Modelo não existe: cardápio, preços, pedidos, estoque e fornecedores são exemplos inventados. Nada do que você faz na demonstração é salvo ou enviado.</p>
+    </div>
+  </section>
+
+  <section class="k-sec k-orig" data-tone="light" aria-labelledby="h-orig">
+    <div class="wrap">
+      <h2 class="label" id="h-orig"><b>02</b><span>De onde ele vem</span></h2>
+      <div class="grid">
+        <p class="k-h2">Nasceu de um café <em>de verdade.</em></p>
+        <div class="tx">
+          <p>O painel foi <b>desenvolvido a partir do projeto do El Tumi Café</b>, um café de especialidade em Curitiba, onde o site já tem cardápio e loja para retirar.</p>
+          <p>Para o seu café, ele vem com o seu cardápio, os produtos da sua loja e os itens do seu estoque.</p>
+          <p><a class="lnk" href="/trabalhos/el-tumi/">Ver o estudo de caso do El Tumi <span class="ar fw" aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="dark cta-sec k-cta" data-tone="dark" aria-labelledby="h-contato">
+    <div class="wrap">
+      <p class="label mono"><b>&lt;G/&gt;</b><span>Contato</span></p>
+      <h2 class="huge" id="h-contato">No seu café, <em>com a sua cara?</em></h2>
+      <div class="grid">
+        <p>Me conte como o seu café funciona hoje: cardápio, loja, estoque, fornecedores. Eu respondo em até um dia e mostro como o painel ficaria para você.</p>
+        <div class="acts">
+          <a class="btn" href="https://wa.me/5541999919434?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20painel%20para%20cafeterias%20e%20quero%20saber%20mais." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Quero no meu café</a>
+          <a class="lnk" href="./painel/">Abrir a demonstração <span class="ar fw" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-tone="dark">
+  <div class="wrap grid">
+    <div class="mark"><img src="/marca/gueta-codigo-logo-claro.svg" alt="Gueta Studio" width="240" height="72" loading="lazy"><p>Sites e plataformas sob medida, feitos à mão em Curitiba.</p></div>
+    <nav aria-label="Rodapé"><a href="/">Início</a><a href="/trabalhos/">Trabalhos</a><a href="/casamentos/">Casamentos</a><a href="/#estudio">Estúdio</a><a href="/#como-trabalhamos">Como trabalhamos</a><a href="/#contato">Contato</a></nav>
+    <address class="dados">
+      <p><span translate="no">Gueta Studio</span> · Moshik Gueta · Curitiba, PR, Brasil · <span class="mono">CNPJ 51.041.290/0001-52</span></p>
+      <ul>
+        <li><a href="https://wa.me/5541999919434" target="_blank" rel="noopener">WhatsApp <span class="mono num">+55 41 99991-9434</span></a></li>
+        <li><a href="https://www.instagram.com/guetastudio/" target="_blank" rel="noopener">Instagram <span class="mono">@guetastudio</span></a></li>
+        <li><a href="https://www.linkedin.com/in/moshikgueta/" target="_blank" rel="noopener">LinkedIn <span class="mono">moshikgueta</span></a></li>
+      </ul>
+    </address>
+    <p class="fin mono"><span>© <span data-year class="num">2026</span> Gueta Studio</span><span>&lt;G/&gt; feito à mão, linha por linha</span></p>
+  </div>
+</footer>
+<script src="/js/estudio.js" defer></script>
+</body>
+</html>

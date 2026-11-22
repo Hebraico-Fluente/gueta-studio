@@ -1,0 +1,75 @@
+/* Gueta Studio · página do painel para cafeterias (/demo/cafeteria/).
+   Usa o sistema de /css/estudio.css (tipografia, grid, topo, rodapé, .phone, .shot, .lnk, .btn)
+   e acrescenta só o clima da página: o creme e o café espresso da demonstração, com o acento caramelo. */
+
+.t-cafe{--bg:#F5EEE3;--ink:#2B1C14;--sub:#5E4C41;--acc:#A9531F;--acc-l:#A9531F;--line:rgba(43,28,20,.15);--ph:#2B1C14}
+
+.k-h2{font:400 clamp(40px,5.4vw,84px)/.98 var(--serif);letter-spacing:-.03em;text-wrap:balance}
+.k-h2 em{color:var(--acc)}
+.k-head{row-gap:24px;align-items:end;margin-bottom:clamp(40px,5vw,72px)}
+.k-head .k-h2{grid-column:1/9}
+.k-head .k-intro{grid-column:9/13}
+.k-intro{font-size:16.5px;line-height:1.6;color:var(--sub);max-width:30em}
+.k-intro b{font-weight:600;color:var(--ink)}
+@media (max-width:900px){.k-head .k-h2,.k-head .k-intro{grid-column:1/-1}}
+
+/* abertura */
+.k-hero{padding:clamp(24px,3vw,44px) 0 clamp(72px,8vw,120px);overflow:clip}
+.k-h1{font-size:clamp(64px,10.4vw,176px);line-height:.86;letter-spacing:-.045em;margin:clamp(14px,1.6vw,22px) 0 0 -.04em}
+.k-h1 em{color:var(--acc)}
+.k-intro-row{margin-top:clamp(28px,3.4vw,48px);row-gap:28px;align-items:end}
+.k-intro-row .say{grid-column:1/8;font:400 clamp(26px,2.6vw,40px)/1.14 var(--serif);letter-spacing:-.012em}
+.k-intro-row .acts{grid-column:8/13;justify-self:end;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:12px 24px}
+.btn.big{min-height:60px;padding:0 30px;font-size:17px}
+.btn.big .ar{transition:transform .3s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.btn:hover{background:#3F2318}.btn.big:hover .ar{transform:translateX(3px)}}
+.btn.wa{background:#156B43;color:#fff}
+@media (hover:hover) and (pointer:fine){.btn.wa:hover{background:#0F5534}}
+.k-cover{margin-top:clamp(44px,5.4vw,88px)}
+.k-cover .cap{margin-top:clamp(28px,3vw,40px)}
+@media (max-width:900px){
+  .k-intro-row .say,.k-intro-row .acts{grid-column:1/-1;justify-self:start;justify-content:flex-start}
+  .k-cover .cap{margin-top:clamp(56px,14vw,96px)}
+}
+@media (max-width:560px){
+  .k-hero{padding-top:18px}
+  .k-hero .crumbs{margin-bottom:22px}
+  .k-intro-row .say{font-size:24px}
+  .k-intro-row .acts .btn{width:100%}
+}
+
+/* seções */
+.k-sec{padding:clamp(80px,10vw,152px) 0;box-shadow:0 -1px 0 var(--line)}
+
+/* o que faz: cinco blocos */
+.fx{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2vw,28px)}
+.fx>li{grid-column:span 4;display:grid;align-content:start;gap:10px;padding:22px 0 30px;box-shadow:0 -1px 0 var(--ink)}
+.fx>li:nth-child(-n+2){grid-column:span 6}
+.fx .n{font:400 12px/1.5 var(--mono);color:var(--acc)}
+.fx h3{font-size:clamp(28px,2.6vw,38px);line-height:1.02;letter-spacing:-.015em}
+.fx p{font-size:15.5px;line-height:1.6;color:var(--sub);max-width:34em}
+.fx ul{margin-top:4px}
+.fx ul li{display:grid;grid-template-columns:18px 1fr;padding:6px 0;font-size:15px;line-height:1.5;color:var(--sub);box-shadow:0 1px 0 var(--line)}
+.fx ul li::before{content:"·";color:var(--acc);font-weight:700}
+@media (max-width:900px){.fx>li,.fx>li:nth-child(-n+2){grid-column:1/-1}}
+
+/* telas */
+.k-shots{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(16px,2vw,28px);row-gap:clamp(36px,4vw,56px);margin-top:clamp(56px,7vw,104px);align-items:end}
+.k-shots .wd{grid-column:1/10}
+.k-shots .ph{grid-column:10/13;max-width:300px;justify-self:end;width:100%}
+.k-shots .hf{grid-column:span 6}
+@media (max-width:900px){
+  .k-shots .wd,.k-shots .hf{grid-column:1/-1}
+  .k-shots .ph{grid-column:1/-1;justify-self:start;width:min(72%,280px)}
+}
+.demo-note{margin-top:clamp(36px,4vw,56px);padding:14px 18px;border-radius:8px;background:rgba(43,28,20,.04);box-shadow:inset 0 0 0 1px var(--line);color:var(--sub);max-width:58em}
+.demo-note b{font-weight:400;color:var(--acc)}
+
+/* origem */
+.k-orig .grid{row-gap:28px;align-items:start}
+.k-orig .k-h2{grid-column:1/8}
+.k-orig .tx{grid-column:8/13;display:grid;gap:16px;font-size:16.5px;line-height:1.6;color:var(--sub)}
+.k-orig .tx b{font-weight:600;color:var(--ink)}
+@media (max-width:900px){.k-orig .k-h2,.k-orig .tx{grid-column:1/-1}}
+
+.k-cta .acts .lnk{color:var(--creme)}
