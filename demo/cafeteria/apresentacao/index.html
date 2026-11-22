@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; manifest-src 'none'; media-src 'none'; frame-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#1A0F0A">
+<title>Modo apresentação: celular do cliente + painel · Café Modelo (demonstração) · Gueta Studio</title>
+<meta name="description" content="Numa tela só: o cliente pede no celular e o pedido chega no tablet do balcão na hora, com aviso sonoro. Demonstração do painel para cafeterias com o Café Modelo, uma rede fictícia.">
+<link rel="canonical" href="https://guetastudio.com.br/demo/cafeteria/apresentacao/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gueta Studio">
+<meta property="og:title" content="Modo apresentação: o pedido sai do celular e chega no painel">
+<meta property="og:description" content="Celular do cliente e tablet do balcão lado a lado, ao vivo. Cafeteria fictícia, dados de exemplo.">
+<meta property="og:url" content="https://guetastudio.com.br/demo/cafeteria/apresentacao/">
+<meta property="og:image" content="https://guetastudio.com.br/shots/cafeteria-apresentacao.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="../comum/icone.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="apresentacao.css">
+</head>
+<body>
+<header class="ap-h">
+  <div class="ap-t"><b>Modo apresentação</b><span>O cliente pede no celular, o pedido chega no tablet do balcão na hora. Café Modelo é fictício; os dados de exemplo ficam só neste navegador.</span></div>
+  <div class="ap-acts">
+    <button class="ap-btn" type="button" id="somBtn" aria-pressed="false">🔕 Ligar som</button>
+    <a class="ap-btn" href="../telao/" target="_blank" rel="noopener">Abrir o telão ↗</a>
+    <button class="ap-btn" type="button" id="recomecar">Recomeçar</button>
+    <a class="ap-btn wa" href="https://wa.me/5541999919434?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20painel%20para%20cafeterias%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Quero no meu café</a>
+    <a class="ap-by" href="https://guetastudio.com.br/"><span>feito por <b>Gueta Studio</b></span></a>
+  </div>
+</header>
+
+<main class="stage" id="stage">
+  <figure class="dev phone" id="phone"><div class="scaler"><div class="bezel"><iframe title="Celular do cliente: tela de pedido do Café Modelo" data-src="../pedido/?embed=1" width="390" height="844" allow="autoplay"></iframe></div></div><figcaption><b>1</b> Celular do cliente</figcaption></figure>
+  <figure class="dev tablet" id="tablet"><div class="scaler"><div class="bezel"><iframe title="Tablet do balcão: painel do Café Modelo" data-src="../painel/?embed=1" width="1180" height="820" allow="autoplay"></iframe></div></div><figcaption><b>2</b> Tablet do balcão</figcaption></figure>
+</main>
+<p class="passos" id="passos">No celular, escolha um item e toque em <b>Pedir para retirar</b>. No tablet, toque em <b>Separar</b>, <b>Pronto para retirar</b> e <b>Cliente retirou</b>: o celular (e o telão, se estiver aberto) acompanha cada etapa.</p>
+
+<section class="estreito" id="estreito" aria-labelledby="h-estreito">
+  <h1 id="h-estreito">Melhor num computador ou TV</h1>
+  <p>O modo apresentação mostra o celular do cliente e o tablet do balcão lado a lado, e precisa de uma tela larga. Nesta tela, abra cada um separado (no mesmo navegador eles ficam em sincronia):</p>
+  <div class="links">
+    <a class="ap-btn big" href="../pedido/">Tela do cliente (celular)</a>
+    <a class="ap-btn big" href="../painel/">Painel do balcão</a>
+    <a class="ap-btn big" href="../telao/">Telão</a>
+  </div>
+</section>
+<script type="module" src="apresentacao.js"></script>
+</body>
+</html>

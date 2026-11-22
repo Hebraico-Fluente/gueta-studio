@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; manifest-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#1A0F0A">
+<title>Telão de pedidos · Café Modelo (demonstração) · Gueta Studio</title>
+<meta name="description" content="O telão da demonstração do painel para cafeterias: na TV da loja, os pedidos em preparo e os prontos para retirar, com aviso sonoro. Café Modelo é uma rede fictícia; dados de exemplo.">
+<link rel="canonical" href="https://guetastudio.com.br/demo/cafeteria/telao/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gueta Studio">
+<meta property="og:title" content="Telão de pedidos: Preparando e Pronto para retirar (demonstração)">
+<meta property="og:description" content="A TV da loja mostra o primeiro nome e o código de cada pedido, e toca um aviso quando fica pronto. Cafeteria fictícia, dados de exemplo.">
+<meta property="og:url" content="https://guetastudio.com.br/demo/cafeteria/telao/">
+<meta property="og:image" content="https://guetastudio.com.br/shots/cafeteria-telao.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="../comum/icone.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="telao.css">
+</head>
+<body>
+<div class="tv" id="tv">
+  <header class="tv-h">
+    <div class="tv-brand"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#F3E6D3"/><path d="M15.5 8.5c-1.3 1.5 1.3 2.7 0 4.2M20.5 8.5c-1.3 1.5 1.3 2.7 0 4.2" fill="none" stroke="#B8612E" stroke-width="1.7" stroke-linecap="round"/><path d="M10.5 16h16v5.5a8 8 0 0 1-16 0z" fill="#3A2318"/><path d="M26.5 17.6h1.4a3.2 3.2 0 0 1 0 6.4h-2" fill="none" stroke="#3A2318" stroke-width="2.2"/><path d="M8.5 31.5h21" stroke="#B8612E" stroke-width="2.4" stroke-linecap="round"/></svg><span><b>Café Modelo</b><small id="lojaTxt">Loja Centro</small></span></div>
+    <div class="tv-ctl">
+      <label class="vh" for="lojaSel">Loja</label><select id="lojaSel"></select>
+      <button type="button" id="somBtn" aria-pressed="false">🔕 Ligar som</button>
+      <button type="button" id="acesaBtn" aria-pressed="false" hidden>Tela acesa</button>
+      <button type="button" id="fsBtn">⛶ Tela cheia</button>
+    </div>
+    <time class="tv-clock" id="clock" aria-live="off">--:--</time>
+  </header>
+  <main class="tv-cols">
+    <section class="col prep" aria-labelledby="h-prep"><h1 id="h-prep">Preparando <span id="nPrep"></span></h1><ul class="list" id="prep"></ul></section>
+    <section class="col pronto" aria-labelledby="h-pronto"><h1 id="h-pronto">Pronto para retirar <span id="nPronto"></span></h1><ul class="list" id="pronto" aria-live="polite"></ul></section>
+  </main>
+  <footer class="tv-f"><span>Procure o seu nome e o código do pedido. Quando aparecer em <b>Pronto</b>, é só retirar no balcão.</span><span class="demo">Demonstração · Café Modelo é fictício · <a href="../painel/" target="_blank" rel="noopener">abrir o painel</a></span></footer>
+</div>
+<script type="module" src="telao.js"></script>
+</body>
+</html>

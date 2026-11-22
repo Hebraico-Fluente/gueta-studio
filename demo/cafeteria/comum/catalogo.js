@@ -5,6 +5,15 @@
    Preços em centavos. p: número, ou lista de [variação, centavos] (tamanhos do cardápio).
    Loja: p null = "a consultar" (o painel pede o valor cobrado na hora da retirada). */
 
+/* As quatro unidades da rede de EXEMPLO (fictícias). Cardápio e preços são os mesmos em todas. */
+export const LOJAS = [
+  { id: "centro", nome: "Loja Centro", curto: "Centro", cidade: "Curitiba", endereco: "Rua de Exemplo, 100 · Centro" },
+  { id: "batel", nome: "Loja Batel", curto: "Batel", cidade: "Curitiba", endereco: "Avenida de Exemplo, 200 · Batel" },
+  { id: "shopping", nome: "Loja Shopping", curto: "Shopping", cidade: "Curitiba", endereco: "Shopping de Exemplo, piso 2" },
+  { id: "sp", nome: "Loja São Paulo", curto: "São Paulo", cidade: "São Paulo", endereco: "Rua de Exemplo, 300 · Pinheiros" },
+];
+export const lojaNome = id => (LOJAS.find(l => l.id === id) || {}).nome || "";
+
 export const CARDAPIO = [
   // Cafés
   { id: "cafes-espresso", cat: "Cafés", nome: "Espresso", p: [["Simples", 800], ["Duplo", 1200]] },

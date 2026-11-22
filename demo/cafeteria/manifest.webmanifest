@@ -1,0 +1,21 @@
+{
+  "id": "/demo/cafeteria/painel/",
+  "name": "Painel Café Modelo",
+  "short_name": "Café Modelo",
+  "description": "Demonstração do painel para cafeterias, com o Café Modelo, uma rede fictícia. Dados de exemplo.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "./painel/",
+  "scope": "/demo/cafeteria/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#3A2318",
+  "background_color": "#F5EEE3",
+  "categories": ["business", "food"],
+  "icons": [
+    { "src": "comum/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "comum/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "comum/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "comum/icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
