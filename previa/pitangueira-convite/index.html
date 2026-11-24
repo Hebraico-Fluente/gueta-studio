@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veja um convite por dentro · Pitangueira</title>
+<meta name="description" content="Abra, vire e veja de perto cada peça de um convite de casamento, como se estivesse com o papel na mão. Demonstração da prova digital da Pitangueira.">
+<link rel="icon" href="marca/icone-bordo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#FF7C38">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pitangueira">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Veja um convite por dentro · Pitangueira">
+<meta property="og:description" content="Abra, vire e veja de perto cada peça do convite, como se estivesse com o papel na mão.">
+<meta property="og:url" content="https://guetastudio.com.br/previa/pitangueira-convite/">
+<meta property="og:image" content="https://guetastudio.com.br/previa/pitangueira-convite/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Convite de portas ilustrado, meio aberto, com o título Veja um convite por dentro">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fontes/dm-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/pinyon-script.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="convite.css">
+<script src="convite.js" defer></script>
+</head>
+<body data-modo="final">
+
+<!-- Formas e efeitos usados pelas ilustrações (estrela e coração são os mesmos do site) -->
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Textura de papel: um granulado leve, só dentro do formato da peça -->
+    <filter id="papel" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="ruido"/>
+      <feColorMatrix in="ruido" type="matrix" values="0 0 0 0 .45  0 0 0 0 .3  0 0 0 0 .25  0 0 0 .16 0" result="grao"/>
+      <feComposite in="grao" in2="SourceAlpha" operator="in" result="graoNoPapel"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="graoNoPapel"/></feMerge>
+    </filter>
+    <!-- Traço de lápis: tremidinho, como desenho à mão -->
+    <filter id="lapis" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="2" result="onda"/>
+      <feDisplacementMap in="SourceGraphic" in2="onda" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <symbol id="s-estrela" viewBox="0 0 200 200"><path d="M100 0 L116 70 L186 30 L132 92 L200 112 L128 124 L150 196 L100 140 L52 200 L70 126 L0 116 L66 90 L18 26 L86 66 Z"/></symbol>
+  <symbol id="s-coracao" viewBox="0 0 200 180"><path d="M100 178 C40 130 0 96 0 52 C0 22 24 0 54 0 C76 0 92 12 100 30 C108 12 124 0 146 0 C176 0 200 22 200 52 C200 96 160 130 100 178 Z"/></symbol>
+  <symbol id="s-pitanga" viewBox="0 0 100 100"><path d="M93.2 52 L92.7 54.5 L91.2 56.8 L89.2 58.9 L87.1 60.7 L85.3 62.5 L84 64.4 L83.4 66.5 L83.3 68.9 L83.3 71.6 L83 74.3 L82.2 76.8 L80.5 78.9 L78.2 80.3 L75.3 81 L72.2 81.3 L69.2 81.3 L66.5 81.4 L64.1 81.9 L62 83 L59.9 84.6 L57.8 86.5 L55.4 88.3 L52.8 89.6 L50 90 L47.2 89.6 L44.6 88.3 L42.2 86.5 L40.1 84.6 L38 83 L35.9 81.9 L33.5 81.4 L30.8 81.3 L27.8 81.3 L24.7 81 L21.8 80.3 L19.5 78.9 L17.8 76.8 L17 74.3 L16.7 71.6 L16.7 68.9 L16.6 66.5 L16 64.4 L14.7 62.5 L12.9 60.7 L10.8 58.9 L8.8 56.8 L7.3 54.5 L6.8 52 L7.3 49.5 L8.8 47.2 L10.8 45.1 L12.9 43.3 L14.7 41.5 L16 39.6 L16.6 37.5 L16.7 35.1 L16.7 32.4 L17 29.7 L17.8 27.2 L19.5 25.1 L21.8 23.7 L24.7 23 L27.8 22.7 L30.8 22.7 L33.5 22.6 L35.9 22.1 L38 21 L40.1 19.4 L42.2 17.5 L44.6 15.7 L47.2 14.4 L50 14 L52.8 14.4 L55.4 15.7 L57.8 17.5 L59.9 19.4 L62 21 L64.1 22.1 L66.5 22.6 L69.2 22.7 L72.2 22.7 L75.3 23 L78.2 23.7 L80.5 25.1 L82.2 27.2 L83 29.7 L83.3 32.4 L83.3 35.1 L83.4 37.5 L84 39.6 L85.3 41.5 L87.1 43.3 L89.2 45.1 L91.2 47.2 L92.7 49.5Z"/><path fill="none" stroke-width="2" stroke-linecap="round" d="M50 22 C34 34 32 66 44 84 M50 22 C66 34 68 66 56 84 M50 22 C47 44 47 66 50 88"/><path fill="none" stroke-width="2.6" stroke-linejoin="round" d="M50 8 L54 18 L64 16 L56 23 L60 32 L50 26 L40 32 L44 23 L36 16 L46 18 Z"/></symbol>
+  <symbol id="s-folha" viewBox="0 0 100 40"><path d="M2 20 C30 -4 70 -4 98 20 C70 44 30 44 2 20 Z"/><path fill="none" stroke-width="1.6" d="M6 20 L92 20 M30 20 L42 10 M30 20 L42 30 M56 20 L68 11 M56 20 L68 29"/></symbol>
+  <symbol id="s-sol" viewBox="-60 -60 120 120"><circle r="30"/><path d="M0 -58 L5 -37 L-5 -37 Z M0 58 L5 37 L-5 37 Z M-58 0 L-37 5 L-37 -5 Z M58 0 L37 5 L37 -5 Z M41 -41 L30 -23 L23 -30 Z M-41 41 L-30 23 L-23 30 Z M-41 -41 L-23 -30 L-30 -23 Z M41 41 L23 30 L30 23 Z"/></symbol>
+</svg>
+
+<a class="pular" href="#pecas">Pular para as peças</a>
+
+<header class="topo">
+  <div class="container">
+    <a href="https://pitangueiracriativa.com.br/" class="logo"><img src="marca/logo-horizontal-bordo.svg" alt="Pitangueira: voltar para o site" width="716" height="180"></a>
+    <a href="https://pitangueiracriativa.com.br/" class="voltar">← Voltar ao site</a>
+  </div>
+</header>
+
+<main>
+  <section class="abertura">
+    <svg class="estrela e1" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-estrela"/></svg>
+    <svg class="estrela e2" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-estrela"/></svg>
+    <div class="container">
+      <span class="etiqueta">Prova digital · demonstração</span>
+      <h1>Veja um convite <span class="script">por dentro</span></h1>
+      <p class="intro">Abra, vire e veja de perto cada peça, como se estivesse com o papel na mão.</p>
+
+      <fieldset class="modo" id="modo">
+        <legend class="sr">Como ver as peças</legend>
+        <label><input type="radio" name="modo" value="rascunho"><span>Rascunho</span></label>
+        <label><input type="radio" name="modo" value="final" checked><span>Arte final</span></label>
+      </fieldset>
+      <p class="dica-modo">Troque entre o desenho a lápis e a arte colorida, em todas as peças.</p>
+    </div>
+  </section>
+
+  <section class="pecas" id="pecas" aria-label="Peças do convite" tabindex="-1">
+    <div class="container">
+      <p class="nota-demo"><strong>Demonstração com peças ilustradas.</strong> Com o seu casamento, aqui entram as fotos do seu convite de verdade. Ana &amp; Pedro, a data e o lugar são só um exemplo.</p>
+      <div class="grade" id="grade"></div>
+      <noscript><p class="nota-demo">Para abrir e virar as peças, ative o JavaScript do navegador.</p></noscript>
+    </div>
+  </section>
+
+  <section class="como" aria-labelledby="como-titulo">
+    <div class="container">
+      <h2 id="como-titulo">Como funciona a <span class="script">prova digital</span></h2>
+      <ol class="passos">
+        <li style="--cor: var(--laranja)"><span class="num" aria-hidden="true">1</span><h3>A gente desenha o rascunho</h3><p>Depois da conversa com vocês, cada peça nasce no lápis: formato, dobras e onde vai cada texto.</p></li>
+        <li style="--cor: var(--coral)"><span class="num" aria-hidden="true">2</span><h3>Vocês veem aqui</h3><p>Abrem, viram e olham de perto cada peça numa página só de vocês, no celular ou no computador.</p></li>
+        <li style="--cor: var(--bordo)"><span class="num" aria-hidden="true">3</span><h3>Aprovam ou pedem ajuste</h3><p>Tudo é conferido com calma antes de ir para a gráfica.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contato">
+    <svg class="estrela e1" viewBox="0 0 200 200" aria-hidden="true"><use href="#s-estrela"/></svg>
+    <div class="container">
+      <h2>Gostou de ver por dentro? <span class="script">Conta pra gente</span></h2>
+      <p>Cada convite é desenhado do zero, com a história de vocês.</p>
+      <a class="btn btn-laranja" id="cta-whats" href="https://wa.me/5541987112437" target="_blank" rel="noopener">Quero o meu convite assim</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="marca/logo-vertical-branco.svg" alt="Pitangueira" width="120" height="110">
+  <p>Pitangueira · Design para casamentos criativos</p>
+</footer>
+
+<!-- "Ver de perto": as faces da peça, grandes e lado a lado -->
+<dialog class="perto" id="perto" aria-labelledby="perto-titulo">
+  <div class="perto-cab">
+    <h2 id="perto-titulo">Ver de perto</h2>
+    <button type="button" class="fechar" id="perto-fechar" aria-label="Fechar">×</button>
+  </div>
+  <div class="perto-corpo" id="perto-corpo"></div>
+</dialog>
+
+<!-- =====================================================================
+     ILUSTRAÇÕES DAS PEÇAS (demonstração)
+     Cada <template> é uma face. O rascunho usa o MESMO desenho com efeito de
+     lápis; o que tem class="so-lapis" só aparece no rascunho (guias e anotações).
+     Para usar fotos de verdade, veja o comentário no começo de convite.js.
+     ===================================================================== -->
+
+<template id="arte-convite-frente">
+<svg viewBox="0 0 500 700">
+  <path class="papel" d="M6 5.7 L15 4.5 L24.1 6.7 L33.1 4.1 L42.1 6.2 L51.2 5.4 L60.2 4.1 L69.3 6 L78.3 4 L87.3 5.7 L96.4 4.1 L105.4 4.2 L114.4 5.7 L123.5 7.4 L132.5 4.3 L141.6 4.8 L150.6 6.6 L159.6 8 L168.7 6.3 L177.7 5.5 L186.7 8.1 L195.8 4 L204.8 7.6 L213.9 5.1 L222.9 4.4 L231.9 4.3 L241 5.2 L250 7.4 L259 4.6 L268.1 6.4 L277.1 6.6 L286.1 5.4 L295.2 6.2 L304.2 4.1 L313.3 4.1 L322.3 4.7 L331.3 6.8 L340.4 5.7 L349.4 5.2 L358.4 6.4 L367.5 5.8 L376.5 5.1 L385.6 7.3 L394.6 6.9 L403.6 4.9 L412.7 6.3 L421.7 6.1 L430.7 7.7 L439.8 7 L448.8 5.1 L457.9 8.1 L466.9 4.3 L475.9 5.6 L485 7.1 L493.4 6 L494 15.1 L492 24.1 L494.7 33.2 L495.2 42.2 L494.3 51.3 L495.7 60.3 L493.2 69.4 L494.9 78.4 L494.4 87.5 L494.4 96.5 L493.8 105.6 L495.5 114.6 L496 123.7 L493.9 132.7 L494.7 141.8 L492.1 150.8 L494.9 159.9 L494.6 168.9 L496.2 178 L495.4 187.1 L493.1 196.1 L493.5 205.2 L494.7 214.2 L491.9 223.3 L493.8 232.3 L492.5 241.4 L492.3 250.4 L492.1 259.5 L495.2 268.5 L492.4 277.6 L492.9 286.6 L493.5 295.7 L495.6 304.7 L492.2 313.8 L493.8 322.8 L494.2 331.9 L495.7 340.9 L495.4 350 L495.6 359.1 L493 368.1 L493.6 377.2 L493.4 386.2 L495.7 395.3 L496 404.3 L492.5 413.4 L492.6 422.4 L492.8 431.5 L492.8 440.5 L493.9 449.6 L494.4 458.6 L493 467.7 L491.8 476.7 L493.6 485.8 L493.4 494.8 L494.3 503.9 L496 512.9 L494.8 522 L494.1 531.1 L494.5 540.1 L494.8 549.2 L492 558.2 L495.8 567.3 L495.2 576.3 L495.6 585.4 L495.3 594.4 L493.5 603.5 L493.6 612.5 L492.3 621.6 L494.6 630.6 L492.1 639.7 L492.1 648.7 L492.7 657.8 L492.5 666.8 L493.3 675.9 L492 684.9 L494 693.1 L485 692.5 L475.9 692.2 L466.9 693.4 L457.9 691.9 L448.8 695.6 L439.8 694.5 L430.7 692.5 L421.7 692.9 L412.7 693.3 L403.6 693.4 L394.6 692.3 L385.6 695.5 L376.5 696.2 L367.5 693.9 L358.4 693.9 L349.4 692.2 L340.4 692.2 L331.3 693.3 L322.3 693 L313.3 695.4 L304.2 692.5 L295.2 691.9 L286.1 696 L277.1 694.1 L268.1 692.4 L259 694.2 L250 691.9 L241 694.1 L231.9 696.1 L222.9 695.6 L213.9 694.9 L204.8 692.9 L195.8 693.4 L186.7 692.5 L177.7 695.2 L168.7 694.1 L159.6 695.2 L150.6 693.3 L141.6 692.8 L132.5 695.4 L123.5 696.1 L114.4 695.6 L105.4 695.3 L96.4 695.4 L87.3 695.1 L78.3 692.8 L69.3 694.1 L60.2 693.4 L51.2 691.9 L42.1 691.9 L33.1 693 L24.1 692.9 L15 694.8 L6.8 694 L5.8 684.9 L7.9 675.9 L8.1 666.8 L8 657.8 L5.4 648.7 L4.8 639.7 L4.8 630.6 L4.7 621.6 L4.7 612.5 L6.5 603.5 L7.8 594.4 L7.5 585.4 L5.9 576.3 L6.7 567.3 L7.3 558.2 L4.2 549.2 L6.7 540.1 L7.8 531.1 L7.2 522 L7.1 512.9 L5.9 503.9 L4.6 494.8 L7.3 485.8 L5.3 476.7 L7.3 467.7 L8.1 458.6 L5.5 449.6 L5.6 440.5 L8 431.5 L7 422.4 L4.5 413.4 L4.4 404.3 L4.5 395.3 L7.8 386.2 L7.3 377.2 L4.4 368.1 L7.4 359.1 L8.1 350 L6.7 340.9 L5.3 331.9 L6.2 322.8 L4.4 313.8 L3.9 304.7 L8.1 295.7 L6.7 286.6 L6.1 277.6 L7.9 268.5 L5.7 259.5 L7.6 250.4 L7.4 241.4 L4.7 232.3 L4.9 223.3 L5.1 214.2 L4.9 205.2 L6.4 196.1 L4.9 187.1 L5.6 178 L4.4 168.9 L7.8 159.9 L5.4 150.8 L5.8 141.8 L6.4 132.7 L7.8 123.7 L5.7 114.6 L7.8 105.6 L6 96.5 L6.1 87.5 L6.1 78.4 L3.9 69.4 L5.7 60.3 L4.6 51.3 L3.8 42.2 L7.3 33.2 L4.6 24.1 L5.9 15.1Z" fill="#FFF8EF" filter="url(#papel)"/>
+  <rect x="34" y="34" width="432" height="632" rx="14" fill="none" stroke="#AD2A49" stroke-width="1.5"/>
+  <rect x="44" y="44" width="412" height="612" rx="10" fill="none" stroke="#F67E7D" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
+  <use href="#s-sol" x="175" y="70" width="150" height="150" fill="#FFCE59"/>
+  <use href="#s-folha" x="130" y="178" width="92" height="37" fill="#AD2A49" stroke="#FFF8EF" transform="rotate(-24 176 196)"/>
+  <use href="#s-folha" x="278" y="178" width="92" height="37" fill="#AD2A49" stroke="#FFF8EF" transform="rotate(204 324 196)"/>
+  <use href="#s-pitanga" x="196" y="136" width="70" height="70" fill="#FF7C38" stroke="#AD2A49"/>
+  <use href="#s-pitanga" x="244" y="160" width="56" height="56" fill="#F67E7D" stroke="#AD2A49"/>
+  <text x="250" y="286" class="t-texto" font-size="12" letter-spacing="3" text-anchor="middle" fill="#7D5A60">COM A BÊNÇÃO DE SUAS FAMÍLIAS</text>
+  <text x="250" y="368" class="t-script" font-size="76" fill="#AD2A49" text-anchor="middle">Ana</text>
+  <text x="250" y="416" class="t-titulo" font-size="38" fill="#FF7C38" text-anchor="middle">&amp;</text>
+  <text x="250" y="486" class="t-script" font-size="76" fill="#AD2A49" text-anchor="middle">Pedro</text>
+  <text x="250" y="528" class="t-texto" font-size="13" fill="#3B1622" text-anchor="middle">convidam para a celebração do seu casamento</text>
+  <use href="#s-coracao" x="240" y="546" width="20" height="18" fill="#F67E7D"/>
+  <text x="250" y="604" class="t-titulo" font-size="32" fill="#3B1622" text-anchor="middle">14 · 03 · 2027</text>
+  <text x="250" y="632" class="t-texto" font-size="11" letter-spacing="2" fill="#7D5A60" text-anchor="middle">SÁBADO, 16H · SÍTIO FLOR DE PITANGA</text>
+  <g class="so-lapis">
+    <line x1="250" y1="22" x2="250" y2="678" stroke-dasharray="3 7"/>
+    <line x1="60" y1="300" x2="440" y2="300" stroke-dasharray="3 7"/>
+    <text x="350" y="96" class="t-script" font-size="24" transform="rotate(6 350 96)">sol amarelo</text>
+    <path d="M352 104 Q 336 116 322 132" fill="none"/>
+    <text x="54" y="420" class="t-script" font-size="22" transform="rotate(-10 54 420)">nomes à mão</text>
+    <text x="330" y="580" class="t-script" font-size="20" transform="rotate(-4 330 580)">margem 10mm</text>
+  </g>
+</svg>
+</template>
+
+<template id="arte-convite-verso">
+<svg viewBox="0 0 500 700">
+  <path class="papel" d="M6 5.7 L15 4.5 L24.1 6.7 L33.1 4.1 L42.1 6.2 L51.2 5.4 L60.2 4.1 L69.3 6 L78.3 4 L87.3 5.7 L96.4 4.1 L105.4 4.2 L114.4 5.7 L123.5 7.4 L132.5 4.3 L141.6 4.8 L150.6 6.6 L159.6 8 L168.7 6.3 L177.7 5.5 L186.7 8.1 L195.8 4 L204.8 7.6 L213.9 5.1 L222.9 4.4 L231.9 4.3 L241 5.2 L250 7.4 L259 4.6 L268.1 6.4 L277.1 6.6 L286.1 5.4 L295.2 6.2 L304.2 4.1 L313.3 4.1 L322.3 4.7 L331.3 6.8 L340.4 5.7 L349.4 5.2 L358.4 6.4 L367.5 5.8 L376.5 5.1 L385.6 7.3 L394.6 6.9 L403.6 4.9 L412.7 6.3 L421.7 6.1 L430.7 7.7 L439.8 7 L448.8 5.1 L457.9 8.1 L466.9 4.3 L475.9 5.6 L485 7.1 L493.4 6 L494 15.1 L492 24.1 L494.7 33.2 L495.2 42.2 L494.3 51.3 L495.7 60.3 L493.2 69.4 L494.9 78.4 L494.4 87.5 L494.4 96.5 L493.8 105.6 L495.5 114.6 L496 123.7 L493.9 132.7 L494.7 141.8 L492.1 150.8 L494.9 159.9 L494.6 168.9 L496.2 178 L495.4 187.1 L493.1 196.1 L493.5 205.2 L494.7 214.2 L491.9 223.3 L493.8 232.3 L492.5 241.4 L492.3 250.4 L492.1 259.5 L495.2 268.5 L492.4 277.6 L492.9 286.6 L493.5 295.7 L495.6 304.7 L492.2 313.8 L493.8 322.8 L494.2 331.9 L495.7 340.9 L495.4 350 L495.6 359.1 L493 368.1 L493.6 377.2 L493.4 386.2 L495.7 395.3 L496 404.3 L492.5 413.4 L492.6 422.4 L492.8 431.5 L492.8 440.5 L493.9 449.6 L494.4 458.6 L493 467.7 L491.8 476.7 L493.6 485.8 L493.4 494.8 L494.3 503.9 L496 512.9 L494.8 522 L494.1 531.1 L494.5 540.1 L494.8 549.2 L492 558.2 L495.8 567.3 L495.2 576.3 L495.6 585.4 L495.3 594.4 L493.5 603.5 L493.6 612.5 L492.3 621.6 L494.6 630.6 L492.1 639.7 L492.1 648.7 L492.7 657.8 L492.5 666.8 L493.3 675.9 L492 684.9 L494 693.1 L485 692.5 L475.9 692.2 L466.9 693.4 L457.9 691.9 L448.8 695.6 L439.8 694.5 L430.7 692.5 L421.7 692.9 L412.7 693.3 L403.6 693.4 L394.6 692.3 L385.6 695.5 L376.5 696.2 L367.5 693.9 L358.4 693.9 L349.4 692.2 L340.4 692.2 L331.3 693.3 L322.3 693 L313.3 695.4 L304.2 692.5 L295.2 691.9 L286.1 696 L277.1 694.1 L268.1 692.4 L259 694.2 L250 691.9 L241 694.1 L231.9 696.1 L222.9 695.6 L213.9 694.9 L204.8 692.9 L195.8 693.4 L186.7 692.5 L177.7 695.2 L168.7 694.1 L159.6 695.2 L150.6 693.3 L141.6 692.8 L132.5 695.4 L123.5 696.1 L114.4 695.6 L105.4 695.3 L96.4 695.4 L87.3 695.1 L78.3 692.8 L69.3 694.1 L60.2 693.4 L51.2 691.9 L42.1 691.9 L33.1 693 L24.1 692.9 L15 694.8 L6.8 694 L5.8 684.9 L7.9 675.9 L8.1 666.8 L8 657.8 L5.4 648.7 L4.8 639.7 L4.8 630.6 L4.7 621.6 L4.7 612.5 L6.5 603.5 L7.8 594.4 L7.5 585.4 L5.9 576.3 L6.7 567.3 L7.3 558.2 L4.2 549.2 L6.7 540.1 L7.8 531.1 L7.2 522 L7.1 512.9 L5.9 503.9 L4.6 494.8 L7.3 485.8 L5.3 476.7 L7.3 467.7 L8.1 458.6 L5.5 449.6 L5.6 440.5 L8 431.5 L7 422.4 L4.5 413.4 L4.4 404.3 L4.5 395.3 L7.8 386.2 L7.3 377.2 L4.4 368.1 L7.4 359.1 L8.1 350 L6.7 340.9 L5.3 331.9 L6.2 322.8 L4.4 313.8 L3.9 304.7 L8.1 295.7 L6.7 286.6 L6.1 277.6 L7.9 268.5 L5.7 259.5 L7.6 250.4 L7.4 241.4 L4.7 232.3 L4.9 223.3 L5.1 214.2 L4.9 205.2 L6.4 196.1 L4.9 187.1 L5.6 178 L4.4 168.9 L7.8 159.9 L5.4 150.8 L5.8 141.8 L6.4 132.7 L7.8 123.7 L5.7 114.6 L7.8 105.6 L6 96.5 L6.1 87.5 L6.1 78.4 L3.9 69.4 L5.7 60.3 L4.6 51.3 L3.8 42.2 L7.3 33.2 L4.6 24.1 L5.9 15.1Z" fill="#FCEADB" filter="url(#papel)"/>
+  <g opacity=".85"><use href="#s-pitanga" x="23" y="29.2" width="16" height="16" fill="#FF7C38" transform="rotate(14.8 31 37.2)"/><use href="#s-pitanga" x="83.4" y="27.6" width="19.2" height="19.2" fill="#FFCE59" transform="rotate(-23.5 93 37.2)"/><use href="#s-estrela" x="144.9" y="27.1" width="20.2" height="20.2" fill="#F67E7D" transform="rotate(7.4 155 37.2)"/><use href="#s-coracao" x="209.5" y="29.7" width="14.9" height="14.9" fill="#FF7C38" transform="rotate(18.4 217 37.2)"/><use href="#s-estrela" x="269.8" y="28" width="18.4" height="18.4" fill="#FFCE59" transform="rotate(-12.5 279 37.2)"/><use href="#s-pitanga" x="333.1" y="29.3" width="15.7" height="15.7" fill="#FF7C38" transform="rotate(-15.9 341 37.2)"/><use href="#s-estrela" x="395.4" y="29.6" width="15.3" height="15.3" fill="#F67E7D" transform="rotate(-18.1 403 37.2)"/><use href="#s-pitanga" x="456.2" y="28.4" width="17.6" height="17.6" fill="#F67E7D" transform="rotate(-24.9 465 37.2)"/><use href="#s-coracao" x="54.2" y="79" width="15.7" height="15.7" fill="#F67E7D" transform="rotate(23 62 86.8)"/><use href="#s-coracao" x="113.5" y="76.3" width="21" height="21" fill="#FF7C38" transform="rotate(-9.3 124 86.8)"/><use href="#s-coracao" x="176.8" y="77.6" width="18.3" height="18.3" fill="#FFCE59" transform="rotate(6.3 186 86.8)"/><use href="#s-coracao" x="237.2" y="76" width="21.5" height="21.5" fill="#FFCE59" transform="rotate(-15.2 248 86.8)"/><use href="#s-estrela" x="301.8" y="78.6" width="16.4" height="16.4" fill="#FF7C38" transform="rotate(-4.3 310 86.8)"/><use href="#s-coracao" x="363.9" y="78.7" width="16.1" height="16.1" fill="#FF7C38" transform="rotate(-9.9 372 86.8)"/><use href="#s-pitanga" x="424.7" y="77.5" width="18.7" height="18.7" fill="#FFCE59" transform="rotate(8.9 434 86.8)"/><use href="#s-estrela" x="23.7" y="129.1" width="14.5" height="14.5" fill="#FF7C38" transform="rotate(15.9 31 136.4)"/><use href="#s-estrela" x="83.2" y="126.6" width="19.6" height="19.6" fill="#F67E7D" transform="rotate(-0.9 93 136.4)"/><use href="#s-pitanga" x="147.3" y="128.7" width="15.4" height="15.4" fill="#FF7C38" transform="rotate(23.8 155 136.4)"/><use href="#s-coracao" x="206.2" y="125.6" width="21.6" height="21.6" fill="#FF7C38" transform="rotate(17.2 217 136.4)"/><use href="#s-coracao" x="269.8" y="127.2" width="18.4" height="18.4" fill="#FF7C38" transform="rotate(-6.7 279 136.4)"/><use href="#s-pitanga" x="330.6" y="126" width="20.7" height="20.7" fill="#FF7C38" transform="rotate(-22.7 341 136.4)"/><use href="#s-coracao" x="393.5" y="126.9" width="19" height="19" fill="#F67E7D" transform="rotate(-19 403 136.4)"/><use href="#s-coracao" x="454.3" y="125.7" width="21.4" height="21.4" fill="#FF7C38" transform="rotate(-7.8 465 136.4)"/><use href="#s-estrela" x="51.4" y="175.4" width="21.1" height="21.1" fill="#FF7C38" transform="rotate(13.8 62 186)"/><use href="#s-coracao" x="424.6" y="176.6" width="18.7" height="18.7" fill="#FF7C38" transform="rotate(18 434 186)"/><use href="#s-coracao" x="22.3" y="226.9" width="17.5" height="17.5" fill="#F67E7D" transform="rotate(-14.6 31 235.6)"/><use href="#s-pitanga" x="83.6" y="226.2" width="18.9" height="18.9" fill="#F67E7D" transform="rotate(-8 93 235.6)"/><use href="#s-pitanga" x="393.8" y="226.4" width="18.4" height="18.4" fill="#FF7C38" transform="rotate(9.3 403 235.6)"/><use href="#s-estrela" x="457.3" y="227.9" width="15.4" height="15.4" fill="#F67E7D" transform="rotate(6.3 465 235.6)"/><use href="#s-pitanga" x="52.2" y="275.4" width="19.5" height="19.5" fill="#FF7C38" transform="rotate(-16.9 62 285.2)"/><use href="#s-coracao" x="426.7" y="277.9" width="14.6" height="14.6" fill="#FFCE59" transform="rotate(1.7 434 285.2)"/><use href="#s-estrela" x="23.9" y="327.7" width="14.3" height="14.3" fill="#FFCE59" transform="rotate(4.7 31 334.8)"/><use href="#s-estrela" x="84.2" y="326" width="17.6" height="17.6" fill="#FF7C38" transform="rotate(-17.7 93 334.8)"/><use href="#s-pitanga" x="395.9" y="327.7" width="14.3" height="14.3" fill="#FF7C38" transform="rotate(-8.3 403 334.8)"/><use href="#s-coracao" x="457.5" y="327.3" width="15" height="15" fill="#FFCE59" transform="rotate(3.2 465 334.8)"/><use href="#s-coracao" x="52.5" y="374.9" width="19" height="19" fill="#FF7C38" transform="rotate(-19.7 62 384.4)"/><use href="#s-estrela" x="425.5" y="375.9" width="17" height="17" fill="#F67E7D" transform="rotate(17.2 434 384.4)"/><use href="#s-estrela" x="23.4" y="426.4" width="15.1" height="15.1" fill="#FFCE59" transform="rotate(17.6 31 434)"/><use href="#s-pitanga" x="84.2" y="425.2" width="17.6" height="17.6" fill="#FF7C38" transform="rotate(9.4 93 434)"/><use href="#s-estrela" x="394.1" y="425.1" width="17.8" height="17.8" fill="#FF7C38" transform="rotate(-1.5 403 434)"/><use href="#s-coracao" x="457.5" y="426.5" width="14.9" height="14.9" fill="#FFCE59" transform="rotate(23 465 434)"/><use href="#s-pitanga" x="51.3" y="472.9" width="21.5" height="21.5" fill="#FF7C38" transform="rotate(-16 62 483.6)"/><use href="#s-estrela" x="425.9" y="475.5" width="16.2" height="16.2" fill="#FFCE59" transform="rotate(18.4 434 483.6)"/><use href="#s-estrela" x="23.7" y="525.9" width="14.5" height="14.5" fill="#FF7C38" transform="rotate(9.7 31 533.2)"/><use href="#s-pitanga" x="85.9" y="526.1" width="14.3" height="14.3" fill="#FF7C38" transform="rotate(-6.8 93 533.2)"/><use href="#s-pitanga" x="393.3" y="523.5" width="19.3" height="19.3" fill="#FF7C38" transform="rotate(-11.8 403 533.2)"/><use href="#s-pitanga" x="455.1" y="523.3" width="19.7" height="19.7" fill="#FF7C38" transform="rotate(7.5 465 533.2)"/><use href="#s-pitanga" x="51.6" y="572.4" width="20.8" height="20.8" fill="#FF7C38" transform="rotate(2.3 62 582.8)"/><use href="#s-estrela" x="115.7" y="574.5" width="16.6" height="16.6" fill="#FF7C38" transform="rotate(-1.9 124 582.8)"/><use href="#s-pitanga" x="176.4" y="573.2" width="19.2" height="19.2" fill="#FF7C38" transform="rotate(-7.6 186 582.8)"/><use href="#s-pitanga" x="239.6" y="574.4" width="16.8" height="16.8" fill="#FF7C38" transform="rotate(-7.5 248 582.8)"/><use href="#s-coracao" x="299.5" y="572.3" width="21" height="21" fill="#FFCE59" transform="rotate(-2.5 310 582.8)"/><use href="#s-estrela" x="361.2" y="572" width="21.7" height="21.7" fill="#FFCE59" transform="rotate(-17.9 372 582.8)"/><use href="#s-coracao" x="426.2" y="575" width="15.6" height="15.6" fill="#FF7C38" transform="rotate(21.9 434 582.8)"/><use href="#s-estrela" x="22.9" y="624.3" width="16.3" height="16.3" fill="#F67E7D" transform="rotate(11 31 632.4)"/><use href="#s-pitanga" x="84.3" y="623.7" width="17.3" height="17.3" fill="#FFCE59" transform="rotate(14 93 632.4)"/><use href="#s-pitanga" x="145.9" y="623.3" width="18.1" height="18.1" fill="#FF7C38" transform="rotate(-9.9 155 632.4)"/><use href="#s-pitanga" x="206.9" y="622.3" width="20.2" height="20.2" fill="#FFCE59" transform="rotate(-11.5 217 632.4)"/><use href="#s-coracao" x="271.2" y="624.6" width="15.6" height="15.6" fill="#FFCE59" transform="rotate(-2.9 279 632.4)"/><use href="#s-pitanga" x="333.3" y="624.7" width="15.4" height="15.4" fill="#FFCE59" transform="rotate(-16 341 632.4)"/><use href="#s-pitanga" x="395.8" y="625.2" width="14.3" height="14.3" fill="#FF7C38" transform="rotate(24 403 632.4)"/><use href="#s-coracao" x="457.8" y="625.2" width="14.4" height="14.4" fill="#F67E7D" transform="rotate(-19.5 465 632.4)"/><use href="#s-coracao" x="53.1" y="673.1" width="17.9" height="17.9" fill="#FFCE59" transform="rotate(-23.2 62 682)"/><use href="#s-estrela" x="115.6" y="673.6" width="16.8" height="16.8" fill="#FFCE59" transform="rotate(5.6 124 682)"/><use href="#s-pitanga" x="178.2" y="674.2" width="15.6" height="15.6" fill="#FFCE59" transform="rotate(20.2 186 682)"/><use href="#s-coracao" x="239.6" y="673.6" width="16.8" height="16.8" fill="#FF7C38" transform="rotate(17.8 248 682)"/><use href="#s-coracao" x="300.2" y="672.2" width="19.5" height="19.5" fill="#FFCE59" transform="rotate(-6.3 310 682)"/><use href="#s-coracao" x="362.8" y="672.8" width="18.4" height="18.4" fill="#FF7C38" transform="rotate(-20.3 372 682)"/><use href="#s-pitanga" x="424.9" y="672.9" width="18.1" height="18.1" fill="#FFCE59" transform="rotate(-10.3 434 682)"/></g>
+  <circle cx="250" cy="300" r="128" fill="#FFF8EF" stroke="#AD2A49" stroke-width="1.5"/>
+  <circle cx="250" cy="300" r="116" fill="none" stroke="#F67E7D" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
+  <text x="212" y="330" class="t-script" font-size="110" fill="#AD2A49" text-anchor="middle">A</text>
+  <text x="250" y="318" class="t-titulo" font-size="34" fill="#FF7C38" text-anchor="middle">&amp;</text>
+  <text x="292" y="348" class="t-script" font-size="110" fill="#AD2A49" text-anchor="middle">P</text>
+  <text x="250" y="390" class="t-texto" font-size="11" letter-spacing="3" text-anchor="middle" fill="#7D5A60">14 · 03 · 2027</text>
+  <rect x="96" y="452" width="308" height="150" rx="16" fill="#FFF8EF" stroke="#F1D6C2" stroke-width="1.5"/>
+  <text x="250" y="488" class="t-titulo" font-size="22" fill="#AD2A49" text-anchor="middle">Para guardar</text>
+  <text x="250" y="516" class="t-texto" font-size="13" fill="#3B1622" text-anchor="middle">Cerimônia às 16h, festa logo em seguida</text>
+  <text x="250" y="540" class="t-texto" font-size="13" fill="#3B1622" text-anchor="middle">Traje: esporte fino, com muita cor</text>
+  <text x="250" y="564" class="t-texto" font-size="13" fill="#3B1622" text-anchor="middle">Confirme até 10 de fevereiro</text>
+  <text x="250" y="652" class="t-texto" font-size="9" letter-spacing="3" text-anchor="middle" fill="#7D5A60">PAPELARIA · PITANGUEIRA</text>
+  <g class="so-lapis">
+    <text x="60" y="140" class="t-script" font-size="22" transform="rotate(-8 60 140)">fundo areia + mini corações</text>
+    <text x="300" y="440" class="t-script" font-size="20" transform="rotate(4 300 440)">infos práticas</text>
+  </g>
+</svg>
+</template>
+
+<template id="arte-portas-capa">
+<svg viewBox="0 0 500 700" preserveAspectRatio="none">
+  <rect class="papel" width="500" height="700" fill="#FF7C38" filter="url(#papel)"/>
+  <use href="#s-coracao" x="40" y="170" width="420" height="378" fill="#F0682A" transform="rotate(-8 250 360)"/>
+  <rect x="22" y="22" width="456" height="656" rx="6" fill="none" stroke="#FFF8EF" stroke-width="1.4"/>
+  <use href="#s-estrela" x="56" y="70" width="44" height="44" fill="#FFCE59"/>
+  <use href="#s-estrela" x="406" y="580" width="40" height="40" fill="#FFCE59"/>
+  <use href="#s-estrela" x="390" y="110" width="22" height="22" fill="#FFF8EF"/>
+  <text x="250" y="150" class="t-texto" font-size="12" letter-spacing="4" text-anchor="middle" fill="#FFF8EF">VOCÊS ESTÃO CONVIDADOS</text>
+  <text x="178" y="400" class="t-script" font-size="150" fill="#FFF8EF" text-anchor="middle">A</text>
+  <text x="250" y="372" class="t-titulo" font-size="42" fill="#FFCE59" text-anchor="middle">&amp;</text>
+  <text x="330" y="432" class="t-script" font-size="150" fill="#FFF8EF" text-anchor="middle">P</text>
+  <text x="250" y="560" class="t-titulo" font-size="26" fill="#7E1C35" text-anchor="middle">14 · 03 · 2027</text>
+  <g class="so-lapis">
+    <line x1="250" y1="0" x2="250" y2="700" stroke-dasharray="6 6"/>
+    <text x="262" y="640" class="t-script" font-size="22">dobra das portas</text>
+  </g>
+</svg>
+</template>
+
+<template id="arte-portas-verso">
+<svg viewBox="0 0 250 700" preserveAspectRatio="none">
+  <rect class="papel" width="250" height="700" fill="#FCEADB" filter="url(#papel)"/>
+  <g opacity=".75"><use href="#s-estrela" x="17.2" y="22.2" width="15.7" height="15.7" fill="#FF7C38" transform="rotate(-18.1 25 30)"/><use href="#s-pitanga" x="69" y="24" width="12" height="12" fill="#AD2A49" transform="rotate(-1.8 75 30)"/><use href="#s-pitanga" x="118.8" y="23.8" width="12.5" height="12.5" fill="#AD2A49" transform="rotate(21.8 125 30)"/><use href="#s-pitanga" x="168.9" y="23.9" width="12.2" height="12.2" fill="#FF7C38" transform="rotate(-16.5 175 30)"/><use href="#s-estrela" x="216.1" y="21.1" width="17.7" height="17.7" fill="#FF7C38" transform="rotate(-17.1 225 30)"/><use href="#s-coracao" x="43.8" y="63.8" width="12.3" height="12.3" fill="#F67E7D" transform="rotate(0.3 50 70)"/><use href="#s-pitanga" x="93.8" y="63.8" width="12.4" height="12.4" fill="#AD2A49" transform="rotate(-5.8 100 70)"/><use href="#s-pitanga" x="141.3" y="61.3" width="17.3" height="17.3" fill="#FF7C38" transform="rotate(-14.8 150 70)"/><use href="#s-coracao" x="191.8" y="61.8" width="16.4" height="16.4" fill="#FF7C38" transform="rotate(19.5 200 70)"/><use href="#s-estrela" x="16.3" y="101.3" width="17.5" height="17.5" fill="#FF7C38" transform="rotate(-10.9 25 110)"/><use href="#s-coracao" x="68.4" y="103.4" width="13.2" height="13.2" fill="#F67E7D" transform="rotate(19 75 110)"/><use href="#s-coracao" x="116.3" y="101.3" width="17.4" height="17.4" fill="#FF7C38" transform="rotate(-18 125 110)"/><use href="#s-coracao" x="167.7" y="102.7" width="14.5" height="14.5" fill="#F67E7D" transform="rotate(23.2 175 110)"/><use href="#s-coracao" x="218.6" y="103.6" width="12.7" height="12.7" fill="#AD2A49" transform="rotate(-15.1 225 110)"/><use href="#s-coracao" x="43" y="143" width="14" height="14" fill="#F67E7D" transform="rotate(-18.3 50 150)"/><use href="#s-coracao" x="92.5" y="142.5" width="15" height="15" fill="#AD2A49" transform="rotate(-0.2 100 150)"/><use href="#s-coracao" x="142.7" y="142.7" width="14.5" height="14.5" fill="#FF7C38" transform="rotate(-15.4 150 150)"/><use href="#s-coracao" x="191.9" y="141.9" width="16.2" height="16.2" fill="#F67E7D" transform="rotate(-16.4 200 150)"/><use href="#s-pitanga" x="16.8" y="181.8" width="16.3" height="16.3" fill="#F67E7D" transform="rotate(-22.3 25 190)"/><use href="#s-pitanga" x="67" y="182" width="16.1" height="16.1" fill="#F67E7D" transform="rotate(12.3 75 190)"/><use href="#s-pitanga" x="116" y="181" width="18" height="18" fill="#F67E7D" transform="rotate(-18.9 125 190)"/><use href="#s-pitanga" x="167.8" y="182.8" width="14.4" height="14.4" fill="#F67E7D" transform="rotate(-16.9 175 190)"/><use href="#s-pitanga" x="218.9" y="183.9" width="12.3" height="12.3" fill="#FF7C38" transform="rotate(17.3 225 190)"/><use href="#s-pitanga" x="42.2" y="222.2" width="15.5" height="15.5" fill="#AD2A49" transform="rotate(-20.7 50 230)"/><use href="#s-estrela" x="93.7" y="223.7" width="12.7" height="12.7" fill="#AD2A49" transform="rotate(-6.7 100 230)"/><use href="#s-coracao" x="142.8" y="222.8" width="14.4" height="14.4" fill="#AD2A49" transform="rotate(12.3 150 230)"/><use href="#s-estrela" x="191.6" y="221.6" width="16.8" height="16.8" fill="#FF7C38" transform="rotate(-25 200 230)"/><use href="#s-coracao" x="18.4" y="263.4" width="13.3" height="13.3" fill="#FF7C38" transform="rotate(-11.5 25 270)"/><use href="#s-coracao" x="68.1" y="263.1" width="13.8" height="13.8" fill="#FF7C38" transform="rotate(-19.8 75 270)"/><use href="#s-coracao" x="118.9" y="263.9" width="12.2" height="12.2" fill="#AD2A49" transform="rotate(15.4 125 270)"/><use href="#s-estrela" x="168" y="263" width="14.1" height="14.1" fill="#F67E7D" transform="rotate(3.3 175 270)"/><use href="#s-coracao" x="217.7" y="262.7" width="14.6" height="14.6" fill="#F67E7D" transform="rotate(-20.2 225 270)"/><use href="#s-estrela" x="42.5" y="302.5" width="15.1" height="15.1" fill="#AD2A49" transform="rotate(-6.5 50 310)"/><use href="#s-pitanga" x="93.1" y="303.1" width="13.7" height="13.7" fill="#AD2A49" transform="rotate(17.2 100 310)"/><use href="#s-estrela" x="143.9" y="303.9" width="12.2" height="12.2" fill="#F67E7D" transform="rotate(-11.9 150 310)"/><use href="#s-coracao" x="191" y="301" width="17.9" height="17.9" fill="#AD2A49" transform="rotate(-17.6 200 310)"/><use href="#s-coracao" x="18.8" y="343.8" width="12.4" height="12.4" fill="#F67E7D" transform="rotate(14.3 25 350)"/><use href="#s-estrela" x="67.2" y="342.2" width="15.7" height="15.7" fill="#FF7C38" transform="rotate(-10.7 75 350)"/><use href="#s-estrela" x="117.3" y="342.3" width="15.4" height="15.4" fill="#F67E7D" transform="rotate(23.1 125 350)"/><use href="#s-pitanga" x="167.3" y="342.3" width="15.3" height="15.3" fill="#AD2A49" transform="rotate(-19.1 175 350)"/><use href="#s-estrela" x="217.6" y="342.6" width="14.7" height="14.7" fill="#AD2A49" transform="rotate(3.1 225 350)"/><use href="#s-estrela" x="42.2" y="382.2" width="15.5" height="15.5" fill="#F67E7D" transform="rotate(8.2 50 390)"/><use href="#s-estrela" x="91.7" y="381.7" width="16.6" height="16.6" fill="#AD2A49" transform="rotate(-0.3 100 390)"/><use href="#s-coracao" x="141.2" y="381.2" width="17.5" height="17.5" fill="#FF7C38" transform="rotate(1.4 150 390)"/><use href="#s-coracao" x="191.6" y="381.6" width="16.8" height="16.8" fill="#F67E7D" transform="rotate(-16.9 200 390)"/><use href="#s-coracao" x="16.4" y="421.4" width="17.2" height="17.2" fill="#F67E7D" transform="rotate(-16.2 25 430)"/><use href="#s-estrela" x="67.2" y="422.2" width="15.5" height="15.5" fill="#AD2A49" transform="rotate(-5.6 75 430)"/><use href="#s-coracao" x="117.4" y="422.4" width="15.3" height="15.3" fill="#AD2A49" transform="rotate(22.3 125 430)"/><use href="#s-pitanga" x="168.8" y="423.8" width="12.4" height="12.4" fill="#AD2A49" transform="rotate(-23.6 175 430)"/><use href="#s-pitanga" x="216.3" y="421.3" width="17.3" height="17.3" fill="#AD2A49" transform="rotate(-9.6 225 430)"/><use href="#s-pitanga" x="42.4" y="462.4" width="15.2" height="15.2" fill="#F67E7D" transform="rotate(18.9 50 470)"/><use href="#s-pitanga" x="92.4" y="462.4" width="15.3" height="15.3" fill="#FF7C38" transform="rotate(-21.8 100 470)"/><use href="#s-coracao" x="141.8" y="461.8" width="16.3" height="16.3" fill="#F67E7D" transform="rotate(-20 150 470)"/><use href="#s-estrela" x="192.6" y="462.6" width="14.7" height="14.7" fill="#FF7C38" transform="rotate(19.4 200 470)"/><use href="#s-pitanga" x="18.8" y="503.8" width="12.3" height="12.3" fill="#AD2A49" transform="rotate(-23.5 25 510)"/><use href="#s-coracao" x="66.4" y="501.4" width="17.3" height="17.3" fill="#F67E7D" transform="rotate(-6.4 75 510)"/><use href="#s-pitanga" x="117.3" y="502.3" width="15.4" height="15.4" fill="#FF7C38" transform="rotate(18.8 125 510)"/><use href="#s-coracao" x="167.1" y="502.1" width="15.7" height="15.7" fill="#F67E7D" transform="rotate(5.7 175 510)"/><use href="#s-pitanga" x="217.8" y="502.8" width="14.5" height="14.5" fill="#AD2A49" transform="rotate(-21.6 225 510)"/><use href="#s-coracao" x="43.9" y="543.9" width="12.2" height="12.2" fill="#F67E7D" transform="rotate(-20.8 50 550)"/><use href="#s-coracao" x="92.9" y="542.9" width="14.1" height="14.1" fill="#FF7C38" transform="rotate(2.4 100 550)"/><use href="#s-estrela" x="143.9" y="543.9" width="12.2" height="12.2" fill="#F67E7D" transform="rotate(-8.3 150 550)"/><use href="#s-estrela" x="194" y="544" width="12.1" height="12.1" fill="#FF7C38" transform="rotate(4.5 200 550)"/><use href="#s-estrela" x="16" y="581" width="17.9" height="17.9" fill="#F67E7D" transform="rotate(-19.7 25 590)"/><use href="#s-estrela" x="67" y="582" width="16" height="16" fill="#FF7C38" transform="rotate(14 75 590)"/><use href="#s-coracao" x="116.1" y="581.1" width="17.8" height="17.8" fill="#F67E7D" transform="rotate(-19.5 125 590)"/><use href="#s-coracao" x="168.8" y="583.8" width="12.4" height="12.4" fill="#AD2A49" transform="rotate(23.8 175 590)"/><use href="#s-estrela" x="218.7" y="583.7" width="12.6" height="12.6" fill="#F67E7D" transform="rotate(-1.6 225 590)"/><use href="#s-pitanga" x="43.4" y="623.4" width="13.2" height="13.2" fill="#AD2A49" transform="rotate(-20.9 50 630)"/><use href="#s-coracao" x="93.2" y="623.2" width="13.5" height="13.5" fill="#AD2A49" transform="rotate(9.1 100 630)"/><use href="#s-coracao" x="142.7" y="622.7" width="14.6" height="14.6" fill="#AD2A49" transform="rotate(-23.9 150 630)"/><use href="#s-coracao" x="192.4" y="622.4" width="15.1" height="15.1" fill="#FF7C38" transform="rotate(-22.1 200 630)"/><use href="#s-estrela" x="17.6" y="662.6" width="14.9" height="14.9" fill="#FF7C38" transform="rotate(5.3 25 670)"/><use href="#s-coracao" x="67.1" y="662.1" width="15.8" height="15.8" fill="#AD2A49" transform="rotate(-11.2 75 670)"/><use href="#s-estrela" x="118.9" y="663.9" width="12.2" height="12.2" fill="#F67E7D" transform="rotate(23.8 125 670)"/><use href="#s-estrela" x="166.2" y="661.2" width="17.6" height="17.6" fill="#FF7C38" transform="rotate(23.4 175 670)"/><use href="#s-coracao" x="218.9" y="663.9" width="12.2" height="12.2" fill="#FF7C38" transform="rotate(-12.6 225 670)"/></g>
+</svg>
+</template>
+
+<template id="arte-portas-interno">
+<svg viewBox="0 0 500 700" preserveAspectRatio="none">
+  <rect class="papel" width="500" height="700" fill="#FFF8EF" filter="url(#papel)"/>
+  <path d="M80 210 C 110 90, 390 90, 420 210" fill="none" stroke="#AD2A49" stroke-width="2" stroke-linecap="round"/>
+  <use href="#s-folha" x="96" y="140" width="60" height="24" fill="#AD2A49" transform="rotate(-50 126 152)"/>
+  <use href="#s-folha" x="150" y="98" width="60" height="24" fill="#F67E7D" transform="rotate(-20 180 110)"/>
+  <use href="#s-folha" x="290" y="98" width="60" height="24" fill="#F67E7D" transform="rotate(200 320 110)"/>
+  <use href="#s-folha" x="344" y="140" width="60" height="24" fill="#AD2A49" transform="rotate(230 374 152)"/>
+  <use href="#s-pitanga" x="222" y="74" width="56" height="56" fill="#FF7C38" stroke="#AD2A49"/>
+  <text x="250" y="200" class="t-texto" font-size="12" letter-spacing="3" text-anchor="middle" fill="#7D5A60">PREPARA O CORAÇÃO</text>
+  <text x="250" y="266" class="t-script" font-size="64" fill="#AD2A49" text-anchor="middle">Ana &amp; Pedro</text>
+  <text x="250" y="312" class="t-titulo" font-size="30" fill="#FF7C38" text-anchor="middle">vão se casar!</text>
+  <text x="250" y="350" class="t-texto" font-size="13" fill="#3B1622" text-anchor="middle">e a festa só fica completa com você</text>
+  <line x1="150" y1="384" x2="350" y2="384" stroke="#F1D6C2" stroke-width="1.5"/>
+  <text x="170" y="426" class="t-titulo" font-size="24" fill="#AD2A49">16h</text>
+  <text x="230" y="426" class="t-texto" font-size="14" fill="#3B1622">Cerimônia no jardim</text>
+  <text x="170" y="466" class="t-titulo" font-size="24" fill="#AD2A49">18h</text>
+  <text x="230" y="466" class="t-texto" font-size="14" fill="#3B1622">Jantar sob as árvores</text>
+  <text x="170" y="506" class="t-titulo" font-size="24" fill="#AD2A49">20h</text>
+  <text x="230" y="506" class="t-texto" font-size="14" fill="#3B1622">Pista aberta</text>
+  <use href="#s-sol" x="220" y="548" width="60" height="60" fill="#FFCE59"/>
+  <text x="250" y="640" class="t-texto" font-size="11" letter-spacing="2" text-anchor="middle" fill="#7D5A60">SÍTIO FLOR DE PITANGA · 14 · 03 · 2027</text>
+  <g class="so-lapis">
+    <text x="60" y="560" class="t-script" font-size="22" transform="rotate(-6 60 560)">programação</text>
+    <path d="M118 548 Q 140 520 160 500" fill="none"/>
+  </g>
+</svg>
+</template>
+
+<template id="arte-livreto-1">
+<svg viewBox="0 0 300 520">
+  <path class="papel" d="M4 4.3 L12.1 4.2 L20.2 3.4 L28.3 4.1 L36.4 4.2 L44.6 4.9 L52.7 2.7 L60.8 4.2 L68.9 3.2 L77 3.3 L85.1 4.9 L93.2 4 L101.3 4.2 L109.4 4.8 L117.6 5.3 L125.7 3.8 L133.8 4.4 L141.9 4 L150 4 L158.1 4.6 L166.2 3.8 L174.3 4.1 L182.4 3.9 L190.6 5.4 L198.7 4.6 L206.8 5.2 L214.9 5.4 L223 3.2 L231.1 4.2 L239.2 5.4 L247.3 5.1 L255.4 2.8 L263.6 2.8 L271.7 3.8 L279.8 2.6 L287.9 3.2 L295.5 4 L296.5 12 L296.9 20 L297.3 28 L294.9 36 L296.7 44 L296.5 52 L294.9 60 L297.2 68 L297.5 76 L295.1 84 L297.4 92 L295.7 100 L296 108 L297.6 116 L297.1 124 L294.9 132 L295.8 140 L296 148 L295.5 156 L295 164 L295.4 172 L296.7 180 L294.5 188 L296.2 196 L295.8 204 L294.5 212 L295.5 220 L296.4 228 L296 236 L294.6 244 L297.6 252 L296.9 260 L297.5 268 L294.7 276 L295.2 284 L294.5 292 L296.9 300 L295.3 308 L294.8 316 L295.8 324 L297.3 332 L297 340 L295.2 348 L294.9 356 L297.3 364 L296.2 372 L296.6 380 L294.7 388 L294.6 396 L296.6 404 L295.8 412 L294.6 420 L297.4 428 L296.4 436 L297 444 L294.7 452 L297.1 460 L294.6 468 L297.2 476 L295.9 484 L295.5 492 L296.2 500 L297.4 508 L296 515.7 L287.9 514.8 L279.8 516.1 L271.7 515.2 L263.6 514.8 L255.4 514.9 L247.3 514.6 L239.2 515 L231.1 515.4 L223 515.4 L214.9 516.8 L206.8 515.3 L198.7 516 L190.6 515 L182.4 515.5 L174.3 514.5 L166.2 515.2 L158.1 514.4 L150 516.7 L141.9 516.2 L133.8 515 L125.7 515.9 L117.6 517.4 L109.4 514.7 L101.3 517 L93.2 515.8 L85.1 516 L77 517.1 L68.9 515.7 L60.8 516 L52.7 516.6 L44.6 517.5 L36.4 515.5 L28.3 517.1 L20.2 516.7 L12.1 516.4 L3.9 516 L3.5 508 L2.6 500 L2.8 492 L2.6 484 L4.8 476 L3.2 468 L2.9 460 L2.7 452 L5.1 444 L5.2 436 L4.5 428 L3.3 420 L3.2 412 L3.3 404 L3.9 396 L2.9 388 L3.8 380 L3.2 372 L5.5 364 L5.5 356 L4.2 348 L3.2 340 L5.5 332 L3.4 324 L3.5 316 L2.4 308 L3.6 300 L3.9 292 L4 284 L3 276 L4 268 L2.4 260 L3.2 252 L2.7 244 L3.7 236 L2.5 228 L2.5 220 L3.4 212 L3.1 204 L4.3 196 L4.1 188 L4.8 180 L4.5 172 L4.7 164 L5.2 156 L3.6 148 L3.4 140 L5.6 132 L2.9 124 L4.7 116 L4.5 108 L2.5 100 L5.1 92 L5.3 84 L4.4 76 L4.7 68 L5 60 L2.8 52 L4.1 44 L4 36 L5.1 28 L5 20 L5 12Z" fill="#AD2A49" filter="url(#papel)"/>
+  <use href="#s-estrela" x="22" y="30" width="40" height="40" fill="#FF7C38"/>
+  <use href="#s-estrela" x="238" y="400" width="34" height="34" fill="#FFCE59"/>
+  <use href="#s-sol" x="90" y="80" width="120" height="120" fill="#FFCE59"/>
+  <use href="#s-pitanga" x="118" y="112" width="64" height="64" fill="#FF7C38" stroke="#7E1C35"/>
+  <text x="150" y="270" class="t-script" font-size="54" fill="#FFF8EF" text-anchor="middle">Nosso</text>
+  <text x="150" y="322" class="t-script" font-size="54" fill="#FFF8EF" text-anchor="middle">grande dia</text>
+  <text x="150" y="366" class="t-texto" font-size="11" letter-spacing="3" fill="#FFC9A8" text-anchor="middle">GUIA DOS CONVIDADOS</text>
+  <text x="150" y="470" class="t-titulo" font-size="20" fill="#FFF8EF" text-anchor="middle">Ana &amp; Pedro</text>
+  <g class="so-lapis"><text x="20" y="420" class="t-script" font-size="20" transform="rotate(-8 20 420)">capa</text></g>
+</svg>
+</template>
+
+<template id="arte-livreto-2">
+<svg viewBox="0 0 300 520">
+  <path class="papel" d="M4 4.3 L12.1 4.2 L20.2 3.4 L28.3 4.1 L36.4 4.2 L44.6 4.9 L52.7 2.7 L60.8 4.2 L68.9 3.2 L77 3.3 L85.1 4.9 L93.2 4 L101.3 4.2 L109.4 4.8 L117.6 5.3 L125.7 3.8 L133.8 4.4 L141.9 4 L150 4 L158.1 4.6 L166.2 3.8 L174.3 4.1 L182.4 3.9 L190.6 5.4 L198.7 4.6 L206.8 5.2 L214.9 5.4 L223 3.2 L231.1 4.2 L239.2 5.4 L247.3 5.1 L255.4 2.8 L263.6 2.8 L271.7 3.8 L279.8 2.6 L287.9 3.2 L295.5 4 L296.5 12 L296.9 20 L297.3 28 L294.9 36 L296.7 44 L296.5 52 L294.9 60 L297.2 68 L297.5 76 L295.1 84 L297.4 92 L295.7 100 L296 108 L297.6 116 L297.1 124 L294.9 132 L295.8 140 L296 148 L295.5 156 L295 164 L295.4 172 L296.7 180 L294.5 188 L296.2 196 L295.8 204 L294.5 212 L295.5 220 L296.4 228 L296 236 L294.6 244 L297.6 252 L296.9 260 L297.5 268 L294.7 276 L295.2 284 L294.5 292 L296.9 300 L295.3 308 L294.8 316 L295.8 324 L297.3 332 L297 340 L295.2 348 L294.9 356 L297.3 364 L296.2 372 L296.6 380 L294.7 388 L294.6 396 L296.6 404 L295.8 412 L294.6 420 L297.4 428 L296.4 436 L297 444 L294.7 452 L297.1 460 L294.6 468 L297.2 476 L295.9 484 L295.5 492 L296.2 500 L297.4 508 L296 515.7 L287.9 514.8 L279.8 516.1 L271.7 515.2 L263.6 514.8 L255.4 514.9 L247.3 514.6 L239.2 515 L231.1 515.4 L223 515.4 L214.9 516.8 L206.8 515.3 L198.7 516 L190.6 515 L182.4 515.5 L174.3 514.5 L166.2 515.2 L158.1 514.4 L150 516.7 L141.9 516.2 L133.8 515 L125.7 515.9 L117.6 517.4 L109.4 514.7 L101.3 517 L93.2 515.8 L85.1 516 L77 517.1 L68.9 515.7 L60.8 516 L52.7 516.6 L44.6 517.5 L36.4 515.5 L28.3 517.1 L20.2 516.7 L12.1 516.4 L3.9 516 L3.5 508 L2.6 500 L2.8 492 L2.6 484 L4.8 476 L3.2 468 L2.9 460 L2.7 452 L5.1 444 L5.2 436 L4.5 428 L3.3 420 L3.2 412 L3.3 404 L3.9 396 L2.9 388 L3.8 380 L3.2 372 L5.5 364 L5.5 356 L4.2 348 L3.2 340 L5.5 332 L3.4 324 L3.5 316 L2.4 308 L3.6 300 L3.9 292 L4 284 L3 276 L4 268 L2.4 260 L3.2 252 L2.7 244 L3.7 236 L2.5 228 L2.5 220 L3.4 212 L3.1 204 L4.3 196 L4.1 188 L4.8 180 L4.5 172 L4.7 164 L5.2 156 L3.6 148 L3.4 140 L5.6 132 L2.9 124 L4.7 116 L4.5 108 L2.5 100 L5.1 92 L5.3 84 L4.4 76 L4.7 68 L5 60 L2.8 52 L4.1 44 L4 36 L5.1 28 L5 20 L5 12Z" fill="#FFF8EF" filter="url(#papel)"/>
+  <text x="150" y="74" class="t-titulo" font-size="30" fill="#AD2A49" text-anchor="middle">Programação</text>
+  <use href="#s-coracao" x="141" y="88" width="18" height="16" fill="#F67E7D"/>
+  <line x1="70" y1="140" x2="70" y2="440" stroke="#F1D6C2" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="70" cy="150" r="9" fill="#FF7C38"/><circle cx="70" cy="245" r="9" fill="#F67E7D"/><circle cx="70" cy="340" r="9" fill="#FFCE59"/><circle cx="70" cy="430" r="9" fill="#AD2A49"/>
+  <text x="94" y="156" class="t-titulo" font-size="22" fill="#AD2A49">16h</text><text x="94" y="180" class="t-texto" font-size="12" fill="#3B1622">o sim, no jardim</text>
+  <text x="94" y="251" class="t-titulo" font-size="22" fill="#AD2A49">17h30</text><text x="94" y="275" class="t-texto" font-size="12" fill="#3B1622">brinde e fotos</text>
+  <text x="94" y="346" class="t-titulo" font-size="22" fill="#AD2A49">19h</text><text x="94" y="370" class="t-texto" font-size="12" fill="#3B1622">jantar</text>
+  <text x="94" y="436" class="t-titulo" font-size="22" fill="#AD2A49">21h</text><text x="94" y="460" class="t-texto" font-size="12" fill="#3B1622">pista até cansar</text>
+  <g class="so-lapis"><text x="170" y="214" class="t-script" font-size="20" transform="rotate(6 170 214)">linha do tempo</text></g>
+</svg>
+</template>
+
+<template id="arte-livreto-3">
+<svg viewBox="0 0 300 520">
+  <path class="papel" d="M4 4.3 L12.1 4.2 L20.2 3.4 L28.3 4.1 L36.4 4.2 L44.6 4.9 L52.7 2.7 L60.8 4.2 L68.9 3.2 L77 3.3 L85.1 4.9 L93.2 4 L101.3 4.2 L109.4 4.8 L117.6 5.3 L125.7 3.8 L133.8 4.4 L141.9 4 L150 4 L158.1 4.6 L166.2 3.8 L174.3 4.1 L182.4 3.9 L190.6 5.4 L198.7 4.6 L206.8 5.2 L214.9 5.4 L223 3.2 L231.1 4.2 L239.2 5.4 L247.3 5.1 L255.4 2.8 L263.6 2.8 L271.7 3.8 L279.8 2.6 L287.9 3.2 L295.5 4 L296.5 12 L296.9 20 L297.3 28 L294.9 36 L296.7 44 L296.5 52 L294.9 60 L297.2 68 L297.5 76 L295.1 84 L297.4 92 L295.7 100 L296 108 L297.6 116 L297.1 124 L294.9 132 L295.8 140 L296 148 L295.5 156 L295 164 L295.4 172 L296.7 180 L294.5 188 L296.2 196 L295.8 204 L294.5 212 L295.5 220 L296.4 228 L296 236 L294.6 244 L297.6 252 L296.9 260 L297.5 268 L294.7 276 L295.2 284 L294.5 292 L296.9 300 L295.3 308 L294.8 316 L295.8 324 L297.3 332 L297 340 L295.2 348 L294.9 356 L297.3 364 L296.2 372 L296.6 380 L294.7 388 L294.6 396 L296.6 404 L295.8 412 L294.6 420 L297.4 428 L296.4 436 L297 444 L294.7 452 L297.1 460 L294.6 468 L297.2 476 L295.9 484 L295.5 492 L296.2 500 L297.4 508 L296 515.7 L287.9 514.8 L279.8 516.1 L271.7 515.2 L263.6 514.8 L255.4 514.9 L247.3 514.6 L239.2 515 L231.1 515.4 L223 515.4 L214.9 516.8 L206.8 515.3 L198.7 516 L190.6 515 L182.4 515.5 L174.3 514.5 L166.2 515.2 L158.1 514.4 L150 516.7 L141.9 516.2 L133.8 515 L125.7 515.9 L117.6 517.4 L109.4 514.7 L101.3 517 L93.2 515.8 L85.1 516 L77 517.1 L68.9 515.7 L60.8 516 L52.7 516.6 L44.6 517.5 L36.4 515.5 L28.3 517.1 L20.2 516.7 L12.1 516.4 L3.9 516 L3.5 508 L2.6 500 L2.8 492 L2.6 484 L4.8 476 L3.2 468 L2.9 460 L2.7 452 L5.1 444 L5.2 436 L4.5 428 L3.3 420 L3.2 412 L3.3 404 L3.9 396 L2.9 388 L3.8 380 L3.2 372 L5.5 364 L5.5 356 L4.2 348 L3.2 340 L5.5 332 L3.4 324 L3.5 316 L2.4 308 L3.6 300 L3.9 292 L4 284 L3 276 L4 268 L2.4 260 L3.2 252 L2.7 244 L3.7 236 L2.5 228 L2.5 220 L3.4 212 L3.1 204 L4.3 196 L4.1 188 L4.8 180 L4.5 172 L4.7 164 L5.2 156 L3.6 148 L3.4 140 L5.6 132 L2.9 124 L4.7 116 L4.5 108 L2.5 100 L5.1 92 L5.3 84 L4.4 76 L4.7 68 L5 60 L2.8 52 L4.1 44 L4 36 L5.1 28 L5 20 L5 12Z" fill="#FCEADB" filter="url(#papel)"/>
+  <text x="150" y="74" class="t-titulo" font-size="30" fill="#AD2A49" text-anchor="middle">Como chegar</text>
+  <rect x="32" y="104" width="236" height="270" rx="14" fill="#FFF8EF" stroke="#F1D6C2" stroke-width="1.5"/>
+  <path d="M40 330 C 100 310, 80 240, 150 230 S 220 160, 260 130" fill="none" stroke="#FFC9A8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M40 330 C 100 310, 80 240, 150 230 S 220 160, 260 130" fill="none" stroke="#FFF8EF" stroke-width="2" stroke-dasharray="6 8"/>
+  <use href="#s-folha" x="60" y="140" width="50" height="20" fill="#F67E7D" transform="rotate(-30 85 150)"/>
+  <use href="#s-folha" x="200" y="290" width="50" height="20" fill="#F67E7D" transform="rotate(20 225 300)"/>
+  <use href="#s-coracao" x="134" y="186" width="34" height="31" fill="#AD2A49"/>
+  <text x="150" y="410" class="t-titulo" font-size="18" fill="#3B1622" text-anchor="middle">Sítio Flor de Pitanga</text>
+  <text x="150" y="436" class="t-texto" font-size="12" fill="#7D5A60" text-anchor="middle">estrada das pitangueiras, km 7</text>
+  <text x="150" y="458" class="t-texto" font-size="12" fill="#7D5A60" text-anchor="middle">estacionamento no local</text>
+  <g class="so-lapis"><text x="180" y="356" class="t-script" font-size="20">mapa ilustrado</text></g>
+</svg>
+</template>
+
+<template id="arte-livreto-4">
+<svg viewBox="0 0 300 520">
+  <path class="papel" d="M4 4.3 L12.1 4.2 L20.2 3.4 L28.3 4.1 L36.4 4.2 L44.6 4.9 L52.7 2.7 L60.8 4.2 L68.9 3.2 L77 3.3 L85.1 4.9 L93.2 4 L101.3 4.2 L109.4 4.8 L117.6 5.3 L125.7 3.8 L133.8 4.4 L141.9 4 L150 4 L158.1 4.6 L166.2 3.8 L174.3 4.1 L182.4 3.9 L190.6 5.4 L198.7 4.6 L206.8 5.2 L214.9 5.4 L223 3.2 L231.1 4.2 L239.2 5.4 L247.3 5.1 L255.4 2.8 L263.6 2.8 L271.7 3.8 L279.8 2.6 L287.9 3.2 L295.5 4 L296.5 12 L296.9 20 L297.3 28 L294.9 36 L296.7 44 L296.5 52 L294.9 60 L297.2 68 L297.5 76 L295.1 84 L297.4 92 L295.7 100 L296 108 L297.6 116 L297.1 124 L294.9 132 L295.8 140 L296 148 L295.5 156 L295 164 L295.4 172 L296.7 180 L294.5 188 L296.2 196 L295.8 204 L294.5 212 L295.5 220 L296.4 228 L296 236 L294.6 244 L297.6 252 L296.9 260 L297.5 268 L294.7 276 L295.2 284 L294.5 292 L296.9 300 L295.3 308 L294.8 316 L295.8 324 L297.3 332 L297 340 L295.2 348 L294.9 356 L297.3 364 L296.2 372 L296.6 380 L294.7 388 L294.6 396 L296.6 404 L295.8 412 L294.6 420 L297.4 428 L296.4 436 L297 444 L294.7 452 L297.1 460 L294.6 468 L297.2 476 L295.9 484 L295.5 492 L296.2 500 L297.4 508 L296 515.7 L287.9 514.8 L279.8 516.1 L271.7 515.2 L263.6 514.8 L255.4 514.9 L247.3 514.6 L239.2 515 L231.1 515.4 L223 515.4 L214.9 516.8 L206.8 515.3 L198.7 516 L190.6 515 L182.4 515.5 L174.3 514.5 L166.2 515.2 L158.1 514.4 L150 516.7 L141.9 516.2 L133.8 515 L125.7 515.9 L117.6 517.4 L109.4 514.7 L101.3 517 L93.2 515.8 L85.1 516 L77 517.1 L68.9 515.7 L60.8 516 L52.7 516.6 L44.6 517.5 L36.4 515.5 L28.3 517.1 L20.2 516.7 L12.1 516.4 L3.9 516 L3.5 508 L2.6 500 L2.8 492 L2.6 484 L4.8 476 L3.2 468 L2.9 460 L2.7 452 L5.1 444 L5.2 436 L4.5 428 L3.3 420 L3.2 412 L3.3 404 L3.9 396 L2.9 388 L3.8 380 L3.2 372 L5.5 364 L5.5 356 L4.2 348 L3.2 340 L5.5 332 L3.4 324 L3.5 316 L2.4 308 L3.6 300 L3.9 292 L4 284 L3 276 L4 268 L2.4 260 L3.2 252 L2.7 244 L3.7 236 L2.5 228 L2.5 220 L3.4 212 L3.1 204 L4.3 196 L4.1 188 L4.8 180 L4.5 172 L4.7 164 L5.2 156 L3.6 148 L3.4 140 L5.6 132 L2.9 124 L4.7 116 L4.5 108 L2.5 100 L5.1 92 L5.3 84 L4.4 76 L4.7 68 L5 60 L2.8 52 L4.1 44 L4 36 L5.1 28 L5 20 L5 12Z" fill="#FFE9B0" filter="url(#papel)"/>
+  <text x="150" y="74" class="t-titulo" font-size="30" fill="#AD2A49" text-anchor="middle">Dicas</text>
+  <use href="#s-estrela" x="40" y="114" width="20" height="20" fill="#FF7C38"/>
+  <text x="70" y="130" class="t-texto" font-size="13" fill="#3B1622">Traje: esporte fino</text><text x="70" y="150" class="t-texto" font-size="13" fill="#3B1622">com muita cor</text>
+  <use href="#s-estrela" x="40" y="194" width="20" height="20" fill="#F67E7D"/>
+  <text x="70" y="210" class="t-texto" font-size="13" fill="#3B1622">Venha de sapato</text><text x="70" y="230" class="t-texto" font-size="13" fill="#3B1622">confortável: a grama</text><text x="70" y="250" class="t-texto" font-size="13" fill="#3B1622">é de verdade!</text>
+  <use href="#s-estrela" x="40" y="294" width="20" height="20" fill="#AD2A49"/>
+  <text x="70" y="310" class="t-texto" font-size="13" fill="#3B1622">Pousadas por perto</text><text x="70" y="330" class="t-texto" font-size="13" fill="#3B1622">no site do casal</text>
+  <use href="#s-coracao" x="110" y="372" width="80" height="72" fill="#F67E7D"/>
+  <text x="150" y="480" class="t-script" font-size="46" fill="#AD2A49" text-anchor="middle">Até lá!</text>
+</svg>
+</template>
+
+<template id="arte-livreto-verso">
+<svg viewBox="0 0 300 520">
+  <path class="papel" d="M4 4.3 L12.1 4.2 L20.2 3.4 L28.3 4.1 L36.4 4.2 L44.6 4.9 L52.7 2.7 L60.8 4.2 L68.9 3.2 L77 3.3 L85.1 4.9 L93.2 4 L101.3 4.2 L109.4 4.8 L117.6 5.3 L125.7 3.8 L133.8 4.4 L141.9 4 L150 4 L158.1 4.6 L166.2 3.8 L174.3 4.1 L182.4 3.9 L190.6 5.4 L198.7 4.6 L206.8 5.2 L214.9 5.4 L223 3.2 L231.1 4.2 L239.2 5.4 L247.3 5.1 L255.4 2.8 L263.6 2.8 L271.7 3.8 L279.8 2.6 L287.9 3.2 L295.5 4 L296.5 12 L296.9 20 L297.3 28 L294.9 36 L296.7 44 L296.5 52 L294.9 60 L297.2 68 L297.5 76 L295.1 84 L297.4 92 L295.7 100 L296 108 L297.6 116 L297.1 124 L294.9 132 L295.8 140 L296 148 L295.5 156 L295 164 L295.4 172 L296.7 180 L294.5 188 L296.2 196 L295.8 204 L294.5 212 L295.5 220 L296.4 228 L296 236 L294.6 244 L297.6 252 L296.9 260 L297.5 268 L294.7 276 L295.2 284 L294.5 292 L296.9 300 L295.3 308 L294.8 316 L295.8 324 L297.3 332 L297 340 L295.2 348 L294.9 356 L297.3 364 L296.2 372 L296.6 380 L294.7 388 L294.6 396 L296.6 404 L295.8 412 L294.6 420 L297.4 428 L296.4 436 L297 444 L294.7 452 L297.1 460 L294.6 468 L297.2 476 L295.9 484 L295.5 492 L296.2 500 L297.4 508 L296 515.7 L287.9 514.8 L279.8 516.1 L271.7 515.2 L263.6 514.8 L255.4 514.9 L247.3 514.6 L239.2 515 L231.1 515.4 L223 515.4 L214.9 516.8 L206.8 515.3 L198.7 516 L190.6 515 L182.4 515.5 L174.3 514.5 L166.2 515.2 L158.1 514.4 L150 516.7 L141.9 516.2 L133.8 515 L125.7 515.9 L117.6 517.4 L109.4 514.7 L101.3 517 L93.2 515.8 L85.1 516 L77 517.1 L68.9 515.7 L60.8 516 L52.7 516.6 L44.6 517.5 L36.4 515.5 L28.3 517.1 L20.2 516.7 L12.1 516.4 L3.9 516 L3.5 508 L2.6 500 L2.8 492 L2.6 484 L4.8 476 L3.2 468 L2.9 460 L2.7 452 L5.1 444 L5.2 436 L4.5 428 L3.3 420 L3.2 412 L3.3 404 L3.9 396 L2.9 388 L3.8 380 L3.2 372 L5.5 364 L5.5 356 L4.2 348 L3.2 340 L5.5 332 L3.4 324 L3.5 316 L2.4 308 L3.6 300 L3.9 292 L4 284 L3 276 L4 268 L2.4 260 L3.2 252 L2.7 244 L3.7 236 L2.5 228 L2.5 220 L3.4 212 L3.1 204 L4.3 196 L4.1 188 L4.8 180 L4.5 172 L4.7 164 L5.2 156 L3.6 148 L3.4 140 L5.6 132 L2.9 124 L4.7 116 L4.5 108 L2.5 100 L5.1 92 L5.3 84 L4.4 76 L4.7 68 L5 60 L2.8 52 L4.1 44 L4 36 L5.1 28 L5 20 L5 12Z" fill="#FCEADB" filter="url(#papel)"/>
+  <g opacity=".7"><use href="#s-estrela" x="17.4" y="22.6" width="17.2" height="17.2" fill="#FF7C38" transform="rotate(-2.4 26 31.2)"/><use href="#s-pitanga" x="71.4" y="24.6" width="13.1" height="13.1" fill="#FFCE59" transform="rotate(-1.2 78 31.2)"/><use href="#s-pitanga" x="121.6" y="22.8" width="16.8" height="16.8" fill="#F67E7D" transform="rotate(-2.7 130 31.2)"/><use href="#s-coracao" x="175.7" y="24.9" width="12.5" height="12.5" fill="#FFCE59" transform="rotate(6.7 182 31.2)"/><use href="#s-pitanga" x="225.1" y="22.3" width="17.9" height="17.9" fill="#FF7C38" transform="rotate(7.7 234 31.2)"/><use href="#s-pitanga" x="278" y="23.2" width="15.9" height="15.9" fill="#FFCE59" transform="rotate(-24.2 286 31.2)"/><use href="#s-pitanga" x="45.8" y="66.6" width="12.4" height="12.4" fill="#F67E7D" transform="rotate(-15.5 52 72.8)"/><use href="#s-coracao" x="96.2" y="65" width="15.6" height="15.6" fill="#FF7C38" transform="rotate(-8.7 104 72.8)"/><use href="#s-pitanga" x="147.5" y="64.3" width="17.1" height="17.1" fill="#FFCE59" transform="rotate(-13.3 156 72.8)"/><use href="#s-estrela" x="200.5" y="65.3" width="15" height="15" fill="#FFCE59" transform="rotate(-20.8 208 72.8)"/><use href="#s-pitanga" x="253.2" y="66" width="13.7" height="13.7" fill="#FFCE59" transform="rotate(24.8 260 72.8)"/><use href="#s-coracao" x="17.9" y="106.3" width="16.2" height="16.2" fill="#FF7C38" transform="rotate(12.9 26 114.4)"/><use href="#s-pitanga" x="71.1" y="107.5" width="13.7" height="13.7" fill="#F67E7D" transform="rotate(3.2 78 114.4)"/><use href="#s-coracao" x="122.8" y="107.2" width="14.4" height="14.4" fill="#FF7C38" transform="rotate(-5.7 130 114.4)"/><use href="#s-coracao" x="173.5" y="105.9" width="17.1" height="17.1" fill="#F67E7D" transform="rotate(-14.3 182 114.4)"/><use href="#s-coracao" x="226.6" y="107" width="14.8" height="14.8" fill="#FFCE59" transform="rotate(-5.1 234 114.4)"/><use href="#s-coracao" x="278.3" y="106.7" width="15.4" height="15.4" fill="#F67E7D" transform="rotate(13.9 286 114.4)"/><use href="#s-estrela" x="45" y="149" width="14" height="14" fill="#FF7C38" transform="rotate(-8.4 52 156)"/><use href="#s-estrela" x="95.7" y="147.7" width="16.5" height="16.5" fill="#F67E7D" transform="rotate(-18.3 104 156)"/><use href="#s-pitanga" x="149.7" y="149.7" width="12.6" height="12.6" fill="#F67E7D" transform="rotate(-1.8 156 156)"/><use href="#s-estrela" x="201.5" y="149.5" width="13.1" height="13.1" fill="#FFCE59" transform="rotate(-15.6 208 156)"/><use href="#s-pitanga" x="253.4" y="149.4" width="13.1" height="13.1" fill="#FFCE59" transform="rotate(13.5 260 156)"/><use href="#s-estrela" x="18.1" y="189.7" width="15.9" height="15.9" fill="#F67E7D" transform="rotate(-5.3 26 197.6)"/><use href="#s-coracao" x="72" y="191.6" width="12" height="12" fill="#FFCE59" transform="rotate(-9.8 78 197.6)"/><use href="#s-coracao" x="123.4" y="191" width="13.3" height="13.3" fill="#FF7C38" transform="rotate(24.8 130 197.6)"/><use href="#s-pitanga" x="174.1" y="189.7" width="15.9" height="15.9" fill="#F67E7D" transform="rotate(-22.9 182 197.6)"/><use href="#s-coracao" x="227.4" y="191" width="13.3" height="13.3" fill="#FF7C38" transform="rotate(-24.5 234 197.6)"/><use href="#s-pitanga" x="279" y="190.6" width="14" height="14" fill="#FF7C38" transform="rotate(-5.7 286 197.6)"/><use href="#s-coracao" x="45.7" y="232.9" width="12.5" height="12.5" fill="#FFCE59" transform="rotate(6.8 52 239.2)"/><use href="#s-coracao" x="96.2" y="231.4" width="15.6" height="15.6" fill="#FF7C38" transform="rotate(6.1 104 239.2)"/><use href="#s-coracao" x="147.1" y="230.3" width="17.8" height="17.8" fill="#FF7C38" transform="rotate(16.6 156 239.2)"/><use href="#s-coracao" x="199.4" y="230.6" width="17.2" height="17.2" fill="#F67E7D" transform="rotate(6.4 208 239.2)"/><use href="#s-estrela" x="251.3" y="230.5" width="17.5" height="17.5" fill="#FFCE59" transform="rotate(-12.5 260 239.2)"/><use href="#s-coracao" x="19.5" y="274.3" width="13" height="13" fill="#FFCE59" transform="rotate(22 26 280.8)"/><use href="#s-coracao" x="69.9" y="272.7" width="16.1" height="16.1" fill="#FF7C38" transform="rotate(19.1 78 280.8)"/><use href="#s-pitanga" x="123.8" y="274.6" width="12.5" height="12.5" fill="#F67E7D" transform="rotate(-19.8 130 280.8)"/><use href="#s-coracao" x="174.5" y="273.3" width="15.1" height="15.1" fill="#FF7C38" transform="rotate(-13.1 182 280.8)"/><use href="#s-pitanga" x="226.8" y="273.6" width="14.3" height="14.3" fill="#FF7C38" transform="rotate(16.2 234 280.8)"/><use href="#s-pitanga" x="278.5" y="273.3" width="14.9" height="14.9" fill="#FFCE59" transform="rotate(-16.2 286 280.8)"/><use href="#s-pitanga" x="43.1" y="313.5" width="17.9" height="17.9" fill="#F67E7D" transform="rotate(-13.6 52 322.4)"/><use href="#s-pitanga" x="96" y="314.4" width="15.9" height="15.9" fill="#FFCE59" transform="rotate(5.7 104 322.4)"/><use href="#s-estrela" x="149.4" y="315.8" width="13.3" height="13.3" fill="#F67E7D" transform="rotate(12.4 156 322.4)"/><use href="#s-coracao" x="201.2" y="315.6" width="13.6" height="13.6" fill="#FF7C38" transform="rotate(-12.5 208 322.4)"/><use href="#s-coracao" x="253.5" y="315.9" width="13.1" height="13.1" fill="#FF7C38" transform="rotate(1.6 260 322.4)"/><use href="#s-coracao" x="19.7" y="357.7" width="12.6" height="12.6" fill="#F67E7D" transform="rotate(19.5 26 364)"/><use href="#s-estrela" x="70" y="356" width="15.9" height="15.9" fill="#FFCE59" transform="rotate(1.1 78 364)"/><use href="#s-coracao" x="122.2" y="356.2" width="15.5" height="15.5" fill="#F67E7D" transform="rotate(-1.3 130 364)"/><use href="#s-estrela" x="173.9" y="355.9" width="16.2" height="16.2" fill="#F67E7D" transform="rotate(-23.9 182 364)"/><use href="#s-pitanga" x="227.8" y="357.8" width="12.4" height="12.4" fill="#F67E7D" transform="rotate(11.5 234 364)"/><use href="#s-estrela" x="279.6" y="357.6" width="12.8" height="12.8" fill="#F67E7D" transform="rotate(-21.2 286 364)"/><use href="#s-pitanga" x="44.9" y="398.5" width="14.2" height="14.2" fill="#F67E7D" transform="rotate(20 52 405.6)"/><use href="#s-pitanga" x="95.8" y="397.4" width="16.4" height="16.4" fill="#F67E7D" transform="rotate(14.7 104 405.6)"/><use href="#s-estrela" x="148.9" y="398.5" width="14.1" height="14.1" fill="#FFCE59" transform="rotate(-1.3 156 405.6)"/><use href="#s-coracao" x="199.4" y="397" width="17.2" height="17.2" fill="#FF7C38" transform="rotate(22.2 208 405.6)"/><use href="#s-coracao" x="251.4" y="397" width="17.2" height="17.2" fill="#FFCE59" transform="rotate(-24.3 260 405.6)"/><use href="#s-pitanga" x="18.9" y="440.1" width="14.3" height="14.3" fill="#FFCE59" transform="rotate(-24.4 26 447.2)"/><use href="#s-coracao" x="71.8" y="441" width="12.5" height="12.5" fill="#FFCE59" transform="rotate(-19.2 78 447.2)"/><use href="#s-estrela" x="121.4" y="438.6" width="17.3" height="17.3" fill="#FFCE59" transform="rotate(-8.5 130 447.2)"/><use href="#s-pitanga" x="173.9" y="439.1" width="16.2" height="16.2" fill="#FF7C38" transform="rotate(-3 182 447.2)"/><use href="#s-pitanga" x="227.7" y="440.9" width="12.5" height="12.5" fill="#FFCE59" transform="rotate(-23.5 234 447.2)"/><use href="#s-pitanga" x="279.7" y="440.9" width="12.5" height="12.5" fill="#F67E7D" transform="rotate(-13.5 286 447.2)"/><use href="#s-pitanga" x="45.7" y="482.5" width="12.7" height="12.7" fill="#FFCE59" transform="rotate(8 52 488.8)"/><use href="#s-estrela" x="97.2" y="482" width="13.5" height="13.5" fill="#F67E7D" transform="rotate(-6.6 104 488.8)"/><use href="#s-coracao" x="148" y="480.8" width="16.1" height="16.1" fill="#F67E7D" transform="rotate(0.9 156 488.8)"/><use href="#s-estrela" x="200" y="480.8" width="16" height="16" fill="#FF7C38" transform="rotate(-0.1 208 488.8)"/><use href="#s-coracao" x="253" y="481.8" width="14" height="14" fill="#FFCE59" transform="rotate(-12.5 260 488.8)"/></g>
+</svg>
+</template>
+
+<template id="arte-rsvp-frente">
+<svg viewBox="0 0 600 420">
+  <path class="papel" d="M14 14 A11 11 0 0 1 36 14 A11 11 0 0 1 58 14 A11 11 0 0 1 80 14 A11 11 0 0 1 102 14 A11 11 0 0 1 124 14 A11 11 0 0 1 146 14 A11 11 0 0 1 168 14 A11 11 0 0 1 190 14 A11 11 0 0 1 212 14 A11 11 0 0 1 234 14 A11 11 0 0 1 256 14 A11 11 0 0 1 278 14 A11 11 0 0 1 300 14 A11 11 0 0 1 322 14 A11 11 0 0 1 344 14 A11 11 0 0 1 366 14 A11 11 0 0 1 388 14 A11 11 0 0 1 410 14 A11 11 0 0 1 432 14 A11 11 0 0 1 454 14 A11 11 0 0 1 476 14 A11 11 0 0 1 498 14 A11 11 0 0 1 520 14 A11 11 0 0 1 542 14 A11 11 0 0 1 564 14 A11 11 0 0 1 586 14 A10.9 10.9 0 0 1 586 35.8 A10.9 10.9 0 0 1 586 57.6 A10.9 10.9 0 0 1 586 79.3 A10.9 10.9 0 0 1 586 101.1 A10.9 10.9 0 0 1 586 122.9 A10.9 10.9 0 0 1 586 144.7 A10.9 10.9 0 0 1 586 166.4 A10.9 10.9 0 0 1 586 188.2 A10.9 10.9 0 0 1 586 210 A10.9 10.9 0 0 1 586 231.8 A10.9 10.9 0 0 1 586 253.6 A10.9 10.9 0 0 1 586 275.3 A10.9 10.9 0 0 1 586 297.1 A10.9 10.9 0 0 1 586 318.9 A10.9 10.9 0 0 1 586 340.7 A10.9 10.9 0 0 1 586 362.4 A10.9 10.9 0 0 1 586 384.2 A10.9 10.9 0 0 1 586 406 A11 11 0 0 1 564 406 A11 11 0 0 1 542 406 A11 11 0 0 1 520 406 A11 11 0 0 1 498 406 A11 11 0 0 1 476 406 A11 11 0 0 1 454 406 A11 11 0 0 1 432 406 A11 11 0 0 1 410 406 A11 11 0 0 1 388 406 A11 11 0 0 1 366 406 A11 11 0 0 1 344 406 A11 11 0 0 1 322 406 A11 11 0 0 1 300 406 A11 11 0 0 1 278 406 A11 11 0 0 1 256 406 A11 11 0 0 1 234 406 A11 11 0 0 1 212 406 A11 11 0 0 1 190 406 A11 11 0 0 1 168 406 A11 11 0 0 1 146 406 A11 11 0 0 1 124 406 A11 11 0 0 1 102 406 A11 11 0 0 1 80 406 A11 11 0 0 1 58 406 A11 11 0 0 1 36 406 A11 11 0 0 1 14 406 A10.9 10.9 0 0 1 14 384.2 A10.9 10.9 0 0 1 14 362.4 A10.9 10.9 0 0 1 14 340.7 A10.9 10.9 0 0 1 14 318.9 A10.9 10.9 0 0 1 14 297.1 A10.9 10.9 0 0 1 14 275.3 A10.9 10.9 0 0 1 14 253.6 A10.9 10.9 0 0 1 14 231.8 A10.9 10.9 0 0 1 14 210 A10.9 10.9 0 0 1 14 188.2 A10.9 10.9 0 0 1 14 166.4 A10.9 10.9 0 0 1 14 144.7 A10.9 10.9 0 0 1 14 122.9 A10.9 10.9 0 0 1 14 101.1 A10.9 10.9 0 0 1 14 79.3 A10.9 10.9 0 0 1 14 57.6 A10.9 10.9 0 0 1 14 35.8 A10.9 10.9 0 0 1 14 14Z" fill="#F67E7D" filter="url(#papel)"/>
+  <rect x="44" y="44" width="512" height="332" rx="8" fill="#FFF8EF"/>
+  <use href="#s-pitanga" x="62" y="62" width="58" height="58" fill="#FF7C38" stroke="#AD2A49"/>
+  <use href="#s-folha" x="104" y="74" width="54" height="22" fill="#AD2A49" transform="rotate(-20 131 85)"/>
+  <use href="#s-estrela" x="494" y="310" width="38" height="38" fill="#FFCE59"/>
+  <text x="300" y="196" class="t-titulo" font-size="62" fill="#AD2A49" text-anchor="middle">Você vem?</text>
+  <text x="300" y="256" class="t-script" font-size="44" fill="#D1652D" text-anchor="middle">confirme sua presença</text>
+  <text x="300" y="310" class="t-texto" font-size="13" letter-spacing="3" fill="#7D5A60" text-anchor="middle">ATÉ 10 DE FEVEREIRO DE 2027</text>
+  <text x="300" y="340" class="t-texto" font-size="12" fill="#7D5A60" text-anchor="middle">vire o cartão e preencha</text>
+  <g class="so-lapis"><text x="380" y="96" class="t-script" font-size="22" transform="rotate(5 380 96)">borda recortada</text></g>
+</svg>
+</template>
+
+<template id="arte-rsvp-verso">
+<svg viewBox="0 0 600 420">
+  <path class="papel" d="M14 14 A11 11 0 0 1 36 14 A11 11 0 0 1 58 14 A11 11 0 0 1 80 14 A11 11 0 0 1 102 14 A11 11 0 0 1 124 14 A11 11 0 0 1 146 14 A11 11 0 0 1 168 14 A11 11 0 0 1 190 14 A11 11 0 0 1 212 14 A11 11 0 0 1 234 14 A11 11 0 0 1 256 14 A11 11 0 0 1 278 14 A11 11 0 0 1 300 14 A11 11 0 0 1 322 14 A11 11 0 0 1 344 14 A11 11 0 0 1 366 14 A11 11 0 0 1 388 14 A11 11 0 0 1 410 14 A11 11 0 0 1 432 14 A11 11 0 0 1 454 14 A11 11 0 0 1 476 14 A11 11 0 0 1 498 14 A11 11 0 0 1 520 14 A11 11 0 0 1 542 14 A11 11 0 0 1 564 14 A11 11 0 0 1 586 14 A10.9 10.9 0 0 1 586 35.8 A10.9 10.9 0 0 1 586 57.6 A10.9 10.9 0 0 1 586 79.3 A10.9 10.9 0 0 1 586 101.1 A10.9 10.9 0 0 1 586 122.9 A10.9 10.9 0 0 1 586 144.7 A10.9 10.9 0 0 1 586 166.4 A10.9 10.9 0 0 1 586 188.2 A10.9 10.9 0 0 1 586 210 A10.9 10.9 0 0 1 586 231.8 A10.9 10.9 0 0 1 586 253.6 A10.9 10.9 0 0 1 586 275.3 A10.9 10.9 0 0 1 586 297.1 A10.9 10.9 0 0 1 586 318.9 A10.9 10.9 0 0 1 586 340.7 A10.9 10.9 0 0 1 586 362.4 A10.9 10.9 0 0 1 586 384.2 A10.9 10.9 0 0 1 586 406 A11 11 0 0 1 564 406 A11 11 0 0 1 542 406 A11 11 0 0 1 520 406 A11 11 0 0 1 498 406 A11 11 0 0 1 476 406 A11 11 0 0 1 454 406 A11 11 0 0 1 432 406 A11 11 0 0 1 410 406 A11 11 0 0 1 388 406 A11 11 0 0 1 366 406 A11 11 0 0 1 344 406 A11 11 0 0 1 322 406 A11 11 0 0 1 300 406 A11 11 0 0 1 278 406 A11 11 0 0 1 256 406 A11 11 0 0 1 234 406 A11 11 0 0 1 212 406 A11 11 0 0 1 190 406 A11 11 0 0 1 168 406 A11 11 0 0 1 146 406 A11 11 0 0 1 124 406 A11 11 0 0 1 102 406 A11 11 0 0 1 80 406 A11 11 0 0 1 58 406 A11 11 0 0 1 36 406 A11 11 0 0 1 14 406 A10.9 10.9 0 0 1 14 384.2 A10.9 10.9 0 0 1 14 362.4 A10.9 10.9 0 0 1 14 340.7 A10.9 10.9 0 0 1 14 318.9 A10.9 10.9 0 0 1 14 297.1 A10.9 10.9 0 0 1 14 275.3 A10.9 10.9 0 0 1 14 253.6 A10.9 10.9 0 0 1 14 231.8 A10.9 10.9 0 0 1 14 210 A10.9 10.9 0 0 1 14 188.2 A10.9 10.9 0 0 1 14 166.4 A10.9 10.9 0 0 1 14 144.7 A10.9 10.9 0 0 1 14 122.9 A10.9 10.9 0 0 1 14 101.1 A10.9 10.9 0 0 1 14 79.3 A10.9 10.9 0 0 1 14 57.6 A10.9 10.9 0 0 1 14 35.8 A10.9 10.9 0 0 1 14 14Z" fill="#FFF8EF" stroke="#F67E7D" stroke-width="2" filter="url(#papel)"/>
+  <text x="60" y="84" class="t-titulo" font-size="28" fill="#AD2A49">Confirmação</text>
+  <use href="#s-coracao" x="232" y="64" width="20" height="18" fill="#F67E7D"/>
+  <text x="60" y="134" class="t-texto" font-size="14" fill="#3B1622">Nome(s)</text>
+  <line x1="130" y1="136" x2="540" y2="136" stroke="#AD2A49" stroke-width="1.2"/>
+  <circle cx="70" cy="178" r="9" fill="none" stroke="#AD2A49" stroke-width="1.5"/><text x="90" y="183" class="t-texto" font-size="14" fill="#3B1622">Vou, com certeza!</text>
+  <circle cx="310" cy="178" r="9" fill="none" stroke="#AD2A49" stroke-width="1.5"/><text x="330" y="183" class="t-texto" font-size="14" fill="#3B1622">Vou ficar devendo</text>
+  <text x="60" y="232" class="t-texto" font-size="14" fill="#3B1622">Quantas pessoas</text>
+  <line x1="190" y1="234" x2="260" y2="234" stroke="#AD2A49" stroke-width="1.2"/>
+  <text x="60" y="280" class="t-texto" font-size="14" fill="#3B1622">Alguma restrição alimentar?</text>
+  <line x1="276" y1="282" x2="540" y2="282" stroke="#AD2A49" stroke-width="1.2"/>
+  <text x="60" y="328" class="t-texto" font-size="14" fill="#3B1622">Uma música que não pode faltar</text>
+  <line x1="296" y1="330" x2="540" y2="330" stroke="#AD2A49" stroke-width="1.2"/>
+  <use href="#s-pitanga" x="500" y="54" width="44" height="44" fill="#FF7C38" stroke="#AD2A49"/>
+  <g class="so-lapis"><text x="330" y="380" class="t-script" font-size="20">linhas para escrever à mão</text></g>
+</svg>
+</template>
+
+<template id="arte-tag-frente">
+<svg viewBox="0 -70 240 490">
+  <path d="M120 -6 C 100 -40, 70 -40, 64 -66 M120 -6 C 140 -40, 176 -44, 182 -68" fill="none" stroke="#AD2A49" stroke-width="2.4" stroke-linecap="round"/>
+  <path class="papel" fill-rule="evenodd" d="M44 0 H196 L236 40 V414 H4 V40 Z M120 30 m-11 0 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z" fill="#FFF8EF" stroke="#F1D6C2" stroke-width="1.5" filter="url(#papel)"/>
+  <circle cx="120" cy="30" r="16" fill="none" stroke="#FF7C38" stroke-width="3"/>
+  <rect x="4" y="74" width="232" height="12" fill="#FF7C38"/>
+  <rect x="4" y="92" width="232" height="4" fill="#FFCE59"/>
+  <text x="120" y="182" class="t-script" font-size="58" fill="#AD2A49" text-anchor="middle">Ana</text>
+  <text x="120" y="218" class="t-titulo" font-size="28" fill="#FF7C38" text-anchor="middle">&amp;</text>
+  <text x="120" y="272" class="t-script" font-size="58" fill="#AD2A49" text-anchor="middle">Pedro</text>
+  <text x="120" y="310" class="t-texto" font-size="11" letter-spacing="3" fill="#7D5A60" text-anchor="middle">14 · 03 · 27</text>
+  <use href="#s-pitanga" x="92" y="330" width="56" height="56" fill="#F67E7D" stroke="#AD2A49"/>
+  <g class="so-lapis"><text x="150" y="-30" class="t-script" font-size="18">fitilho</text></g>
+</svg>
+</template>
+
+<template id="arte-tag-verso">
+<svg viewBox="0 -70 240 490">
+  <path d="M120 -6 C 140 -40, 170 -40, 176 -66 M120 -6 C 100 -40, 64 -44, 58 -68" fill="none" stroke="#AD2A49" stroke-width="2.4" stroke-linecap="round"/>
+  <path class="papel" fill-rule="evenodd" d="M44 0 H196 L236 40 V414 H4 V40 Z M120 30 m-11 0 a11 11 0 1 0 22 0 a11 11 0 1 0 -22 0 Z" fill="#FCEADB" stroke="#F1D6C2" stroke-width="1.5" filter="url(#papel)"/>
+  <circle cx="120" cy="30" r="16" fill="none" stroke="#FF7C38" stroke-width="3"/>
+  <text x="30" y="136" class="t-titulo" font-size="24" fill="#AD2A49">Para:</text>
+  <line x1="30" y1="176" x2="210" y2="176" stroke="#AD2A49" stroke-width="1.2"/>
+  <line x1="30" y1="214" x2="210" y2="214" stroke="#AD2A49" stroke-width="1.2"/>
+  <text x="120" y="290" class="t-script" font-size="34" fill="#D1652D" text-anchor="middle">com carinho,</text>
+  <text x="120" y="330" class="t-script" font-size="40" fill="#AD2A49" text-anchor="middle">A &amp; P</text>
+  <use href="#s-coracao" x="104" y="356" width="32" height="29" fill="#F67E7D"/>
+</svg>
+</template>
+
+</body>
+</html>

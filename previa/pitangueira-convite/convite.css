@@ -1,0 +1,219 @@
+/* =====================================================================
+   Veja um convite por dentro · Pitangueira
+   Mesma identidade do site (cores, fontes e formas do manual de marca).
+   ===================================================================== */
+
+/* Fontes do site, servidas daqui mesmo (sem pedir nada a outro endereço) */
+@font-face { font-family: "DM Serif Display"; font-style: normal; font-weight: 400; font-display: swap; src: url("fontes/dm-serif-display.woff2") format("woff2"); }
+@font-face { font-family: "DM Serif Display"; font-style: italic; font-weight: 400; font-display: swap; src: url("fontes/dm-serif-display-italic.woff2") format("woff2"); }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("fontes/montserrat.woff2") format("woff2"); }
+@font-face { font-family: "Pinyon Script"; font-style: normal; font-weight: 400; font-display: swap; src: url("fontes/pinyon-script.woff2") format("woff2"); }
+
+:root {
+  --bordo: #AD2A49;
+  --laranja: #FF7C38;
+  --coral: #F67E7D;
+  --amarelo: #FFCE59;
+  --bordo-escuro: #7E1C35;
+  --laranja-escuro: #F0682A;
+  --laranja-texto: #D1652D;
+  --pessego: #FFC9A8;
+  --creme: #FFF7EE;
+  --areia: #FCEADB;
+  --linha: #F1D6C2;
+  --texto: #3B1622;
+  --suave: #7D5A60;
+  --branco: #FFFFFF;
+  --lapis: #6E6766;
+
+  --f-titulo: "DM Serif Display", Georgia, serif;
+  --f-script: "Pinyon Script", cursive;
+  --f-texto: "Montserrat", system-ui, sans-serif;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --sombra: 0 14px 34px -16px rgba(126, 28, 53, .35);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--f-texto); color: var(--texto); background: var(--creme); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--f-titulo); font-weight: 400; line-height: 1.08; margin: 0; }
+.script { font-family: var(--f-script); font-weight: 400; }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+img { max-width: 100%; display: block; }
+.container { width: min(1160px, 100% - 40px); margin-inline: auto; }
+:focus-visible { outline: 3px solid var(--bordo); outline-offset: 3px; border-radius: 6px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.pular { position: absolute; left: 12px; top: -60px; z-index: 60; background: var(--bordo); color: #fff; padding: 10px 16px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+.pular:focus { top: 12px; }
+
+/* ---------- Topo ---------- */
+header.topo { position: sticky; top: 0; z-index: 30; background: rgba(255, 247, 238, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--linha); }
+.topo .container { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 16px; }
+.topo .logo { display: inline-flex; align-items: center; min-height: 44px; }
+.topo .logo img { height: 46px; width: auto; }
+.topo .voltar { color: var(--bordo); font-weight: 600; font-size: .9rem; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; padding: 0 4px; }
+.topo .voltar:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 680px) { .topo .logo img { height: 36px; } .topo .voltar { font-size: .84rem; } }
+
+/* ---------- Abertura ---------- */
+.abertura { background: var(--laranja); color: #fff; text-align: center; padding: 64px 0 70px; position: relative; overflow: hidden; isolation: isolate; }
+.abertura .estrela { position: absolute; z-index: -1; fill: var(--pessego); opacity: .6; }
+.abertura .e1 { width: 190px; left: -60px; top: 20px; transform: rotate(12deg); }
+.abertura .e2 { width: 70px; right: 12%; top: 40px; fill: var(--amarelo); opacity: .9; }
+.etiqueta { display: inline-block; font-size: .76rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--bordo-escuro); background: var(--pessego); padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
+.abertura h1 { font-size: clamp(2.5rem, 6.4vw, 4.6rem); }
+.abertura h1 .script { display: block; font-size: 1.2em; line-height: .95; color: var(--bordo-escuro); }
+.abertura .intro { max-width: 46ch; margin: 18px auto 28px; font-size: 1.06rem; font-weight: 500; color: var(--texto); }
+
+/* Rascunho / Arte final */
+.modo { display: inline-flex; border: 0; margin: 0; padding: 5px; gap: 4px; background: rgba(255, 247, 238, .25); border-radius: 999px; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .55); }
+.modo label { position: relative; }
+.modo input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.modo span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 600; font-size: .95rem; color: #fff; transition: background 250ms var(--ease-out), color 250ms var(--ease-out); }
+.modo input:checked + span { background: #fff; color: var(--bordo); box-shadow: 0 6px 14px -8px rgba(59, 22, 34, .5); }
+.modo input:focus-visible + span { outline: 3px solid var(--bordo-escuro); outline-offset: 2px; }
+.modo label:first-child input:checked + span { font-family: var(--f-script); font-size: 1.45rem; font-weight: 400; color: var(--lapis); }
+.dica-modo { margin: 12px 0 0; font-size: .84rem; color: var(--bordo-escuro); }
+
+/* ---------- Peças ---------- */
+.pecas { padding: 52px 0 76px; }
+.pecas:focus { outline: none; }
+.nota-demo { margin: 0 auto 34px; max-width: 72ch; text-align: center; font-size: .9rem; color: var(--bordo); background: var(--branco); border: 1.5px dashed var(--coral); border-radius: 14px; padding: 12px 18px; }
+.grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+@media (max-width: 880px) { .grade { grid-template-columns: minmax(0, 1fr); } }
+
+.cartao { scroll-margin-top: 82px; background: var(--branco); border: 1.5px solid var(--linha); border-radius: 26px; box-shadow: var(--sombra); padding: 22px 22px 20px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.cartao.largo { grid-column: 1 / -1; }
+.cartao-cab { display: flex; gap: 14px; align-items: flex-start; }
+.cartao-cab .num { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-family: var(--f-titulo); font-size: 1.3rem; color: #fff; background: var(--cor, var(--laranja)); }
+.cartao-cab h2 { font-size: 1.6rem; color: var(--bordo); }
+.cartao-cab p { margin: 4px 0 0; font-size: .88rem; color: var(--suave); }
+
+/* A "mesa" onde a peça fica */
+.palco { position: relative; aspect-ratio: 1 / 1; border-radius: 18px; overflow: hidden; container-type: inline-size; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab;
+  background: radial-gradient(ellipse at 50% 38%, #FFFDF9 0%, var(--areia) 72%, #F7DCC8 100%); }
+.palco.arrastando { cursor: grabbing; }
+.cartao.largo .palco { aspect-ratio: 16 / 8; }
+@media (max-width: 880px) { .cartao.largo .palco { aspect-ratio: 1 / 1; } }
+.palco:focus-visible { outline: 3px solid var(--bordo); outline-offset: -3px; }
+.palco .dica { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-size: .74rem; font-weight: 600; letter-spacing: .04em; color: var(--suave); background: rgba(255, 255, 255, .75); padding: 4px 12px; border-radius: 999px; white-space: nowrap; pointer-events: none; }
+.cena { position: absolute; inset: 0; display: grid; place-items: center; perspective: 150cqi; }
+.cena * { transform-style: preserve-3d; }
+
+/* Uma face de papel: duas camadas (arte final e rascunho) que se cruzam ao trocar o modo */
+.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face.verso { transform: rotateY(180deg); }
+.arte { position: absolute; inset: 0; transform-style: flat !important; }
+.camada { position: absolute; inset: 0; transition: opacity 650ms var(--ease-in-out); transform-style: flat !important; }
+.camada > svg, .camada > img { width: 100%; height: 100%; display: block; object-fit: cover; }
+body[data-modo="final"] .camada-rascunho, body[data-modo="rascunho"] .camada-final { opacity: 0; }
+.camada-final > svg, .camada-final > img { filter: drop-shadow(0 10px 12px rgba(59, 22, 34, .16)); }
+.camada-final .so-lapis { display: none; }
+
+/* Rascunho a lápis: o mesmo desenho, sem cor, com traço cinza tremido */
+.lapis { filter: url(#lapis) drop-shadow(0 8px 10px rgba(59, 22, 34, .1)); }
+.lapis :is(path, rect, circle, line, use, polyline, polygon, ellipse) { fill: none !important; stroke: var(--lapis) !important; stroke-width: 1.3px; }
+.lapis use { stroke-width: 2.6px; }
+.lapis .papel { fill: #FCFBF8 !important; stroke: #9D9593 !important; stroke-width: 1.2px; }
+.lapis text { fill: #7C7472 !important; stroke: none !important; }
+.lapis .so-lapis text { fill: #8E8785 !important; }
+.lapis .so-lapis :is(line, path) { stroke: #A9A2A0 !important; stroke-width: 1px; }
+.foto-lapis { filter: grayscale(1) contrast(1.15) brightness(1.08) sepia(.12); }
+
+.t-titulo { font-family: var(--f-titulo); }
+.t-script { font-family: var(--f-script); }
+.t-texto { font-family: var(--f-texto); font-weight: 500; }
+
+/* --- Convite de portas --- */
+.gatefold { position: relative; width: 44cqi; aspect-ratio: 5 / 7; transform: scale(calc(1.4 - .4 * var(--p, 0))); }
+.gatefold .interno { position: absolute; inset: 0; }
+.porta { position: absolute; top: 0; bottom: 0; width: 50%; }
+.porta.esq { left: 0; transform-origin: left center; transform: rotateY(calc(var(--p, 0) * -178deg)) translateZ(.1px); }
+.porta.dir { right: 0; transform-origin: right center; transform: rotateY(calc(var(--p, 0) * 178deg)) translateZ(.1px); }
+.porta .face { overflow: hidden; }
+.porta .face.frente .arte { width: 200%; }
+.porta.dir .face.frente .arte { left: -100%; }
+
+/* --- Cartões que viram e giram --- */
+.virador { position: relative; transition: transform 800ms var(--ease-in-out); }
+.virador.sem-transicao { transition: none; }
+.virador.convite { width: 50cqi; aspect-ratio: 5 / 7; }
+.virador.rsvp { width: 80cqi; aspect-ratio: 600 / 420; }
+.virador.tag { width: 30cqi; aspect-ratio: 240 / 490; }
+
+/* --- Livreto sanfonado --- */
+.sanfona { position: absolute; left: 50%; top: 50%; width: 24cqi; aspect-ratio: 300 / 520; transform-origin: 0 0; }
+.inclina { position: absolute; inset: 0; }
+.painel { position: absolute; inset: 0; }
+.painel .painel { left: 100%; right: auto; width: 100%; transform-origin: left center; }
+
+/* ---------- Controles ---------- */
+.controles { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.controles .faixa { flex: 1 1 220px; display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: .86rem; font-weight: 600; color: var(--bordo); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 2px solid transparent; font-weight: 600; font-size: .9rem; text-decoration: none; transition: background 200ms ease, color 200ms ease, border-color 200ms ease, transform 150ms var(--ease-out); }
+.btn:active { transform: scale(.97); }
+.btn-bordo { background: var(--bordo); color: #fff; }
+.btn-bordo:hover { background: var(--bordo-escuro); }
+.btn-contorno { border-color: var(--laranja); color: var(--bordo); background: transparent; }
+.btn-contorno:hover { background: var(--bordo); border-color: var(--bordo); color: #fff; }
+.btn-laranja { background: var(--laranja); color: var(--texto); }
+.btn-laranja:hover { background: var(--amarelo); }
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+input[type="range"] { -webkit-appearance: none; appearance: none; flex: 1; min-width: 0; height: 44px; background: transparent; margin: 0; cursor: pointer; --v: 0%; }
+input[type="range"]::-webkit-slider-runnable-track { height: 8px; border-radius: 999px; background: linear-gradient(90deg, var(--laranja) var(--v), var(--linha) var(--v)); }
+input[type="range"]::-moz-range-track { height: 8px; border-radius: 999px; background: var(--linha); }
+input[type="range"]::-moz-range-progress { height: 8px; border-radius: 999px; background: var(--laranja); }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; margin-top: -10px; border-radius: 50%; background: var(--bordo); border: 3px solid #fff; box-shadow: 0 3px 8px rgba(59, 22, 34, .35); }
+input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--bordo); border: 3px solid #fff; box-shadow: 0 3px 8px rgba(59, 22, 34, .35); }
+input[type="range"]:focus-visible { outline: none; }
+input[type="range"]:focus-visible::-webkit-slider-thumb { outline: 3px solid var(--bordo-escuro); outline-offset: 3px; }
+input[type="range"]:focus-visible::-moz-range-thumb { outline: 3px solid var(--bordo-escuro); outline-offset: 3px; }
+
+/* ---------- Ver de perto ---------- */
+dialog.perto { width: min(1100px, 100% - 24px); max-height: 92vh; border: 0; border-radius: 22px; padding: 0; background: var(--creme); color: var(--texto); overflow: auto; }
+dialog.perto[open] { animation: abre 320ms var(--ease-out); }
+dialog.perto::backdrop { background: rgba(59, 22, 34, .72); }
+@keyframes abre { from { opacity: 0; transform: translateY(16px) scale(.97); } }
+.perto-cab { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--bordo); color: #fff; padding: 16px 20px 14px 24px; }
+.perto-cab h2 { font-family: var(--f-script); font-size: 2.4rem; line-height: 1; }
+@media (max-width: 480px) { .perto-cab h2 { font-size: 1.9rem; } .perto-corpo { padding: 16px; } }
+.perto .fechar { border: 0; background: rgba(255, 255, 255, .2); color: #fff; width: 44px; height: 44px; border-radius: 50%; font-size: 1.5rem; flex-shrink: 0; }
+.perto .fechar:hover { background: rgba(255, 255, 255, .35); }
+.perto .fechar:focus-visible { outline-color: #fff; }
+.perto-corpo { padding: 22px 24px 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 22px; align-items: start; }
+.perto-corpo figure { margin: 0; background: radial-gradient(ellipse at 50% 40%, #FFFDF9, var(--areia)); border-radius: 16px; padding: 18px; }
+.perto-corpo .arte-perto { position: relative; margin: 0 auto; }
+.perto-corpo figcaption { margin-top: 12px; font-size: .86rem; color: var(--suave); text-align: center; }
+.perto-corpo figcaption strong { display: block; color: var(--bordo); font-family: var(--f-titulo); font-weight: 400; font-size: 1.15rem; }
+.perto-modo { grid-column: 1 / -1; text-align: center; margin: -6px 0 0; font-size: .84rem; color: var(--suave); }
+
+/* ---------- Como funciona ---------- */
+.como { background: var(--areia); padding: 76px 0 84px; }
+.como h2 { text-align: center; font-size: clamp(2rem, 4.4vw, 3rem); color: var(--bordo); margin-bottom: 52px; }
+.como h2 .script { color: var(--laranja-texto); font-size: 1.2em; }
+.passos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 22px; }
+@media (max-width: 860px) { .passos { grid-template-columns: 1fr; gap: 40px; } }
+.passos li { background: var(--branco); border-radius: 24px; padding: 34px 24px 24px; position: relative; box-shadow: var(--sombra); border: 1.5px solid var(--linha); }
+.passos .num { position: absolute; top: -24px; left: 22px; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font-family: var(--f-titulo); font-size: 1.6rem; color: #fff; background: var(--cor); }
+.passos h3 { font-size: 1.45rem; color: var(--bordo); margin: 6px 0 8px; }
+.passos p { margin: 0; color: var(--suave); font-size: .94rem; }
+
+/* ---------- Contato ---------- */
+.contato { background: var(--bordo); color: #fff; text-align: center; padding: 76px 0; position: relative; overflow: hidden; isolation: isolate; }
+.contato .estrela { position: absolute; z-index: -1; width: 220px; right: -60px; bottom: -60px; fill: var(--laranja); opacity: .35; }
+.contato h2 { font-size: clamp(2rem, 4.6vw, 3.1rem); }
+.contato h2 .script { display: block; font-size: 1.3em; color: var(--amarelo); line-height: 1.05; }
+.contato p { max-width: 46ch; margin: 14px auto 28px; opacity: .92; }
+.contato .btn { padding: 13px 28px; font-size: 1rem; }
+footer { background: var(--bordo-escuro); color: #F3C9D1; text-align: center; font-size: .82rem; padding: 26px 0; }
+footer img { height: 100px; width: auto; margin: 0 auto 6px; }
+footer p { margin: 0; }
+
+/* Reduzir movimento: os estados mudam de uma vez, sem animação */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
